@@ -1,0 +1,23 @@
+# Variable declaration keyword:
+    - var,let & const.
+
+    > const: declare and initialize at the same statment/line.
+    > var & let declaring first and assigning later is possible.
+
+    > const: not possible to re-assign 
+    > let and var: possible to re-assign.
+
+    > const and let no redeclaration.
+    > var is possible to redeclare.
+
+    > var: has global scope.
+    > const & let: has bloack scope.
+
+---------------------------------------------------------------------------------------
+
+Q. So, when to use var? when to use let? when to use const?
+    1. always try to use const at first place if possible when should not be change/re-assign later.
+    2. if not const try let as it hs TDZ as const, so that you should never face undexpected undefine error.
+    3. never use var expect some exception cases.
+
+---------------------------------------------------------------------------------------

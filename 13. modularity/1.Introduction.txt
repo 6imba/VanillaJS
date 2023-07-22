@@ -1,0 +1,13 @@
+# Uncaught SyntaxError: cannot use import statement outside a module while importing a function from a JavaScript file.
+    - This error occurs for one reason: you’re trying to use import and you’re not inside an ES module.
+    - It can happen in a Node.js environment, or in the browser.
+
+# Solution: Implement ES_Module in javascript.
+    - In node js:
+        1. In package.json file ==> { "type": "module" }
+            OR
+        2. Keep file extension as .mjs
+    - In broswer vanilla js:
+        3. type="module" attribuite in script tag ===> <script type="module"></script>
+
+

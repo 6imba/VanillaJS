@@ -1,0 +1,41 @@
+- onclick can be use to perform some JS(validation,etc) when button is clicked.
+- page will reload when you hit server
+
+- See onclick attribute doesnt reload the page.
+- but if onclick attribute is on vutton it will reload a page.
+- same way in input type="submit" & form onsubmit="".
+- when calling function in event_handler_attribute, it should have parenthesis ().
+    - onclick="func()", - onsubmit="func()"
+- Not:
+    - onclick="func", - onsubmit="func"
+
+- There if we call onclick & onsubmit event_attribute via button_tag it always reloads the page.
+    - Here we can use onclick in other tag then button but onsubmit is trigger onlick when we hit type="submit."
+- There if we call onclick & onsubmit event_attribute via button_tag it always reloads the page.
+
+Q. So how prevent Page_Reload when click submit button:
+    - <form onsubmit="">
+        <input type="submit">
+      </form>
+    - <form onsubmit="">
+        <button type="submit"></button>
+      </form>
+    - <button onclick=""></button>
+
+# Answer:
+    - return false ==> <form onsubmit="return func"> ==> <form onsubmit="return false"> | <button onclick="return func"> ==> <button onclick="return false">
+    - event.preventDefault();
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+# After 13.html:
+
+# .preventDefault(); Is best way event.
+
+Q. Some questions:
+    - Why calling onclick&onsubmit event_attribute via button_tag reloads current page?
+    - How onsubmit works?
+    - How event.preventDefault() prevent page reloading?
+
+# Extra:
+    - <button onClick="window.location.reload();">Refresh Page</button> ==> reload the page.
+    - 

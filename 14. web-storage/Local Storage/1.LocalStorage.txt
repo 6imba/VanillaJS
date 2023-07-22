@@ -1,0 +1,4 @@
+- Stores data in broswer in key-value form.
+- localStorage is the property of window object. => window.localStorage
+- localStorage stores values(interger, string, object, array formate) in broswer localStorage in string form.
+    - so, before storing data incase of array, object use JSON.stringify. So the data to be store gets save in its original formate

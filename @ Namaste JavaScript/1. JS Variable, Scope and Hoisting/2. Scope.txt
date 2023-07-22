@@ -1,0 +1,72 @@
+# JS Scope:
+	- Scope determines the accessibility (visibility) of variables.
+	- JavaScript has 3 types of scope: Global Scope, Block Scope, Function Scope.
+	> global & local(Block,Function)
+
+# Global Scope:
+	- A variable declared outside a function, becomes GLOBAL.
+
+# Block Scope:
+	- Variables declared inside a { } block cannot be accessed from outside the block.
+	- A variable when declared inside the if or switch conditions or inside for or while loops, are accessible within that particular condition or loop.
+
+# Function Scope:
+	- When a variable is declared inside a function, it is only accessible within that function and cannot be used outside that function.
+	- Variables declared with var, let and const are quite similar when declared inside a function.
+
+---------------------------------------------------------------------------------------------------------------
+
+# Who have Global Scope?
+	- Varible declare with var keyword not inside function,
+	- Varible define with no keyword,
+	- Varible declare with let,const outside block{},
+	- Varible declare with var inside block{},
+
+	- Global Scope: variable: var, no keyword, let&const outside function_scope.
+
+# Who have Function Scope?
+	- Varible declare within  a JavaScript function, ==> function foo () {},
+	- Varible declare with var,let,const keyword all have Function Scope when declare inside a function.
+
+	- Function Scope: function foo () {} && variable: var,let,const.
+
+# Who have Block Scope?
+	- Varible declare with let, const keyword,
+	- Varible declare inside block{} with let, const keyword,
+	- Varible declare within a JavaScript function,
+
+	- Variables declared with the var keyword inside block{}, can NOT have block scope instead has has global scope.
+	- Block Scope: variable:let,const && condition:if(){},switch(){} && loop:for(){},while(){},do{}.
+
+---------------------------------------------------------------------------------------------------------------
+
+# var:
+	- global-scope(not incase of function)
+	- possible to declare only.
+	- re-declare in same scope
+	- re-assigned.
+	- default
+	- Declared after use.
+	- hoisted-top and initialized-anytime, default, declare-after.
+
+# let:
+	- block scope
+	- possible to declare only.
+	- no re-declare same scope
+	- reassigned.
+	- Declared before use.
+	- hoisted-top but not initialized,
+
+# const:
+	- block scope
+	- not possible to declare only(declare and assign at the same time).
+	- no re-declare.
+	- no re-assigned.
+	- Declared before use.
+	- Must Declare and Define at same time.
+
+----------------------------------------------------------------------------------------------------------------
+
+# What determinses the scope of any variable?
+	- Where it is declared? (inside function, within block{}, outside any kind of block|function)?
+	- What keyword is used while declaring corresponding variable?

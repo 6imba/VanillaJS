@@ -1,0 +1,40 @@
+- Callbacks: "I will call back later!"
+- Asynchronous: "I will finish later!"
+
+- For Example: setTimeout(()=>console.log("I am callback), 5000)
+    - setTimeout() ==> Asynchronous
+    - ()=>console.log("I am callback) ==>Callbacks
+
+* In the real world, callbacks are most often used with asynchronous functions.
+    - callbacks is passed into asynchronous as parameter, so that it can be call later inside asynchronous.
+    - Where callbacks really shine are in asynchronous functions, where one function has to wait for another function.
+    - asynchronous Functions runs in parallel with other functions, doesn't happen at the same time, but runs at their own pace.
+    - asynchronous Functions will finish later. like: setTimeout, setInterval,
+
+* asynchronous Functions runs in parallel with other functions, doesn't happen at the same time.
+    - This means that function runs along with another function but doesnt stop/wait excuting if other function takes some time.
+    - runs paraleel but not at the same time wait, both runs at their own pace.
+    - In Software design, Asynchronous software design expands upon the concept by building code that allows a program to ask that
+      a task be performed alongside the original task (or tasks), without stopping to wait for the task to complete.
+
+# Therfore, asynchronous runs alongside callback, doesnt stops its flow but make callback wait for some time period.
+
+
+# Finally: : combo of asychronous{setTimeout, setInterval} and callback
+    var second = 0;
+    function callbackCallLater(){
+        setTimeout(() => console.log('I am callBack!'), 3000); //setTimeout(asynchronous) with callback
+    }
+    function asynchronousFinishLater(callback){ //setTimeout(asynchronous) with callback
+        console.log('Hi 1')
+        console.log('Hi 2')
+        callback();
+        console.log('Hi 3')
+        console.log('Hi 4')
+        console.log('Hi 5')
+        if(second<10){setInterval(() => console.log('Second:', second += 1), 1000)} //setInterval(asynchronous) with callback
+        console.log('Hi 6')
+        console.log('Hi 7')
+        console.log('Hi 8')
+    }
+    asynchronousFinishLater(callbackCallLater);

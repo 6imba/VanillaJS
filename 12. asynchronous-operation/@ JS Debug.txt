@@ -1,0 +1,14 @@
+- [[Prototype]]: Promise
+- [[Prototype]]: Object
+
+
+
+# eventlistener ~ callfucntion ~ callback:
+    postBtn.addEventListener("click", postData);
+    postBtn.addEventListener("click", postData());
+    postBtn.addEventListener("click", () => postData());
+
+
+- Template literals:
+    const x= {a:2,b:3}
+    console.log(`${x}`)

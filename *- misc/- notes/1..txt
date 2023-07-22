@@ -1,0 +1,38 @@
+HTML: Content-Structure (Structure the content)
+CSS: Content-Decoration (Style the content)
+JS: Change-Content (Make content dynamic)
+
+************************************************************************************************************************
+
+# Where to JS:
+	<html>
+		<head>
+			<script type="text/javascript"></script> // Internal JavaScript
+		</head>
+		<body>
+			<script src="main.js"></script> // External JavaScript
+		</body>
+		<script src="main.js"></script> // External JavaScript
+	</html>
+
+************************************************************************************************************************
+
+# Output:
+	- document.write("<h1>Hello I am  External JavaScript !</h1>") -------> window
+	- alert("Hi"); -------> alert_popup
+	- console.log("hi"); -------> inspect_console
+	- document.getElementById("demo").innerHTML; -------> document_content
+
+
+************************************************************************************************************************
+
+# Example:
+	<input type="text" id="text_id"></input>
+	document.getElementById("text_id").value;
+
+	document.getElementById("demo").innerHTML;
+	document.getElementById("demo").value;
+	document.getElementById("demo").style.color;
+
+************************************************************************************************************************
+

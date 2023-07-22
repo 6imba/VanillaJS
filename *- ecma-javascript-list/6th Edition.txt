@@ -1,0 +1,51 @@
+# ECMA_JavaScript 6th Edition:
+    - ECMAScript 2015 Language is the 6th Edition of the ECMA-262 standard.
+    - Published_Date: June 2015: ECMAScript_2015(ES2015)
+    - Editor: Allen Wirfs-Brock
+    - The 6th edition was initially named as "ECMAScript 6 (ES6)" and later renamed to ECMAScript 2015.
+    - ECMAScript 2015 was the second major revision to JavaScript.
+    - ECMAScript 2015 is also known as ES6 and ECMAScript 6.
+
+        # Features Included:
+            > The let keyword: let keyword for local declarations,
+            > The const keyword: Constants: const keyword for constant local declarations,
+            > Scoping: Block-Scoped Variables, Block-Scoped Functions
+            > Arrow Functions
+            > For/of: iterators and for...of loops(For/of loop),
+            > new collections object(maps, sets and WeakMap),
+            > Classes: class declarations (class Foo { ... })
+            > Promises
+            > Symbol
+            > Default Parameters
+            > Function Rest Parameter
+            > String.includes()
+            > String.startsWith()
+            > String.endsWith()
+            > Array.from()
+            > Array keys()
+            > Array find()
+            > Array findIndex()
+            > New Math Methods
+            > New Number Properties
+            > New Number Methods
+            > New Global Methods
+            > Object entries
+            > JavaScript Modules
+            > multilinestring
+            > template literals for strings
+            > ES6 modules like import * as moduleName from "..."; export const Foo;
+            > binary data,
+            > typed arrays,
+            > number and math enhancements,
+            > reflection,
+            > proxies (metaprogramming for virtual objects and wrappers)
+            > Destructuring Assignments
+            > Spread Operator
+            
+
+# Reference:
+    - https://en.wikipedia.org/wiki/ECMAScript#ES2015
+    - http://es6-features.org/#BlockScopedVariables
+    - https://www.w3schools.com/js/js_es6.asp
+
+

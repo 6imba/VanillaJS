@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FetchAPI</title>
+  </head>
+  <body>
+    <h1>Fetch API</h1>
+    <script>
+
+        // // 1. no response return & promise-reject:
+            // // A.1:
+            // console.log(fetch("https://jsonplaceholder.typicode")); //Promise {<pending>} # this promise gets rejected
+
+            // // A.2:
+            // fetch("https://jsonplaceholder.typicode")
+            //     .catch(()=>console.log("error"))
+
+            // // A.3:
+            // fetch("https://jsonplaceholder.typicode")
+            //     .catch((err)=>console.log(err))
+
+            // // A.4:
+            // fetch("https://jsonplaceholder.typicode")
+            //     .catch((err)=>console.log("Error: ",err))
+
+
+            // // B.1
+            // console.log(fetch("https://apple")); //Promise {<pending>} # this promise gets rejected
+
+            // // B.2:
+            // fetch("https://apple")
+            //     .catch(()=>console.log("error"))
+
+            // // B.3:
+            // fetch("https://apple")
+            //     .catch((err)=>console.log(err))
+
+            // // B.4:
+            // fetch("https://apple")
+            //     .catch((err)=>console.log("Error: ",err))
+
+            // -----------------------------------------------------------------------------------------------------------
+
+        // // 2. network-error & promise-reject:
+
+            // // A.1:
+            // console.log(fetch("http://localhost:3000/users")); // this promise gets rejected with browser error-message
+
+            // // A.2:
+            // fetch("http://localhost:3000/users")
+            //     .catch(()=>console.log("error"))
+
+            // // A.3:
+            // fetch("http://localhost:3000/users")
+            //     .catch((err)=>console.log(err))
+
+            // // A.4:
+            // fetch("http://localhost:3000/users")
+            //     .catch((err)=>console.log("Error: ",err))
+
+
+        // proise-rejected_state + proise-rejected_response-value + proise-rejected_browser_error-message
+        // error-message doesnt execute then() method
+
+        // // Why are some path promise is fullfill and some path promise is rejected?
+
+    </script>
+  </body>
+</html>

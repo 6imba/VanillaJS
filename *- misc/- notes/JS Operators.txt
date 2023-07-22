@@ -1,0 +1,8 @@
+- JavaScript Arithmetic Operators: +, -, *, **, /, %, ++, -- 
+- JavaScript Assignment Operators: =, +=, -=, *=, /=, %=, **=
+- JavaScript Comparison Operators: ==, ===, !=, !==, >, <, <=, >=, ?
+- JavaScript Logical Operators: &&, ||, !
+- JavaScript Type Operators: typeof, instanceof
+- JavaScript String Operators: +, +=, 
+- JavaScript Bitwise Operators: &, |, ~, ^, <<, >>, >>>
+- Function call operator: ()

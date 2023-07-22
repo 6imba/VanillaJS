@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- 2.1 Problem: addEventListener's loadData-function gets call before event is detected -->
+<!-- <body>
+    <h3>XMLHttpResponse Object</h3>
+    <button id="getDataBtn">Load Data</button>
+    <script>
+
+        function loadData(method, url){
+            const xhr = new XMLHttpRequest();
+            xhr.open(method, url, true); // while fetching data from file path it might take time so async true.
+            xhr.responseType = "json";
+            xhr.onload = () => {
+                console.log(xhr.response)
+            };
+            xhr.send();
+        }
+        const getBtn = document.getElementById("getDataBtn");
+        getBtn.addEventListener("click", loadData('GET', 'https://reqres.in/api/users')); // here function gets call without clicking button as we have call loadData() function
+    </script>
+</body> -->
+
+<!-- 2.2 Solution: Use Callback Concept: to call loadData-function when event is hits/detected. By placing loadData-function inside callback. -->
+<body>
+    <h3>XMLHttpResponse Object</h3>
+    <button id="getDataBtn">Load Data</button>
+    <script>
+
+        function loadData(method, url){
+            const xhr = new XMLHttpRequest();
+            xhr.open(method, url, true); // while fetching data from file path it might take time so async true.
+            xhr.responseType = "json";
+            xhr.onload = () => {
+                console.log(xhr.response)
+            };
+            xhr.send();
+        }
+
+        const getBtn = document.getElementById("getDataBtn");
+        getBtn.addEventListener("click", ()=>loadData('GET', 'https://reqres.in/api/users')); //using higher order function concept
+    </script>
+</body>
+
+</html>
+
+<!-- here:
+    # 1:
+    - addEventListener is asynchronous function
+    - ()=>{} is HOF
+    - loadData('GET', 'https://reqres.in/api/users') is callback
+    Again,
+    # 2:
+    - loadData itself  is asynchronous function.
+    - onload is callback function. -->

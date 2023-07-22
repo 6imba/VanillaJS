@@ -1,0 +1,33 @@
+Q. What are theing that return promises object called?
+    - Promise(): new Promise constructor,
+    - fetch(): Pre-defined browser methods.
+
+Q. Thenables in JavaScript?
+
+
+
+
+// 2.1 Promise Reject State:
+const promiseObj = new Promise((resolve, reject) => {
+    if (false) {
+        resolve(); // Return promise-object that has Fullfill state with data|value!
+    } else {
+        reject(); // Return promise-object that has Rejected state with error-object!
+    }
+});
+promiseObj.then(() => console.log("Promise Resolved action!"))
+promiseObj.catch((err) => console.log("Promise Rejected action!"));
+
+ VS
+
+// 2.1 Promise Reject State:
+const promiseObj = new Promise((resolve, reject) => {
+    if (false) {
+        resolve(); // Return promise-object that has Fullfill state with data|value!
+    } else {
+        reject(); // Return promise-object that has Rejected state with error-object!
+    }
+});
+promiseObj
+    .then(() => console.log("Promise Resolved action!"))
+    .catch((err) => console.log("Promise Rejected action!"));

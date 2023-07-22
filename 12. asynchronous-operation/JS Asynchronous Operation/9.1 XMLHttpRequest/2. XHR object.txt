@@ -1,0 +1,44 @@
+# XMLHttpRequest object woring:
+    const xhr = new XMLHttpRequest(); // object constructor
+    xhr.open('GET', 'index.txt', true); // method
+    xhr.onload = () => console.log(this.responseText); // events
+    xhe.send(); // method
+
+- const xhr = new XMLHttpRequest(); ----> new XMLHttpRequest() is used to create new XMLHttpRequest objects.
+- xhr.open(); ----> XMLHttpRequest().open() method is used to initializes a newly-created request, or re-initializes an existing one.
+- xhr.onload ----> The load event is fired when an XMLHttpRequest-transaction(XMLHttpRequest.open()) completes successfully. # see note_1
+- xhr.send() ----> XMLHttpRequest().send() method sends the request to the server.
+
+# xhr.open('Method', 'file_path', asyn-blocking/non-blocking-boolean_value);
+    - methods: HTTP-request-methods ==> GET, POST, ...
+    - file-path: relative-local-system-path,  absolute-local-system-path, local-server-path, external-server-path, internet-file-path. ==> 'https://jsonplaceholder.typicode.com/todos/1'
+    - program-flow: synchronous-blocking-http-request:false or asynchronous-non-blocking-http-request:true. ==> default value is true
+
+# async Optional:
+    - An optional Boolean parameter, defaulting to true, indicating whether or not to perform the operation asynchronously.
+    - If this value is false, the send() method does not return until the response is received.
+    - If true, notification of a completed transaction is provided using event listeners.
+    - This must be true if the multipart attribute is true, or an exception will be thrown.
+    - Note: Synchronous requests on the main thread can be easily disruptive to the user experience and should be avoided; in fact, many browsers have deprecated synchronous XHR support on the main thread entirely. Synchronous requests are permitted in Workers.
+
+# note_1: onload
+    - XMLHttpRequest: load event
+        - The load event is fired when an XMLHttpRequest transaction completes successfully.
+    - Syntax:
+        * Use the event name in methods like addEventListener()
+            - addEventListener('load', event => { })
+        * or set an event handler property.
+            - onload = event => { }
+
+# note_2: send
+    - XMLHttpRequest.send()
+    - XMLHttpRequest.send(body): body is optional
+    - If the request is asynchronous (which is the default), this method returns as soon as the request is sent and the result is delivered using events.
+    - If the request is synchronous, this method doesn't return until the response has arrived.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+const xhr = new XMLHttpRequest(); // contruct/create/initialized XMLHttpRequest-Object.
+xhr.open("method", "URL_to_API"); // Preaparation/Make API-call in the prototype.| initialize http request/ make request ready thats to be sent.
+xhr.send() // Send HTTP-Request || Connection Established: (now you can see the HTTP-Reponse in Network tab of console.)
+xhr.onload() // Handle now HTTP-Response: (now you can see the HTTP-Reponse in browser's console || pass HTTP-Reponse to HTML-Templates using HTML-DOM as well)

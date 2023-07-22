@@ -1,0 +1,38 @@
+div#header = tab ==>
+
+eventt
+{
+onclick="function/functionname"
+}
+
+funtion
+{
+getElementById()
+write()
+Date()
+alert()
+console.log()
+toFixed()
+forEach()
+shift()
+unshift()
+}
+
+var ==> varaible
+
+// ==> single line consule
+/*...*/ ==> multiple line console
+
+//go to inspect and go to console ...you can see error here ==> ctrl+shift+i
+
+
+days.forEach(function(abcd){console.log(abcd)});//????
+how to code button inside script
+
+
+  days.forEach(
+		function(abcd)
+		{
+		console.log(abcd)
+		}
+	       );

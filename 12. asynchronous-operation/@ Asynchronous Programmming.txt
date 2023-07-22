@@ -1,0 +1,54 @@
+- When ever we start any application it might be the web-application or mobile-application, default main thread is created.
+- In this main thread we can perform various operation.
+    > small&light operation: operation that takes very small amount of time to complete execution.
+        * UI Interaction,
+        * Button Click,
+        * Mathematical Operations,
+        * Logical Operation.
+    > long&heavy operation: operation that takes very large amount of time to complete execution.
+        * Network Operation,
+        * File Download,
+        * Image Loading from server,
+        * Performing Heavy Database Queries from the server.
+
+# So what is Asynchronos Programming ? and is it related over here?
+    - Asynchronos Programming is a kind of parallel Programming in which long running operation runs parallelly without effecting the normal flow of your program.
+    - i.e running any program asynchronosly wont effect user-experience or wont block your UI.
+    - You can perform multiple tsaks without blocking the normal functioning of program.
+
+# JavaScript is a Single Threaded language. That is it doesnt execute task parallely in background thread. It can only contain one thread that is main thread.
+# If you try to perform long&heavy operation in Main-Thread, then this will block your main thread. Resulting in blocking in you application UI. This will make user feel your apllication is freeze or hang and your UI will become unresponsive.
+
+# So here question pops up, since JavaScript is Single-Threaded, how do we perform these long&heavy operation parallelly with other small-operation, without effecting the normal flow of your program?
+# Simply how comes javscript handles long&heavy operation asynchronously being single threaded language?
+    - JavaScript follows Single-Threaded with Event Loop Model inspired by JavaScript Event-based model with JavaScript callback mechanism.
+    - https://thecodest.co/blog/asynchronous-and-single-threaded-javascript-meet-the-event-loop/
+
+# How does asynchronous work with single threaded?
+    - Synchronous with a single thread : Tasks are executed one after another. Each task waits for its previous task to get executed and finish.
+    - Asynchronous with a single thread : Tasks start being executed without waiting for a previous task to finish.
+
+# Ways to perform long-heavy-operations asynchronously in JavaScript:
+    1. Asynchronous fucntion with Callback. ~ "callback"
+    2. Promise: Promise() with .then() function. ~ "Promise"
+    3. Promise: Promise() with async/await keyword. ~ "async/await"
+# Therefore, these are the way you can perform long-heavy-operations asynchronously in JavaScript without blocking program-code flow and UI.
+
+2. Promise: Promise() with .then() function. ~ "Promise"
+    - Promise is like a contract that garenty to return some response after the completion of given task/operation(that takes some time).
+    - write heavy-long-operation inside asynchronous function that return promise.
+    - so when we execute asynchronous function it returns promise object.
+    - Promise is not the actual data we needed as response, but contain our required response data inside its body.
+    - So, inorder to get the response value we use .then() methods, once promise status is fulfilled.
+    - So, inorder to get the error object we use .catch() methods, once promise status is rejected.
+    - In case of Promise with asyn and await: 
+        - As asynchronous function return promise object,
+        - we can get response data directly instead of promise object.
+        - all you need to do is write await infront of asynchronous call and async infront of function inside which asynchronous call is placed.
+        i.e:
+        fucntion asynchronousName(){....} // defination
+        async function func1(){
+            const data = await asynchronousName(); // call // return data instead of promise object.
+        }
+
+- 

@@ -1,0 +1,18 @@
+Q. SyntaxError,ReferenceError,TypeError?
+
+# Errors:
+    - ReferenceError: (Try to access a specific variable inside a memory space and cannot find/access it.): Try to access let variable before its assigned with somer value.
+    - SyntaxError: (When no proper/standered syntax.): Try to re-declare let/const variable, Try to declare variable with same identifier regardless of var,let,const, Try to declare const variable without assigning any value.
+    - TypeError:(When you try do some operation particular datatype which is not possible.): Try to reassign const variable.
+
+# Incase of ReferenceError, script execution flow stops at that particular line/statement where error is detected.
+# Incase of SyntaxError, script doenst even start executing.
+# Incase of TypeError, script execution flow stops at that particular line/statement where error is detected.
+
+# Redeclare:
+    - let x = 3;
+    - let x = 4; //Redeclare
+
+# Ressing:
+    - let x = 3;
+    - x = 4; //Reassign

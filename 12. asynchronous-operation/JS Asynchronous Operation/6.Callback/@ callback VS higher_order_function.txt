@@ -1,0 +1,28 @@
+higher order function: function passed as an argument to another function
+callback: higher order function which must be called inside another function.
+
+# Higher Order Function:
+    - In Javascript, functions can be assigned to variables in the same way that strings or arrays can.
+    - They can be passed into other functions as parameters or returned from them as well.
+    - A “higher-order function” is a function that accepts functions as parameters and/or returns a function.
+    - Example of built-in Higher Order Function: filter(),map(),reduce(),some()
+
+# The main difference between a Higher Order Function and a Callback Function:
+    - Higher Order Function is function that takes function as argument. VS. Callback Function is function that is passed as argument in another function.
+    - Higher Order Function is define and invoke at the same time. VS. Callback Function is define somewhere and invoke somewhere.
+
+# The main difference between a normal function and a callback function:
+    - A normal function is called directly, while a callback function is initially only defined.
+    - The callback function is only called and executed once a specific event has occurred.
+
+# setTimeout(()=>greet, 2000)
+    - setTimeout: asynchronous
+    - HOF: ()=>{}
+    - callback: greet
+
+# HOF: takes function as argument or returns function as argument.
+    const x = () => { //function1 ~ HOF
+        () => y //function2 ~ Callback
+    }
+
+#

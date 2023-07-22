@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3>XMLHttpResponse Object, using promise to work with async code.</h3>
+    <button id="getDataBtn">Load Data</button>
+
+    <!-- 1 Returns HTTP-Response-data to .then() methods. -->
+    <!-- <script>
+        function loadData(method, url){
+            const promise = new Promise((taskResolve, taskReject) => { // create new promise object using Promise() constructor which takes function with two args(resolve & reject)
+                // move all XHR code inside promise_contructor's-function
+                const xhr = new XMLHttpRequest();
+                xhr.open(method, url, true);
+                xhr.responseType = "json";
+                xhr.onload = () => {
+                    // taskResolve(xhr.response); // returns response-data to .then() methods.
+                };
+                xhr.send();
+            })
+            .then(promiseResponse => console.log('Response: ',promiseResponse)) // handle promise inside the function.
+        }
+
+        const getBtn = document.getElementById("getDataBtn");
+        getBtn.addEventListener("click", ()=>loadData('GET', 'https://reqres.in/api/users'));
+    </script> -->
+
+
+
+    <!-- 2 -->
+    <!-- <script>
+        function loadData(method, url){
+            const promise = new Promise((taskResolve, taskReject) => { // create new promise object using Promise() constructor which takes function with two args(resolve & reject)
+                // move all XHR code inside promise_contructor's-function
+                const xhr = new XMLHttpRequest();
+                xhr.open(method, url, true);
+                xhr.responseType = "json";
+                xhr.onload = () => {
+                    taskResolve(xhr.response);
+                };
+                xhr.send();
+            })
+            console.log(promise) // see returned promise-object.
+            promise.then(promiseResponse => console.log(promiseResponse))
+        }
+
+        const getBtn = document.getElementById("getDataBtn");
+        getBtn.addEventListener("click", ()=>loadData('GET', 'https://reqres.in/api/users'));
+    </script> -->
+
+
+
+    <!-- 3 -->
+    <!-- <script>
+        function loadData(method, url){
+            const promise = new Promise((taskResolve, taskReject) => { // create new promise object using Promise() constructor which takes function with two args(resolve & reject)
+                //Producing code:(May take some time)
+                // move all XHR code inside promise_contructor's-function
+                const xhr = new XMLHttpRequest();
+                xhr.open(method, url, true);
+                xhr.responseType = "json";
+                xhr.onload = () => {
+                    taskResolve(xhr.response); // when Producing code is successful else execute taskReject.
+                };
+                xhr.send();
+            })
+            // "Consuming Code" (Must wait for a Promise to be fulfilled.)
+            promise.then(promiseResponse => console.log(promiseResponse))
+        }
+
+        const getBtn = document.getElementById("getDataBtn");
+        getBtn.addEventListener("click", ()=>loadData('GET', 'https://reqres.in/api/users'));
+    </script> -->
+
+
+
+    <!-- 4. Error:404 -->
+    <!-- <script>
+        function loadData(method, url){
+            const promise = new Promise((taskResolve, taskReject) => {
+                //Producing code:(May take some time)
+                const xhr = new XMLHttpRequest();
+                xhr.open(method, url, true);
+                xhr.responseType = "json";
+                xhr.onload = () => { //onload is asynchronous function. onload HTTP-Response will be either success-JSON-data or reject-error-object.
+                    taskResolve(xhr.response); // when Producing code is successful execute taskResolve.
+                };
+                xhr.send();
+            })
+            //Consuming Code:(Must wait for a fulfilled Promise)
+            promise.then(promiseResponse => console.log(promiseResponse))
+        }
+        const getBtn = document.getElementById("getDataBtn");
+        getBtn.addEventListener("click", ()=>loadData('GET', 'https://reqres.in/api'));
+    </script> -->
+
+
+
+    <!-- 4.1 This API(https://reqres.in/api) return .html file so kind of promise fulfill as we get some kind of response-data. -->
+    <!-- <script>
+        function loadData(method, url){
+            const promise = new Promise((taskResolve, taskReject) => { // create new promise object using Promise() constructor which takes function with two args(resolve & reject)
+                //Producing code:(May take some time)
+                const xhr = new XMLHttpRequest();
+                xhr.open(method, url, true); // while fetching data from file path it might take time so async true.
+                xhr.responseType = "json";
+                xhr.onload = () => { //onload is asynchronous function which will either success or reject
+                    taskResolve(xhr.response); // when Producing code is successful execute taskResolve.
+                    taskReject('Loading data failed!'); // when Producing code is not successful execute taskReject.
+                };
+                xhr.send();
+            })
+            //Consuming Code:(Must wait for a fulfilled Promise)
+            promise.then(
+                promiseResponse => console.log("Fullfill: ",promiseResponse),
+                promiseResponse => console.log("Rejected: ",promiseResponse)
+                )
+        }
+        const getBtn = document.getElementById("getDataBtn");
+        getBtn.addEventListener("click", ()=>loadData('GET', 'https://reqres.in/api'));
+    </script> -->
+
+    <!-- 4.2 way -->
+    <!-- <script>
+        function loadData(method, url){
+            const promise = new Promise((taskResolve, taskReject) => { // create new promise object using Promise() constructor which takes function with two args(resolve & reject)
+                //Producing code:(May take some time)
+                const xhr = new XMLHttpRequest();
+                xhr.open(method, url, true); // while fetching data from file path it might take time so async true.
+                xhr.responseType = "json";
+                xhr.onload = () => { //onload is asynchronous function which will either success or reject
+                    if(xhr.status == 200){
+                        taskResolve(xhr.response); // when Producing code is successful execute taskResolve.
+                    }else{
+                        taskReject('Loading data failed!'); // when Producing code is not successful execute taskReject.
+                    }
+                };
+                xhr.send();
+            })
+            //Consuming Code:(Must wait for a fulfilled Promise)
+            promise.then(
+                promiseResponse => console.log(promiseResponse),
+                promiseResponse => console.log(promiseResponse)
+                )
+        }
+        const getBtn = document.getElementById("getDataBtn");
+        getBtn.addEventListener("click", ()=>loadData('GET', 'https://reqres.in/api'));
+    </script> -->
+
+<!-- 4.3 way -->
+ <!-- <script>
+    function loadData(method, url){
+        const promise = new Promise((taskResolve, taskReject) => { // create new promise object using Promise() constructor which takes function with two args(resolve & reject)
+            //Producing code:(May take some time)
+            const xhr = new XMLHttpRequest();
+            xhr.open(method, url, true); // while fetching data from file path it might take time so async true.
+            xhr.responseType = "json";
+            xhr.onload = () => { //onload is asynchronous function which will either success or reject
+                if(xhr.status == 200){
+                    taskResolve(xhr.response); // when Producing code is successful execute taskResolve.
+                }else{
+                    taskReject('Loading data failed!'); // when Producing code is not successful execute taskReject.
+                }
+            };
+            xhr.send();
+        })
+        //Consuming Code:(Must wait for a fulfilled Promise)
+        promise.then(promiseResponse => console.log(promiseResponse));
+        promise.catch(promiseResponse => console.log(promiseResponse));
+    }
+    const getBtn = document.getElementById("getDataBtn");
+    getBtn.addEventListener("click", ()=>loadData('GET', 'https://reqres.in/api'));
+</script> -->
+
+<!-- 4.4 way -->
+<script>
+    function loadData(method, url){
+        return new Promise((taskResolve, taskReject) => { // create new promise object using Promise() constructor which takes function with two args(resolve & reject)
+            //Producing code:(May take some time)
+            const xhr = new XMLHttpRequest();
+            xhr.open(method, url, true); // while fetching data from file path it might take time so async true.
+            xhr.responseType = "json";
+            xhr.onload = () => { //onload is asynchronous function which will either success or reject
+                if(xhr.status == 200){
+                    taskResolve(xhr.response); // when Producing code is successful execute taskResolve.
+                }else{
+                    taskReject('Loading data failed!'); // when Producing code is not successful execute taskReject.
+                }
+            };
+            xhr.send();
+        })
+    }
+    const getBtn = document.getElementById("getDataBtn");
+    getBtn.addEventListener("click", ()=> {
+        loadData('GET', 'https://reqres.in/api')
+            //Consuming Code:(Must wait for a fulfilled Promise)
+            .then(promiseResponse => console.log(promiseResponse))
+            .catch(promiseResponse => console.log(promiseResponse));
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+- community.mongodb.com
+
+Return value
+Once a Promise is fulfilled or rejected, the respective handler function (onFulfilled or onRejected) will be called asynchronously (scheduled in the current thread loop). The behavior of the handler function follows a specific set of rules. If a handler function:
+
+returns a value, the promise returned by then gets resolved with the returned value as its value.
+doesn't return anything, the promise returned by then gets resolved with an undefined value.
+throws an error, the promise returned by then gets rejected with the thrown error as its value.
+returns an already fulfilled promise, the promise returned by then gets fulfilled with that promise's value as its value.
+returns an already rejected promise, the promise returned by then gets rejected with that promise's value as its value.
+returns another pending promise object, the resolution/rejection of the promise returned by then will be subsequent to the resolution/rejection of the promise returned by the handler. Also, the resolved value of the promise returned by then will be the same as the resolved value of the promise returned by the handler.
+Following, an example to demonstrate the asynchronicity of the then method.

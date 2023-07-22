@@ -1,0 +1,85 @@
+- A callback function is a defined somewhere(scope)
+- A callback function is a defined somewhere(scope) & passed into another function as an argument.
+- A callback function is a function passed into another function as an argument.
+- A callback function is a function passed into another function as an argument, so that can be called later.
+- A callback function is a function passed into another function as an argument, which is then invoked inside the function(where it was passed as argument).
+- A callback function is a function passed into another function as an argument, which is then invoked inside the function(where it was passed as argument) after completion of some routine/action/task.
+- function(where it was passed as argument) is asynchronous function.
+- Asynchronous function takes some time to complete th execution of task(load data from server, etc).
+- So should rest of our code wait till that asynchronous_task/function is not finished?
+- Now, here come the use of callback.
+- Now, here we pass callback into asynchronous_function as argument.
+- Now, here we pass callback into asynchronous_function as argument, which waits until asynchronous_task is finished and deal with response.
+- So, asynchronous_function makes callback wait inside it.
+- Callback waits untill asynchronous_task is complete.
+
+- Therefore, callback is passed as an argument to asynchronous_function & the callback gets invoke when asynchronous_task is finished inside asynchronous_function.
+- (Simply, Callback waits inside Synchronous_function)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Example_1:
+function callback(data) {
+  alert('Hello ' + data);
+}
+function asynFunction(callback) {
+  const data = # Loading data from server takes 3 second
+  callback(data); # waits untill data is returned but let next code_statement execute.
+  cont next = foo
+}
+asynFunction(callback);
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Example_2:
+function greeting(name) {
+  alert('Hello ' + name);
+}
+function processUserInput(callback) {
+  var name = prompt('Please enter your name.');
+  callback(name);
+}
+processUserInput(greeting);
+
+- The above example is a synchronous callback, as it is executed immediately.
+- Note, however, that callbacks are often used to continue code execution after an asynchronous operation has completed — these are called asynchronous callbacks.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- A callback function can return a value.
+- but the code that calls the function won't pay attention to the return value.
+- means as we call callback inside asynchronous_function, at the time callback return value code execution is out of asynchronous_function.
+- So asynchronous_function wont be able to access return value of callback.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Handle Asynchronous JavaScript using Callbacks.
+  - asynchronous takes some time and callback waits until asynchronous_operation inside asynchronous_function gets done.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Summary:
+  - A callback function is a function passed into another function as an argument.
+  - A callback function is a defined somewhere and invoked inside some other function.
+  - synchronous callback and asynchronous callback.
+  - A good example is the callback functions executed inside a .then() block chained onto the end of a promise after that promise fulfills or rejects. This structure is used in many modern web APIs, such as fetch().
+  - The callback pattern is at the heart of most I/O and event-driven programming in JavaScript.
+
+- In computer programming, a callback, also known as a "call-after" function.
+- There are two types of callbacks, differing in how they control data flow at runtime:
+  - blocking callbacks (also known as synchronous callbacks or just callbacks)
+      and
+  - deferred callbacks (also known as asynchronous callbacks).
+
+# callback return:
+  - A callback function can return a value, in other words, but the code that calls the function won't pay attention to the return value.
+  - You can't get a return value from the function you pass to setTimeout.
+  - Timeouts are asynchronous, so you can't return from them.
+  - Hell Yeah! you can return from callback using promise.
+
+# Finally Asynchronous function cannot look to return value after asynchronous_operation so we use callback to handle the return value.
+# But if we need the return value after asynchronous_operation we use (Callback with Promise)
+# where Promise_Producing_Code returns value and Promise_Consuming_Code manipulate value.
+# where Promise_Producing_Code has fullfill & reject as callback.
+
+- Callback is invoked when certain event is triggered.
+- Asynchronous function is one the triggered that event.

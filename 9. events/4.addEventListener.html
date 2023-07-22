@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener</title>
+</head>
+<body>
+    <button id="myBtn" value="oeoe">Time?</button>
+
+    <script>
+
+        // // 1: event handler function with no parameter ==> way
+        // document.getElementById("myBtn").addEventListener("click", displayDate);
+        // function displayDate() {
+        //     document.getElementById("myBtn").innerHTML = Date();
+        // }
+        // just write fucntion name is enough as no parameter.
+
+        // // 2: event handler function with parameter ==> not way
+        // document.getElementById("myBtn").addEventListener("click", displayDate('apple'));
+        // function displayDate(a) {
+        //     alert(a)
+        //     document.getElementById("myBtn").innerHTML = Date();
+        // }
+        // // invoke fucntion when need to pass parameter.
+
+        // // 3: event handler function with parameter ==> way
+        // document.getElementById("myBtn").addEventListener("click", () => displayDate('apple'));
+        // function displayDate(a) {
+        //         alert(a)
+        //         document.getElementById("myBtn").innerHTML = Date();
+        //     }
+        // // use callback & call fucntion when need to pass parameter
+
+        // 4: event handler function with parameter ==> way
+        document.getElementById("myBtn").addEventListener("click", (e) => displayDate(e));
+        function displayDate(a) {
+                console.log(a)
+                console.log(a.target)
+                console.log(a.target.value)
+                document.getElementById("myBtn").innerHTML = Date();
+            }
+        // use callback & call fucntion when need to pass parameter
+
+
+    </script>
+</body>
+</html>
+
+
+<!-- Syntax
+element.addEventListener(event, function, useCapture) -->

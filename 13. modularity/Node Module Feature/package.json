@@ -1,0 +1,12 @@
+{
+  "name": "node_module_test",
+  "version": "1.0.0",
+  "description": "This package was initialized for testing purpose of node modular system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amir SHRESTHA",
+  "license": "ISC",
+  "type": "module"
+}

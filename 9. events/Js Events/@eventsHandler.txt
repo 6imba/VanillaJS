@@ -1,0 +1,19 @@
+# Event handled through HTML tag by HTML_event_attribute:
+    1. <form onsubmit="myFunction()"></form>
+    2. <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+    3. <button onclick="this.innerHTML = Date()">The time is?</button>
+
+# Event handled through script tag by HTML_DOM:
+    1. HTML_event_attribute,
+    2. setAttribute,
+    3. addEventListener,
+    4. attachEvent.
+
+
+# set event-attribute to an element by:
+    * HTML event atrribute
+    * HTML DOM inside script
+    * event-atrribute-value: either direct-JS-code or Call-Js-funtion
+    * setAttribute() ~ HTML DOM setAttribute() Method
+    * addEventListener() ~ JavaScript HTML DOM EventListener method
+    * attachEvent()

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>JavaScript SetTimeout()</h2>
+  <p>Wait 2 seconds (2000 milliseconds) for this page to change.</p>
+  <h1 id="demo"></h1>
+
+  <!-- 1 -->
+  <script>
+    setTimeout(function() { myCallbackFunction("I love You !!!"); }, 2000); // asynchronous(setTimeout) with callback with myFunction)
+    function myCallbackFunction(value) {
+      document.getElementById("demo").innerHTML = value;
+    }
+  </script>
+</body>
+</html>
+  <!-- asynchronous(setTimeout) takes some time and callback(myCallbackFunction) waits until asynchronous(setTimeout) gets done -->
+  <!-- see myCallbackFunction is inside function(){}, which itself is inside setTimeout-function. -->
+  <!-- see myFunction:(normalfunction) is inside function(){}:(anonomous-function), which itself is inside setTimeout-function:(asynchronous). -->
+  <!-- here, myFunction:(normalfunction) is called callback -->

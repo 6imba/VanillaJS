@@ -1,0 +1,31 @@
+1. Template Literals ==>
+let postDetials = `<div><p>Hi apple</p><p>Hi ball</p></div>`
+
+2. Placeholders in Template Literals ==>
+let postDetials = `<div><p>Hi apple</p><p>Hi ball</p></div>`
+
+#note:
+`` : backticks 
+${expression} : placeholders : dynamic content: doller_sign curly_bracket_open expression curly_bracket_close
+
+
+3. We need quotes the Placeholders in Template_Literals if the expression is String_Variable and that expression|String_Variable is passed as the function parameter during function call.
+i.e: '${postObj.title}'
+let postDetials = `
+                     <div>
+			<p>Hi apple</p>
+			<button type="button" class="" onclick="deleteTask(${postObj.id})">X</button>
+			<button type="button" class="" onclick="deleteTask('${postObj.title}')">X</button>
+			<input type="checkbox" onclick="changeStatus(${postObj.userId},'${postObj.title}',${postObj.status},${postObj.id})">
+		     </div>
+		  `;
+#note:
+postObj = {
+userId:1,
+title:"Happy Day!"
+}
+i.e: '${postObj.title}'
+
+
+
+https://www.taniarascia.com/understanding-template-literals/

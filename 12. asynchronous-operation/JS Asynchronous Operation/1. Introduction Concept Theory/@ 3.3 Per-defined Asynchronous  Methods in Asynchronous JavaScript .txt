@@ -1,0 +1,13 @@
+- Some of Pre-defined asynchronous methods in Asynchronous JavaScript:
+    - Waiting for a Timeout: setTimeout() ==> run code after given time period
+    - Waiting for Intervals: setInterval() ==> run code in every given time interval
+    - Waiting for Files: XMLHttpRequest()
+    - Waiting for Resposne-Data from API-url: fetch()
+
+- callback waits untill asynchronous gets done.
+
+# Reference:
+    - https://developer.mozilla.org/en-US/docs/Glossary/Asynchronous
+
+- Asynchronous itself takes time to return data but doesnt stop the flow to programing execution.
+- Generally asynchronous in JS return promises.

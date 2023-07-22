@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CopyJsArray</title>
+  </head>
+  <body>
+    <h1>Copy array in Js</h1>
+    <script>
+      console.log("Welcome JS");
+
+      const cars1 = ["Saab", "Volvo", "BMW"];
+      console.log(cars1); //(3) ['Saab', 'Volvo', 'BMW']
+
+      //using assign operator
+      const cars2 = cars1;
+      console.log(cars2); //(3) ['Saab', 'Volvo', 'BMW']
+      console.log(cars1 == cars2); //true
+      console.log(cars1 === cars2); //true
+      cars1.push("Tractor");
+      console.log(cars1); //(4) ['Saab', 'Volvo', 'BMW', 'Tractor']
+      console.log(cars2); //(4) ['Saab', 'Volvo', 'BMW', 'Tractor']
+
+      //using  Spread Operator (Shallow copy)
+      const cars3 = [...cars1];
+      console.log(cars3); //(4) ['Saab', 'Volvo', 'BMW', 'Tractor']
+      cars1.push("BellGadi");
+      console.log(cars1); //(4) ['Saab', 'Volvo', 'BMW', 'Tractor', 'BellGadi']
+      console.log(cars3); //(4) ['Saab', 'Volvo', 'BMW', 'Tractor']
+      console.log(cars1 == cars3); //false
+      console.log(cars1 === cars3); //false
+
+      //using slice method
+      const cars4 = cars1.slice();
+      console.log(cars4); //(4) ['Saab', 'Volvo', 'BMW', 'Tractor']
+      cars1.push("HorseRide");
+      console.log(cars1); //(4) ['Saab', 'Volvo', 'BMW', 'Tractor', 'BellGadi']
+      console.log(cars4); //(4) ['Saab', 'Volvo', 'BMW', 'Tractor']
+      console.log(cars1 == cars4); //false
+      console.log(cars1 === cars4); //false
+
+      //using Good Old for() Loop (Shallow copy)
+      //Good Old while() Loop (Shallow copy)
+      //Array.map (Shallow copy)
+      //Array.filter (Shallow copy)
+      //https://www.freecodecamp.org/news/how-to-clone-an-array-in-javascript-1d3183468f6a/
+    </script>
+  </body>
+</html>
+
+<!-- clone|copy|duplicate an array: -->

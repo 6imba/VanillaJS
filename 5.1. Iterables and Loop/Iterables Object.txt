@@ -1,0 +1,25 @@
+- Data structures that are iterable such as Arrays, Strings, Maps, NodeLists, and more are called iterable object.
+
+# Different Kinds of Loops in JavaScript:
+    > for - loops through a block of code a number of times.
+    > for/in - loops through the properties of an object.
+    > for/of - loops through the values of an iterable object.
+    > forEach - method calls a function (a callback function) once for each array element.
+    > while - loops through a block of code while a specified condition is true.
+    > do/while - also loops through a block of code while a specified condition is true.
+
+# iterable,iterate,iteration,iterator:
+    - Iterable: Iterable is an object which can be looped over or iterated over with the help of a for loop.
+    - Iterate/Iterated: looped over/ performing looping.
+    - Iteration: a single loop cycle.
+    - iterator: dummy loop temporaty variable(i)
+
+// The spread operator allows you to spread out elements of an iterable object such as an array, map, or set.
+// The spread operator allows you to spread out property(key-value_pair) of an object.
+// In JavaScript, Object s are not iterable unless they implement the iterable protocol.
+// Therefore, you cannot use for...of to iterate over the properties of an object.
+
+Q. iteration protocols?
+Q. 
+
+

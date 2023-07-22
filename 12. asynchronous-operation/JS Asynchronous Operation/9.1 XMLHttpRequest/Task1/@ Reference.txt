@@ -1,0 +1,32 @@
+# Dummy REST-API ==> https://reqres.in/
+
+# There comes three common ways to send HTTP-Request using vanillaJS:
+# There are quit few options to make an API call in JavaScript. The possible optios are:
+    1. xhr.js: Sending JavaScript Http Requests with (Browser's Built-in  XMLHttpRequest API/object). '2000 AD'
+    2. fetch.js: Sending JavaScript Http Requests with (Browser's Built-in Fetch API). '2015 ES6'
+    3. axios.js: Sending JavaScript Http Requests with (Third party library, Third party library integration: Axios Package).
+
+# In XMLHttpRequest object, .onload() is a asynchronous function so we use promise to handle the response.
+    - that means .onload() method returns promise_object.
+
+# Reference: https://www.youtube.com/watch?v=4K33w-0-p2c&t=4s
+
+# How can you see the Built-in objects in Browser-JavaScript:
+    - console.log(window)
+
+    - you can see Window-Object with many methods and properties,
+    - and XMLHttpRequest: ƒ XMLHttpRequest() is also one of the methods of Window-Object,
+    - hereby you can create XMLHttpRequest-Object with this XMLHttpRequest() Object-Constructor-Function.
+
+    - console.log(window) ==> Window {0: Window, window: Window, self: Window, document: document, name: '', location: Location, …}
+    - console.log(window.XMLHttpRequest) ==> ƒ XMLHttpRequest() { [native code] }
+    - console.log(new XMLHttpRequest().open) ==> ƒ open() { [native code] }
+    - console.log(new XMLHttpRequest().send) ==> ƒ send() { [native code] }
+    - console.log(new XMLHttpRequest()) ==> XMLHttpRequest {onreadystatechange: null, readyState: 0, timeout: 0, withCredentials: false, upload: XMLHttpRequestUpload, …}
+
+
+
+- prototype: XMLHttpRequest
+- In OOP clas is an object constructor but in JS function an object constructor.
+- There are four ways to create an object in JavaScript - using object literals, using the function constructor, using the Object. create method, and using the class keyword (which is almost the same as using a function constructor).
+- https://www.youtube.com/results?search_query=object+constructor+in+JS

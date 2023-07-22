@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetchAPI</title>
+</head>
+<body>
+    <!-- 1 -->
+    <!-- <script>
+        console.log(fetch('1.file_data.txt'))
+    </script> -->
+
+    <!-- 2 -->
+    <!-- <script>
+        fetch('1.file_data.txt')
+            .then(res =>  console.log(res))
+            // .then(res =>  console.log(res.ok))
+            // .then(res =>  console.log(res.body))
+    </script> -->
+
+        <!-- 3 -->
+        <!-- <script>
+            fetch('1.file_data.txt')
+                // .then(res =>  console.log(res))
+                .then(res =>  console.log(typeof(res)))
+        </script> -->
+
+        <!-- 4 -->
+        <!-- <script>
+            fetch('1.file_data.txt')
+                .then(res =>  console.log(res))
+                // .then(res =>  console.log(res.text()))
+                // .then(res =>  console.log(typeof(res)))
+                // .then(res =>  console.log(typeof(res.text())))
+        </script> -->
+
+        <!-- 5 -->
+        <script>
+            fetch('1.file_data.txt')
+                .then(res =>  res)
+                .then(data =>  data)
+                .then(d =>  console.log(d))
+        </script>
+</body>
+</html>
+
+<!-- URL scheme "file" is not supported. -->

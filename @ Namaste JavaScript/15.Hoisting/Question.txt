@@ -1,0 +1,3 @@
+Q. Difference between GlobalScope& ScriptScope in Browser?
+Q. What is ScriptScope in Browser?
+Q. 

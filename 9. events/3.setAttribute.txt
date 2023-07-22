@@ -1,0 +1,27 @@
+* Sets the value of an attribute on the specified element.(that attribute is either normal_html_attribute or event_attribute)
+* If the attribute already exists, the value is updated; otherwise a new attribute is added with the specified name and value.
+
+* Syntax:
+    Element.setAttribute(name, value);
+
+* Example_1:
+<body>
+    <p id='myTime'>Color</p>
+    <script>
+        document.getElementById('myTime').setAttribute('style', 'color:green;');
+    </script>
+</body>
+
+* Example_2:
+<body>
+    <p id='myTime'>Color</p>
+    <button id='c1'>Click</button>
+    <script>
+        document.getElementById('c1').setAttribute('onclick', 'color()');
+        function color(){
+            document.getElementById('c1').style.color = 'red';
+        }
+    </script>
+</body>
+
+Q. How can we set anonomous fucntion as value?

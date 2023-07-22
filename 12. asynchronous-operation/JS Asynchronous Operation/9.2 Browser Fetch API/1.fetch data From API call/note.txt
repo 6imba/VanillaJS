@@ -1,0 +1,9 @@
+res.json()
+Sends a JSON response composed of the specified data.
+
+Usage
+#
+return res.json(data);
+
+
+--------------------------------------------------

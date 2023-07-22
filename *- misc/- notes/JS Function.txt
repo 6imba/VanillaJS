@@ -1,0 +1,16 @@
+- Function Define,
+
+- Function Invocation/Call:
+	- The code inside the function will execute when "something" invokes (calls) the function:
+		- When an event occurs (when a user clicks a button)
+		- When it is invoked (called) from JavaScript code
+		- Automatically (self invoked)
+	- The () Operator Invokes the Function
+
+- Function Return
+
+- Why Functions?
+	==> You can reuse code: Define the code once, and use it many times.
+
+- Functions Used as Variable Values.
+- Local Variables.

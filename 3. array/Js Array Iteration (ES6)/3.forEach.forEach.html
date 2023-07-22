@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested forEach</title>
+  </head>
+  <body>
+    <h1>Nested forEach</h1>
+  </body>
+  <script>
+    var filteredUsers = [
+      {
+        userId: 1,
+        tasks: [
+          {
+            title: "user1 task1",
+            completed: true,
+          },
+          {
+            title: "user1 task2",
+            completed: false,
+          },
+        ],
+      },
+      {
+        userId: 2,
+        tasks: [
+          {
+            title: "user2 task1",
+            completed: true,
+          },
+          {
+            title: "user2 task2",
+            completed: false,
+          },
+          {
+            title: "user2 task3",
+            completed: true,
+          },
+        ],
+      },
+      {
+        userId: 3,
+        tasks: [
+          {
+            title: "user3 task1",
+            completed: true,
+          },
+        ],
+      },
+    ];
+
+  </script>
+</html>
+
+
+
+<!-- // function add (numArray){
+//     let total = 0;
+//     numArray.forEach((element) => total += element)
+//     console.log(total)
+// }
+// add([1,2,3]); -->

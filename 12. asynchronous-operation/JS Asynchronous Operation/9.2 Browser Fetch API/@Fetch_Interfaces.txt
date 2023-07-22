@@ -1,0 +1,26 @@
+# JS built-in fetch() methods is used to fetch data from API|URL. So called Fetch API.
+
+- The Fetch API provides an interface for fetching resources (including across the network).
+
+- The fetch() method in JavaScript is used to request to the server and load the information in the webpages.
+- The fetch() method in JavaScript is used to request for action/task(HTTP GET,POST,PUT,PATCH) to the server and load the information in the webpages.
+- The request can be made to any APIs|url that returns the data of the format JSON or XML.
+- This method returns a promise.
+
+- fetch(): The fetch() method used to fetch a resource.
+    - Headers: Represents response/request headers, allowing you to query them and take different actions depending on the results.
+    - Request: Represents a resource request.
+    - Response: Represents the response to a request.
+
+- Summary:
+- The Fetch API allows you to asynchronously request for a resource.
+- Use the fetch() method to return a promise that resolves into a Response object.
+- To get the actual data, you call one of the methods of the Response object e.g., text() or json() .
+
+- The global fetch() method starts the process of fetching a resource from the network, returning a promise which is fulfilled once the response is available.
+- The global fetch() method starts the process of fetching a resource from the network, returning a promise which is rejected if error occur.
+
+- Some of Asynchronous methods:
+    - setTimeout(),
+    - setInterval (),
+    - fetch(),

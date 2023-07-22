@@ -1,0 +1,29 @@
+# 1:
+    - Promise {<pending>}
+
+    - Promise {<pending>}
+        [[Prototype]]: Promise
+        [[PromiseState]]: "fulfilled"
+        [[PromiseResult]]
+
+    - [[Prototype]]: Promise
+        catch: ƒ catch()
+        constructor: ƒ Promise()
+        finally: ƒ finally()
+        then: ƒ then()
+        Symbol(Symbol.toStringTag): "Promise"
+        [[Prototype]]: Object
+
+    - [[PromiseState]]: "fulfilled"
+
+    - [[PromiseResult]]: Response
+        body: (...)
+        bodyUsed: false
+        headers: Headers {}
+        ok: true
+        redirected: false
+        status: 200
+        statusText: ""
+        type: "cors"
+        url: "https://jsonplaceholder.typicode.com/todos/1"
+        [[Prototype]]: Response

@@ -1,0 +1,16 @@
+Listening to the event.
+
+
+The addEventListener() is a JavaScript HTML DOM EventListener method that attaches an event handler to the specified element.
+
+
+Add an event listener that fires when a user clicks a button:
+document.getElementById("myBtn").addEventListener("click", displayDate);
+
+
+The addEventListener() method attaches an event handler to an element without overwriting existing event handlers.
+You can add many event handlers to one element.
+You can add many event handlers of the same type to one element, i.e two "click" events.
+You can easily remove an event listener by using the removeEventListener() method.
+
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fun1(event)">Click</button>
+    <input type="text" onchange="fun1(event)">
+    <script>
+
+        function fun1(e){
+            console.log(e)
+            console.log(typeof(e))
+            console.log(e.target)
+            console.log(typeof(e.target))
+            console.log(e.view)
+            console.log(typeof(e.view))
+            console.log(e.path)
+            console.log(typeof(e.path))
+            console.log({})
+            console.log(()=>{}) //()=>{}
+        }
+
+        console.log([1,2,3].__proto__)
+        console.log([1,2,3].__proto__.forEach)
+        console.log([1,2,3].__proto__.map)
+        console.log([1,2,3].__proto__.slice)
+
+        // Object ction prototype chaining
+        console.log(Object.prototype)
+        console.log({a:1}.__proto__)
+        console.log(Object.prototype == {a:1}.__proto__)
+        
+        console.log(Array.prototype)
+        console.log([1,2,3].__proto__)
+        console.log(Object.prototype == {a:1}.__proto__)
+
+        // Array ction prototype chaining
+        console.log([1,2,3].__proto__.__proto__)
+        
+        // Fun ction prototype chaining
+        console.log(fun1.__proto__)
+        console.log(fun1.__proto__.__proto__)
+        console.log(fun1.__proto__.__proto__.__proto__)
+
+        const obj1 = {}
+        obj1.__proto__ = null
+        console.log(obj1)
+
+        const numb = 6;
+        console.log(numb.__proto__)
+
+        const x = Object.create(null)
+        console.log(x)
+        console.log(x.__proto__)
+
+
+        </script>
+</body>
+</html>

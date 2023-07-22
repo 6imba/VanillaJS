@@ -1,0 +1,32 @@
+What does it mean to be in sync?
+Definition of in sync
+
+1 : in a state in which two or more people or things move or happen together at the same time and speed serially The dancers moved in sync.
+
+synchronous:  occuring at same time.
+asynchronous: not occuring at same time.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# A callback function can run after another function has finished.
+# Where callbacks really shine are in asynchronous functions, where one function has to wait for another function (like waiting for a file to load).
+# Waiting for a Timeout
+- When using the JavaScript function setTimeout(), you can specify a callback function to be executed on time-out:
+    setTimeout(myCallback, 3000);
+    function myCallback() {
+        document.getElementById("demo").innerHTML = "I love You !!";
+    }
+
+# Here, myCallback run only when setTimeout finished executing. - here setTimeout is asynchronous.
+# Means setTimeout task is to stop executing code for given time period.
+# See myCallback runs after another-function[asynchronous~setTimeOut] has finished.
+
+
+- Camera and flash sync.
+- Vedio and audio sync.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Synchronous programming performs tasks one by one by serially blocking the main thread. ... On the other hand, asynchronous programming can perform multiple tasks at the same time in parallel without blocking the main thread.
+

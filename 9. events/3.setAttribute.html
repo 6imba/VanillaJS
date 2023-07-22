@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setAttribute</title>
+</head>
+<body>
+    <h1 id='myTime'>Color</h1>
+    <button id='c'><b>Click</b></button>
+    <button id='c1'><b>Click1</b></button>
+    <script>
+        document.getElementById('myTime').setAttribute('style', 'color:red');
+
+        document.getElementById('c').setAttribute('onclick', 'color()');
+        function color(){
+            document.getElementById('c').style.color = 'red';
+        }
+
+        // document.getElementById('c').setAttribute('onclick', "function(){ document.getElementById('c1').style.color = 'red'}");
+        // document.getElementById('c').setAttribute('onclick', function(){ document.getElementById('c1').style.color = 'red'});
+    </script>
+</body>
+</html>
+
+<!-- Q. Why does an onclick property set with setAttribute fail to work?
+    - myTime6.setAttribute("onclick", () => document.getElementById('myTime6').innerHTML = Date()); // and this doesnt works? -->
+
+<!-- Sets the value of an attribute on the specified element. -->
+<!-- type: method ==> function setAttribute() { [native code] } -->
+<!-- return: undefined -->
+
+<!-- cant we set value of setAttribute to anonomous function? -->

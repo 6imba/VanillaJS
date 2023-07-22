@@ -1,0 +1,128 @@
+* event_handler_attributes: onkeydown, onsubmit, onclick etc
+* JavaScript lets you execute-code/react-someJS when events are detected.
+
+* HTML events are "things" that the browser does, or something a user does/happen to HTML elements.
+* Here are some examples of HTML events:
+    An HTML web page has finished loading
+    An HTML input field was changed
+    An HTML button was clicked
+    When a user clicks the mouse
+    When a web page has loaded
+    When an image has been loaded
+    When the mouse moves over an element
+    When an input field is changed
+    When an HTML form is submitted
+    When a user strokes a key
+
+
+* HTML allows event-handler-attributes, with JavaScript code, to be added to HTML elements.
+  event_handler_attributes: onkeydown, onsubmit, onclick etc.
+  <button onclick="JS">Login</button>
+  Here, whenever user clicks on an above-button-element, onclick event occurs/is_detected which is handled by event_handler_attributes: onsubmit, onclick etc
+
+
+Often, when events happen, you may want to do something.
+JavaScript lets you execute code when events are detected.
+HTML allows event-handler-attributes, with JavaScript code, to be added to HTML elements.
+With single quotes:
+  syxtax: <element event='some JavaScript to react when corresponding event is detected'>
+  event-handler-attributes: onkeydown, onsubmit, onclick etc
+
+i.e ==> With in HTML tag:
+  <button onclick="JS">Login</button>
+  <form onsubmit="myFunction()"></form>
+  <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+  <button onclick="this.innerHTML = Date()">The time is?</button>
+
+You can see in above example that, value of event_handler_attributes can be JS statement or function.
+But, JavaScript code is often several lines long. So it is more common to see event attributes calling functions:
+
+i.e ==> In script tag:
+  <button onclick="displayDate()">The time is?</button>
+  <form onsubmit="myFunction()"></form>
+
+
+A list of some common HTML events|events_attributes:
+onchange, onclick, onmouseover, onmouseout, onkeydown, onload.
+
+
+****************************************************************************************************************************************
+
+* Reacting to Events:
+  A JavaScript can be executed when an event occurs, like when a user clicks on an HTML element.
+  To execute code when a user clicks on an element, add JavaScript code to an HTML event_attribute_value: onclick=JavaScript
+
+HTML elements and its event attributes
+
+HTML Event Attributes
+To assign events to HTML elements you can use event attributes.
+Example
+Assign an onclick event to a button element:
+<button onclick="displayDate()">Try it</button>
+In the example above, a function named displayDate will be executed when the button is clicked.
+
+
+
+****************************************************************************************************************************************
+
+* Assign Events to HTML elements using event attributes inside html_element_tags.
+* Assign Events to HTML elements using the HTML DOM inside <script></script> tag .
+
+
+
+* Assign Events to HTML elements using HTML Event Attributes inside opening html_element_tags:
+  <button onclick="displayDate()">Try it</button>
+  <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+  <button onclick="this.innerHTML = Date()">The time is?</button>
+
+----------------------------------------------------------------------------------------------------------------------------
+Example_1:
+  <body>
+    <p id='myTime' onclick = 'showTime()'>Time?</p>
+    <button onclick="document.getElementById('demo').innerHTML = Date()">The time is?</button>
+  </body>
+
+Example_2:
+  <body>
+      <p id='myTime' onclick = 'showTime()'>Time?</p>
+      <script>
+        function showTime(){
+          document.getElementById('myTime').innerHTML = Date();
+        }
+      </script>
+  </body>
+
+Example_3:
+  <body>
+      <p id='myTime'>Time?</p>
+      <script>
+          document.getElementById('myTime').onclick = showTime;
+          function showTime(){
+              document.getElementById('myTime').innerHTML = Date();
+          }
+      </script>
+  </body>
+
+----------------------------------------------------------------------------------------------------------------------------
+* You see:
+  - Example_1 sets event_attributes_value to JS_statement and Example_2 sets event_attributes_value to JS_function by HTML_event_attribute,
+  - whereas, Example_3 sets event_attributes_value to JS_function by HTML_DOM.
+
+----------------------------------------------------------------------------------------------------------------------------
+Example_1.1: Now see it without function~ direct JS.
+* Assign Events to HTML elements using HTML Event Attributes inside opening html_element_tags with value direct JS not JS-function:
+<body>
+    <p id='myTime' onclick = "document.getElementById('myTime').innerHTML = Date()">Time?</p>
+</body>
+* it gives result but look long and messy
+
+
+
+Example_2.1: Now see it without function~ direct JS.
+* Assign Events to HTML elements using  HTML DOM inside <script></script> tag with value direct JS not JS-function:
+<body>
+    <p id='myTime'>Time?</p>
+    <script>
+        document.getElementById('myTime').onclick = document.getElementById('myTime').innerHTML = Date();
+    </script>
+</body>

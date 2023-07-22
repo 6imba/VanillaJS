@@ -1,0 +1,22 @@
+Q. What is difference between ECMAScript and JavaScript?
+    - ECMAScript is a Standard for scripting languages such as JavaScript, JScript, etc.
+    - It is a trademark scripting language specification.
+    - JavaScript is a language based on ECMAScript.
+    - JavaScript is considered as one of the most popular implementations of ECMAScript.
+
+Q. What is ES6?
+    - ES6 refers to version 6 of the ECMA Script programming language.
+    - It is a major enhancement to the JavaScript language, and adds many more features intended to make large-scale software development easier.
+    - ECMAScript, or ES6, was published in June 2015. It was subsequently renamed to ECMAScript 2015.
+
+- ECMA is an organization that creates standard for technologies.(European Computer Manufacture Association).
+- ECMA Scripting is based on JavaScript(Netscape) and JScript(Microsoft).
+
+# Programming Language VS Scripting langauges.
+# Client Scripting Language VS Server Scripting langauges.
+# Client Scripting Language: Vanilla_JavaScript, AJAX, jQuery etc
+# Server Scripting langauges: Node_JavaScript, Python, PHP, and Perl.
+    - Python scripts, Perl, Shell is all the scripting languages, which are used in system administration.
+
+Q. Typescript vs Javascript?
+    - TypeScript is known as an Object-oriented programming language whereas JavaScript is a scripting language

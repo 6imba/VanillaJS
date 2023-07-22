@@ -1,0 +1,11 @@
+1. Asynchronous Operation.
+2. Callback inside Asynchronous_Function that does Asynchronous_Operation.
+3. Callback Hell
+4. Promise_Object(Promise_Producing_Code & Promise_Consuming_Code)
+5. Promise_Producing_Code(Resolve() & Reject) && Promise_Consuming_Code(.then() & .catch())
+6. .then-chain
+7. Promise_Object(Promise_Producing_Code: Resolve() & Reject) + Promise_Consuming_Code(async & await)
+7. Promise_Object(Promise_Producing_Code: Resolve() & Reject) + Promise_Consuming_Code(async & await) & trycatch
+7. Promise_Object(Promise_Producing_Code: Resolve() & Reject) + Promise_Consuming_Code(async & await) + Promise_Consuming_Code(.then() & .catch())
+
+# Reference: https://www.youtube.com/watch?v=V2NeK5UT5Oc

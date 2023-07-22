@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>XMLHttpResponse Object</h3>
+    <button id="getDataBtn">Load Data</button>
+
+    <!-- <script>
+        function loadData(method, url){
+            const xhr = new XMLHttpRequest();
+            xhr.open(method, url);
+            if(xhr.status == 0){
+                console.log('Error: ',xhr.status)
+            }
+        }
+        const getBtn = document.getElementById("getDataBtn");
+        getBtn.addEventListener("click", ()=>loadData('GET', 'https://req'));
+    </script> -->
+    <!-- Usually error code 0 means there is no response. -->
+
+    <script>
+        function loadData(method, url){
+            const xhr = new XMLHttpRequest();
+            xhr.open(method, url);
+            console.log('XMLHttpResonse Status Code 1: ',xhr.status)
+            xhr.responseType = "json";
+            xhr.onload = () => {
+                console.log('.onload executed asynchronousely 2 !')
+                if(xhr.status == 200){
+                    console.log('XMLHttpResonse Status Code 3: ',xhr.status)
+                    console.log('XMLHttpResonse Status Code 4: ',xhr.response)
+                }
+            };
+            console.log('XMLHttpResonse Status Code 5: ',xhr.status)
+            xhr.send();
+        }
+        const getBtn = document.getElementById("getDataBtn");
+        getBtn.addEventListener("click", ()=>loadData('GET', 'https://reqres.in/api/users'));
+    </script>
+
+</body>
+
+
+</html>
+
+<!--
+Note:
+    - Usually error code 0 means there is no response.
+-->

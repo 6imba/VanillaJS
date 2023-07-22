@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9.fetchAPI</title>
+</head>
+<body>
+    <script>
+        fetch('https://jsonplaceholder.typicode.com/users') //try-1
+        // fetch('https://jsonplaceholder.typicode.com/users/11') //try-2
+            .then(res =>  {
+                    if(res.ok){
+                        console.log("Success(Response OK:true)")
+                    }else{
+                        console.log("Error(Response OK:false)")
+                    }
+                })
+</script>
+</body>
+</html>
+
+<!-- So what you can do is check if response is ok or not. -->

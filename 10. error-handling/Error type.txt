@@ -1,0 +1,3 @@
+- Client Error.
+- Server Error.
+- Network Error.

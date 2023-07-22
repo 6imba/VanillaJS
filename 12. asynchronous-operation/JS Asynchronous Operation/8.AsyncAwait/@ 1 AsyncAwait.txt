@@ -1,0 +1,62 @@
+# Handle Asynchronous JavaScript using Async-Await.
+
+- callback
+- callback hell
+- callback hell is solved by Promise
+- callback hell is solved by Promise resolve and reject methods which is handled by .then() & catch().
+- promise brought then-chain.
+- concept of Promise resolve and reject methods can be done more easily using async/await.
+- async/await helps to perform asynchronous operation using promise more easily than resolve/reject method.
+
+- async keyword before any function makes that function asynchronous, means that function will take some time to finished and return promise_object once finished.
+- while await keyword inside asynchronous function make any of statement wait for promise response.
+
+- await only blocks the code execution within the async function. It only makes sure that the next line is executed when the promise resolves.
+
+- 
+
+-----------------------------------------------------------------------------------------------
+
+  useEffect(()=>{
+    axios(`https://jsonplaceholder.typicode.com/posts/${params.postId}`)
+      .then(res=>setPost(res.data))
+    axios(`https://jsonplaceholder.typicode.com/comments?postId=${params.postId}`)
+      .then(res => setComments(res.data))
+  },[])
+
+-----------------------------------------------------------------------------------------------
+
+  const fetchPost = async () => {
+    const resposne = await axios(`https://jsonplaceholder.typicode.com/posts/${params.postId}`)
+    console.log(resposne.data)
+    setPost(resposne.data)
+  }
+  const fetchComments = async () => {
+    const resposne = await axios(`https://jsonplaceholder.typicode.com/comments?postId=${params.postId}`)
+    console.log(resposne.data)
+    setComments(resposne.data)
+  }
+
+    useEffect(()=>{
+        fetchPost()
+        fetchComments()
+    },[])
+
+-----------------------------------------------------------------------------------------------
+
+   const fetchData = async () => {
+    const resposnePost = await axios(`https://jsonplaceholder.typicode.com/posts/${params.postId}`)
+    const resposneComment = await axios(`https://jsonplaceholder.typicode.com/comments?postId=${params.postId}`)
+    setPost(resposnePost.data)
+    setComments(resposneComment.data)
+   }
+    useEffect(()=>{
+        fetchData()
+    },[])
+
+-----------------------------------------------------------------------------------------------
+
+
+
+
+

@@ -1,0 +1,15 @@
+# callback return in setTimeout:
+  - A callback function can return a value, in other words, but the code that calls the function won't pay attention to the return value.
+  - You can't get a return value from the function you pass to setTimeout.
+  - Timeouts are asynchronous, so you can't return from them.
+  - Hell Yeah! you can return from callback using promise.
+  - You can’t get the return value in setTimeout. You can use promise to wrap it.
+  - SetTimeout runs asynchronously and cannot be returned. You can use the callback function to do the processing you want
+  - Use promise or async / await.
+
+# However callback is used for processing not return.
+# promise and asyn/await can be used for return.
+
+# function(asynchronous) holds/stop/make_wait function(callback) untill function(asynchronous) itself get done/finished.
+
+Q. As console.log("Hi") is also a function why cant we use it as callback instead of ()=>console.log("Hi").

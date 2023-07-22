@@ -1,0 +1,11 @@
+sort() ==> method sorts an array alphabetically. (compare function to sort numerically)
+	const fruits = ["Banana", "Orange", "Apple", "Mango"];
+	fruits.sort();
+	// fruits =>  ["Apple", "Banana", "Mango", "Orange"]
+
+
+
+reverse() ==> method reverses the elements in an array.
+fruits.reverse();
+
+Compare Function:

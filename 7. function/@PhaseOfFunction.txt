@@ -1,0 +1,1 @@
+1. Declaration/Defination --> 2. Invocation/Call/Enter --> 3. Return/Stop/Exist

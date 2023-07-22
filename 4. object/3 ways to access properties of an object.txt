@@ -1,0 +1,9 @@
+# Three Ways to access the properties of an Object in JavaScript:
+    - Dot property accessor ==> . ==> object. property.
+    - Square brackets property access ==> [] ==> object['property']
+    - Object destructuring ==> const { property } = object.
+
+- prototype: XMLHttpRequest
+- In OOP clas is an object constructor but in JS function an object constructor.
+- There are four ways to create an object in JavaScript - using object literals, using the function constructor, using the Object. create method, and using the class keyword (which is almost the same as using a function constructor).
+- https://www.youtube.com/results?search_query=object+constructor+in+JS

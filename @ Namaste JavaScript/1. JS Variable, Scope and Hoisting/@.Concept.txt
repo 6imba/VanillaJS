@@ -1,0 +1,26 @@
+# What determinses the scope of any variable?
+	- Where it is declared? (inside function, within block{}, outside any kind of block|function)?
+	- What keyword is used while declaring corresponding variable?
+
+# Global Scope:
+    - variable_assigned_with_var_keyword outside fucntion have global scope.
+    - variable_assigned_with_let&const_keyword outside fucntion,block have global scope.
+    - variable_assigned_with_no_keyword outside fucntion,block have global scope.
+
+# Local Scope:
+    > Function Scope:
+        - variable_assigned_with_atleast_any_keyword inside fucntion have function_local_scope.
+
+    > Block Scope:
+        - variable_assigned_with_let&const_keyword inside block{} have block_local_scope.
+
+# Pass by value and reference:
+    - var: pass by value
+    - let: pass by value
+    - const: pass by reference
+    > this determines wether to re-declare and re-assign is possible or not?
+
+# Whole Summury:
+    - varaible's (scope,declare,assign,re-declare,re-assign,mutable,pass by value or reference) is determined by ==>where(inside function, within block{}, outside any kind of block|function) its declared and keyword used while declaring.
+
+# 

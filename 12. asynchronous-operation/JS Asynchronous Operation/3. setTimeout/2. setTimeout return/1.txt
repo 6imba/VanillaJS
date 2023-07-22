@@ -1,0 +1,9 @@
+# setTimeout return in JavaScript.
+    - setTimeout() returns a timeoutID which is a positive integer identifying the timer created as a result of calling the method.
+    - The timeoutID can be used to cancel timeout by passing it to the clearTimeout() method.
+
+# setTimeout return in node.js.
+    - setTimeout() returns a Timeout object that can be used to reference the timeout that was set.
+    - This returned object can be used to cancel the timeout i.e:  clearTimeout() as well as change the execution behavior i.e: unref().
+
+

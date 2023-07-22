@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>XMLHttpResponse Object</h3>
+    <button onclick="loadData()">Load Data</button>
+    <script>
+        // // 1.1 Send Asynchronous-HTTP-Request and retrive HTTP-Response:
+        // function loadData(){
+        //     const xhr = new XMLHttpRequest();
+        //     xhr.open("GET", 'https://jsonplaceholder.typicode.com/todos/1', true);
+        //     xhr.send();
+        // }
+
+        // // 1.2 Handle the Asynchronous-HTTP-Request-processing and respective HTTP-Response.
+        // function loadData(){
+        //     const xhr = new XMLHttpRequest();
+        //     xhr.open("GET", 'https://jsonplaceholder.typicode.com/todos/1', true);
+        //     xhr.send();
+        //     xhr.onload = () => console.log(xhr.response) // handle HTTP-Response.
+        //     xhr.onprogress = () => console.log('Loading...') // when HTTP-Response is pending.
+        // }
+
+        // // 2
+        // function loadData(){
+        //     const xhr = new XMLHttpRequest();
+        //     xhr.open("GET", "https://reqres.in/api/users", true); // while fetching data from file path it might take time so async true.
+        //     xhr.onprogress = () => console.log('Loading...') // run JS(function) when events(response-pending) is detected.
+        //     xhr.onload = () => console.log(xhr.response); // run JS(function) when events(fullfill|reject-response) is detected.
+        //     xhr.send();
+        // }
+
+        // // 3 See the data-type of HTTP-Response-Data --> JSON-formate-string, JSON-string, JSON.
+        // function loadData(){
+        //     const xhr = new XMLHttpRequest();
+        //     xhr.open("GET", "https://reqres.in/api/users", true);
+        //     xhr.onprogress = () => console.log('Loading...')
+        //     xhr.onload = () => {
+        //         console.log(xhr.response)
+        //         console.log(typeof(xhr.response))
+        //         const data = JSON.parse(xhr.response)
+        //         console.log(data)
+        //         console.log(typeof(data))
+        //     };
+        //     xhr.send();
+        // }
+
+        // https://reqres.in/api/users returns data of string type in JSON formate.
+
+
+
+        // // 3.1 Handle HTTP-Response: Parse HTTP-Response-JSON using Browser's-Built-in JSON.parse() method.
+        // function loadData(){
+        //     const xhr = new XMLHttpRequest();
+        //     xhr.open("GET", "https://reqres.in/api/users", true);
+        //     xhr.onprogress = () => console.log('Loading...')
+        //     xhr.onload = () => {
+        //         const data = JSON.parse(xhr.response)
+        //         console.log(data)
+        //     };
+        //     xhr.send();
+        // }
+
+
+
+        // 4. Handle HTTP-Response: Parse HTTP-Response-JSON with the help of XMLHttpRequest().responseType property.
+        function loadData(){
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "https://reqres.in/api/users", true);
+            xhr.responseType = "json";
+            xhr.onload = () => {
+                console.log(xhr.response)
+                console.log(typeof(xhr.response))
+            };
+            xhr.send();
+        }
+        // as https://reqres.in/api/users returns data of string type in JSON formate.
+        // .responseType = "json" will parse JSON-string in to JS-Object.
+
+    </script>
+</body>
+</html>

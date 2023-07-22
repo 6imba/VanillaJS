@@ -1,0 +1,19 @@
+- [[Prototype]]: PointerEvent
+- [[Prototype]]: Event
+- [[Prototype]]: Window
+- [[Prototype]]: Array(0)
+- [[Prototype]]: Object
+
+
+
+- Prototype.
+- Prototype Chaining.
+- Prototypal Inheritance.
+
+
+
+- Inheritance as in concept in JavaScript is totally different than classical inheritance in other languages.
+- Inheritance in JavaScript is just concept in which one object is trying to access the properties of another object.
+Q. So how can we do it?
+
+

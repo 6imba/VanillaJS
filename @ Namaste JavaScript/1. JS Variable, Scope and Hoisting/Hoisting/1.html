@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting</title>
+</head>
+<body>
+    <p>Hoisting</p>
+    <script>
+        var c = function(){
+            x = 400;
+            console.log(x)
+        }
+        console.log(x)
+        console.log(d)
+        console.log(e)
+        console.log(c)
+        console.log(a)
+        console.log(b)
+        a();
+        b();
+        c();
+        d();
+        e();
+        console.log(x)
+        var x = 100;
+        function a (){
+            x = 200;
+            console.log(x)
+        }
+        function b (){
+            x = 300;
+            console.log(x)
+        }
+        var d = function(){
+            x = 500;
+            console.log(x)
+        }
+        var e = () => {
+            x = 600;
+            console.log(x)
+        }
+    </script>
+</body>
+</html>

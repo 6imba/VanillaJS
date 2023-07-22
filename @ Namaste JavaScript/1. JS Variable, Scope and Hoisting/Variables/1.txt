@@ -1,0 +1,23 @@
+- Value Types and Reference Types in JavaScript.
+
+- Value Types:
+    - Primitive Simple Data Types
+        - less memory occupy.
+        - In term of memory allocation: Stack Memory************
+        > string, numbers, booleans, null, undefined.
+        - immutable, compared & copied by value.
+
+- Reference Types:
+    - Complex Data Type
+        - more memory occupy.
+        - In term of memory allocation: Heap Memory************
+        > array, object, function.
+        - mutable, compared & copied by reference.
+
+- Variable Allocation:
+    - variable label/identifier: x
+    - variable memory address/location: 12Oe056
+    - varible value: 3
+    > var x = 
+    
+# Reference: https://www.youtube.com/watch?v=e-_mDyqm2oU

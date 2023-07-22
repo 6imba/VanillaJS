@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id='myTime5'>Time5?</p>
+
+    <p id='myTime6'>Time6?</p>
+
+    <script>
+        const myTime5 = document.getElementById('myTime5');
+        myTime5.onclick = () => myTime5.innerHTML = Date(); // why this doesnt work ?
+
+    </script>
+</body>
+</html>
+
+<!-- Q. Why does an onclick property set with setAttribute fail to work?
+    - myTime6.setAttribute("onclick", () => document.getElementById('myTime6').innerHTML = Date()); // and this doesnt works? -->

@@ -1,0 +1,58 @@
+toString() ==> method converts an array to a string of (comma separated) array values.
+var arrString = ["Banana", "Orange", "Apple", "Mango"].toString();
+//arrString = Banana,Orange,Apple,Mango
+//typeof(arrString) = String
+
+
+pop() ==> js method removes the last element from an array and returns the removed element
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fruit = fruits.pop();
+//fruits ==> ["Banana", "Orange", "Apple"]
+//fruit  ==> Mango
+
+
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+push() ==> js method adds a new element at the end of array and returns the new array length.
+fruits.push("Kiwi");
+
+shift() ==> js method removes the first array element and "shifts" all other elements to a lower index. Also return returns the value that was "shifted out".
+fruits.shift();
+
+unshift() ==> js method adds a new element at the beginning of array and "unshifts" older elements. Also returns the new array length.
+fruits.unshift("Lemon");
+
+#delete
+delete ==> js operator that deletes the elements of an Array but leaves undefined holes in place of deleted element from the array.
+delete fruits[0];
+
+#update|retrive
+Changing Array elements: arr[0]=value; or arr[arr.length]=value;
+Array elements are accessed using their index number:
+Array indexes start with 0:
+
+#create
+splice() ==> js method can be used to add new element or remove old element to an array at provided index.
+fruits.splice(2, 2, "Lemon", "Kiwi"); or fruits.splice(0, 1);
+
+concat() ==> method creates/returns a new array by merging (concatenating) existing arrays.
+const newArray= array1.concat(array2);
+const myChildren = arr1.concat("Peter"); //method can also take strings as arguments
+
+slice() ==> method slices out a piece of an array into a new array.(slice() method creates a new array. It does not remove any elements from the source array.)
+const citrus = fruits.slice(3);
+const citrus = fruits.slice(1,3);
+
+
+
+
+
+- create & delete array
+- manipulate original array(add,update,delete elements)
+- return new array performing manipulation on original array value
+- array copy
+- copy value of array
+- copy reference of array
+- array destructuring
+- array looping
+- iteration array ==> loop(for,while,do,forEach), Built-in-HOF(map,reduce,filter,), operators(in)

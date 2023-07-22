@@ -1,0 +1,3 @@
+- addButton.onclick = addTask
+- addButton.classList.remove("addTask")
+- addButton.classList.add("addTask")

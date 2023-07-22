@@ -1,0 +1,24 @@
+- window.setTimeout is a native JavaScript function.
+- SetTimeOut executes asynchronous behaviour.
+- It sets a timer (a countdown set in milliseconds) for an execution of a callback function, calling the function upon completion of the timer.
+
+- Syntax:
+    .setTimeout(callback, timer)
+    .setTimeout(function, milliseconds)
+
+    - Its parameters are:
+        function - a callback function containing a block of code
+        milliseconds - the time after which the callback function is executed
+
+- return:
+    - The setTimeout() method returns an intervalID-number in JavaScript and Timeout-object in node.js.
+
+- The method executes the code only once.
+
+- SetTimeOut is part of windows object( Browser ) then how is it working in Node js?
+- WKT, The setTimeout() method returns an intervalID-number, but is there any way we can return value from callback inside asynchronous:setTimeout.
+
+- Some of Asynchronous methods:
+    - setTimeout(),
+    - setInterval (),
+    - fetch(),

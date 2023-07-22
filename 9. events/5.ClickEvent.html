@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click</title>
+</head>
+<body>
+    <button id="b1" onclick="this.innerHTML = 'Clicked'">Button1</button><br><br> <!-- 1. onclick event_attribute in script. -->
+    <button id="b2">Button2</button><br><br>
+    <button id="b3">Button3</button><br><br>
+    <button id="b4">Button4</button><br><br>
+    <button id="b4.1">Button4.1</button><br><br>
+
+    <script>
+        // 2. onclick event_attribute in script.
+        document.getElementById("b2").onclick = () => document.getElementById("b2").innerHTML = 'Clicked';
+
+        // 3. setattribute method.
+        // document.getElementById("b3").setAttribute("onclick", document.getElementById("b3").innerHTML = 'Clicked'); // 1 ***
+        // document.getElementById("b3").setAttribute("onclick", () => document.getElementById("b3").innerHTML = 'Clicked'); // 2 ***
+        // document.getElementById("b3").setAttribute("onclick", fucn3); // 3 ***
+        // function fucn3 () {document.getElementById("b3").innerHTML = 'Clicked'};
+        // document.getElementById("b3").setAttribute("onclick", fucn3()); // 4 ***
+        // function fucn3 () {document.getElementById("b3").innerHTML = 'Clicked'};
+        document.getElementById("b3").setAttribute("onclick", "fucn3()");
+        function fucn3 () {document.getElementById("b3").innerHTML = 'Clicked'};
+
+        // 4. addEventAttribute method.
+        document.getElementById("b4").addEventListener("click", fucn4);
+        function fucn4 () {document.getElementById("b4").innerHTML = 'Clicked'};
+        // // 4.1 addEventAttribute method with parameter.
+        // document.getElementById("b4.1").addEventListener("click", fucn4("Clicked")); // ==> not way
+        // function fucn4 (x) {document.getElementById("b4.1").innerHTML = x};
+        // 4.1 addEventAttribute method with parameter.
+        document.getElementById("b4.1").addEventListener("click", () => fucn4("Clicked")); // need callback ==> way
+        function fucn4 (x) {document.getElementById("b4.1").innerHTML = x};
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter</title>
+  </head>
+  <body>
+    <script>
+      const number1 = [101, 102, 103, 104, 105, 106, 107, 108, 109];
+      const number2 = number1.filter(myNumbers);
+
+      // function myNumbers(numb) {
+      //   return numb % 2 == 0;
+      // }
+
+        function myNumbers(numb, index, array) {
+          // console.log(numb);
+          // console.log(index);
+          // console.log(array);
+          // return false;
+          // return true;
+          // return 0;
+          // return 1;
+        }
+
+      console.log(number2);
+    </script>
+  </body>
+</html>
+
+<!-- forEach(), map(), filter() all these es6 methods calls callback function for each of element in iterable.
+where map() and filter() create&returns new array but forEach updates the original array.
+* array is iterable. -->
+<!-- Here filter function will return iteration_element to new array only if callback function is satisfied|true. -->

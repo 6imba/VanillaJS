@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myFun1(event, 23)" value="test1.1">Click1</button>
+    <button onclick="myFun2(23)" value="test1.2">Click1</button>
+    <button value="test2" id="t2">Click2</button>
+    <button value="test3" id="t3">Click3</button>
+    <script>
+        function myFun1(event, i){
+            console.log(event)
+            console.log(event.target)
+            console.log(event.target.value)
+            console.log(i)
+        }
+        function myFun2(event, i){
+            console.log(event)
+            console.log(event.target)
+            console.log(event.target.value)
+            console.log(i)
+        }
+        document.getElementById("t2").addEventListener("click",(event)=>{
+            console.log(event)
+        })
+        document.getElementById("t3").setAttribute("style","color:red")
+        document.getElementById("t2").setAttribute("onclick","myFun(event,24)")
+    </script>
+</body>
+</html>

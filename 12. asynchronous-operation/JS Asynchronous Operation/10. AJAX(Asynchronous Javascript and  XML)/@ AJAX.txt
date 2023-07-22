@@ -1,0 +1,18 @@
+- AJAX stands for "Asynchronous JavaScript and XML(JSON|CSV...)"
+- Asynchronous JavaScript Programming is Single-Main-Thread, perform multiple tasks, Non-blocking, Non-wait.
+- XML|JSON|CSV... are the data formate on which data can be exchanged between client and server.
+- AJAX is set of technologies to perform Asynchronous JavaScript while data transmission.
+- AJAX is implemented using 1.XMLHttpResponse-API|object, 2.FetchAPI & 3.Axios-JavaScript-Library along with #Vanilla-JavaScript and #HTML_DOM (to display or use the data).
+
+
+- AJAX using JavaScript.
+- AJAX using JQuery.
+- CRUD Database using AJAX through NodeJS, PHP, Python.
+
+
+# There comes three common ways to send HTTP-Request(Asynchronous) using vanillaJS:
+# There are quit few options to make an API call in JavaScript. The possible optios are:
+# There comes three common ways for making an AJAX request in JavaScript:
+    1. xhr.js: Sending JavaScript Http Requests with (Browser's Built-in  XMLHttpRequest API/object). '2000 AD'
+    2. fetch.js: Sending JavaScript Http Requests with (Browser's Built-in Fetch API). '2015 ES6'
+    3. axios.js: Sending JavaScript Http Requests with (Third party library, Third party library integration: Axios Package).

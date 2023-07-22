@@ -1,0 +1,59 @@
+# There comes three common ways to send HTTP-Request using vanillaJS:
+# There are quit few options to make an API call in JavaScript. The possible optios are:
+    1. xhr.js: Sending JavaScript Http Requests with (Browser's Built-in  XMLHttpRequest API/object). '2000 AD'
+    2. fetch.js: Sending JavaScript Http Requests with (Browser's Built-in Fetch API). '2015 ES6'
+    3. axios.js: Sending JavaScript Http Requests with (Third party library, Third party library integration: Axios Package).
+# In XMLHttpRequest object, .onload() is a asynchronous function so we use promise to handle the response.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+# How can you see the Built-in objects in Browser-JavaScript:
+    - console.log(window)
+    - you can see Window-Object with many methods and properties,
+    - and XMLHttpRequest: ƒ XMLHttpRequest() is also one of the methods of Window-Object,
+    - hereby you can create XMLHttpRequest-Object with this XMLHttpRequest() Object-Constructor-Function.
+    - console.log(window.XMLHttpRequest) ==>print what XMLHttpRequestactually is: its browser-JS's native function ==>  ƒ XMLHttpRequest() { [native code] },
+    - console.log(new XMLHttpRequest()) ==> returns XMLHttpRequest-Object as XMLHttpRequest() is XMLHttpRequest_Object_Contructor_Function ==> XMLHttpRequest {onreadystatechange: null, readyState: 0, timeout: 0, withCredentials: false, upload: XMLHttpRequestUpload, …}
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+- In OOP clas is an object constructor but in JS function an object constructor.
+- There are four ways to create an object in JavaScript - using object literals, using the function constructor, using the Object. create method, and using the class keyword (which is almost the same as using a function constructor).
+- https://www.youtube.com/results?search_query=object+constructor+in+JS
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+- prototype: XMLHttpRequest
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Status code:
+- API actually fails to parse the incomming request because we are not saying it that we are sending json-data.
+- So, tell API that we are sending JSON-data by setting extra header ==> xhr.setRequestHeader("Content-Type", "application/json"); --> whoch signals we are appending JSON data.
+- before xhr.send() we are setting/preparing the HTTP-Request to be sent.
+- onerror this events gets trigger only when there is techinical-error/request-techincally-fails: no-network-connections,
+- when password is not matched, we get error-response(400), which actually gives error-response, that means is succefull connection. Thats why .onerror is not triggered.
+- So onerror get hits only if HTTP-Request fails due some kind of tchincal-fails or other reason.
+// @Reference: https://www.youtube.com/watch?v=4K33w-0-p2c&t=4s
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+// XMLHttpRequest API to handle asynchronous Http-Request operations using Promise.
+// But what if we had an API that would use promises out of the box so that we dont have to create wrapper like in XMLHttpRequest.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+- AJAX can be performed/implemented using browser's built-in #XMLHttpResponse object along with #JavaScript and #HTML_DOM (to display or use the data)
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+- 'https://jsonplaceholder.typicode.com/todos/1' ==> free fake online REST API that can be used to make xml-http-request.
+- make HTTP-Request of XML|JSON data from URL,server,API,endpoints, using browser's built-in native XMLHttpRequest object initialized by calling XMLHttpRequest() Constructor_Function.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+- make HTTP-Request of XML|JSON data from URL,server,API,endpoints, using browser's built-in native XMLHttpRequest object initialized by calling XMLHttpRequest() Constructor_Function.
+- You can seent the send HTTP-Request in Network of browser console.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+# {data: {…}, support: {…}} // Object
+    data: {id: 1, name: 'cerulean', year: 2000, color: '#98B2D1', pantone_value: '15-4020'} // key:value
+    support: {url: 'https://reqres.in/#support-heading', text: 'To keep  appreciated!'} // key:value
+    [[Prototype]]: Object // ???
+
+------------------------------------------------------------------------------------------------------------------------------------------------

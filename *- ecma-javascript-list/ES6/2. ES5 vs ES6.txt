@@ -1,0 +1,146 @@
+# 1. variable declaration keyword:
+    - ES5 just had var.
+    - ES6 have let and const too.
+    - 
+        
+        # 1.
+            for(i=0; i<5; i++){
+                console.log(i) // i with no declaration is changeable
+            }
+
+        # 2.
+            for(var i=0; i<5; i++){
+                console.log(i) // i declared with var is changeable
+            }
+
+        # 3.
+            for(let i=0; i<5; i++){
+                console.log(i) // i declared with let is changeable
+            }
+
+        # 4.
+            for(const i=0; i<5; i++){
+                console.log(i) // i declared with const is not changeable
+            }
+            // TypeError: Assignment to constant variable.
+            // here for first iteration i value is defined as 1 and later in next iteration forloop try to incremeant value of i which is not possible as its was declared using const keyword.
+
+    # JavaScript let and global object
+        - When you declare a global variable using the var keyword, you add that variable to the property list of the global object. In the case of the web browser, the global object is the window. For example:
+        - However, when you use the let keyword to declare a variable, that variable is not attached to the global object as a property.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# 2. Scope: Block
+    - ES5 just have Global_Scope and Function_Scope.
+    - Block_Scope was introduced in ES6.
+    - Variable declared with #let & #const keyword have #Block_Scope.
+    - Variables declared inside a { } block with #let & #const is only accessible within that particular block only, cannot be accessed from outside the block.
+    Q. So we where do we have block?
+        - Block is considered to be inside curly braces,{}.
+        - A block in JavaScript is used to group zero or more statements with curly braces ( {} ).
+            - Remember that a statement is simply a unit of code that does something or produces some behavior. 
+        - Blocks are most often used with while , if...else, for, try_catch, statements.
+
+    > Block_Scope in if(){}
+        # 1:
+            if(true){
+                x = 1;
+            }
+            console.log(x)
+
+        # 2:
+            if(true){
+                var x = 1;
+            }
+            console.log(x)
+
+        # 3:
+            if(true){
+                let x = 1;
+            }
+            console.log(x) // ReferenceError: x is not defined
+
+        # 4:
+            if(true){
+                const x = 1;
+            }
+            console.log(x) // ReferenceError: x is not defined
+
+    > Block_Scope in for(){}
+        # 1. 
+            for(let a=0; a<5; a++){
+                i = a;
+            }
+            console.log(i)
+
+        # 2.
+            for(let b=0; b<5; b++){
+                var j = b;
+            }
+            console.log(j)
+
+        # 3.
+            for(let c=0; c<5; c++){
+                let k = c;
+            }
+            console.log(k) //ReferenceError: k is not defined. As variable declared with let has block scope it cannot be accessed outside the respective block.
+
+        # 4.
+            for(let  d=0; d<5; d++){
+                const l = d;
+            }
+            console.log(l) //ReferenceError: l is not defined. As variable declared with const has block scope it cannot be accessed outside the respective block.
+
+    let x = 2;
+    {
+        // let x;
+        x = 3;
+    }
+    console.log(x)
+
+    # JavaScript let and callback function in a for loop:
+        for (var i = 0; i < 5; i++) {
+            setTimeout(function () {
+                console.log(i);
+            }, 1000);
+        }
+
+        for (var i = 0; i < 5; i++) {
+            setTimeout(function () {
+                console.log(i);
+            }, `${i}000`);
+        }
+        - here in each iteration itertion:i value changes as var i reffers to global scope.
+
+        for (let i = 0; i < 5; i++) {
+                setTimeout(function () {
+                    console.log(i);
+                }, `${i}000`);
+            }
+        - here in each iteration itertion:i value doesnt changes as let i reffers to block scope.
+
+    - In ES5, you can fix this issue by creating another scope so that each callback function references a new variable. And to create a new scope, you need to create a function. Typically, you use the IIFE pattern as follows:
+        for (var i = 0; i < 5; i++) {
+            (function (j) {
+                setTimeout(function () {
+                    console.log(j);
+                }, 1000);
+            })(i);
+        }
+
+    - In ES6, the let keyword declares a new variable in each loop iteration. Therefore, you just need to replace the var keyword with the let keyword to fix the issue.
+        for (let i = 0; i < 5; i++) {
+            setTimeout(() => console.log(i), 1000);
+        }
+
+    - Hopisting:
+        -In fact, the JavaScript engine will hoist a variable declared by the let keyword to the top of the block. However, the JavaScript engine does not initialize the variable. Therefore, when you reference an uninitialized variable, you’ll get a ReferenceError.
+
+--------------------------------------------------------------------------------------------
+
+# 3. Pass by vslue and reference:
+    - Primitive_Types are always passed/copied by value, but for objects the value of the variable is passed/copied by reference.
+    - 
+
+# 

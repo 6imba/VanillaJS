@@ -1,0 +1,18 @@
+- Programming Architecture.
+    - Serial vs Parallel,
+    - Single-Thread vs Multi-Thread,
+    - Single-task-at-a-time vs Multi-task-at-a-time,
+    - Blocking-calls vs Non-Blocking-calls,
+    - Waits vs No-Waits,
+    - Synchronous vs Asynchronous,
+
+- Synchronous and Asynchronous Programming.
+- Synchronous and Asynchronous JavaScript.
+
+- Asynchronous JavaScript.
+- Ways to write/handle Asynchronous JavaScript:
+    - Asynchronous & Callbacks,
+    - Promises,
+    - Async/Await.
+
+- Asynchronous JavaScript and XML/JSON aka AJAX.

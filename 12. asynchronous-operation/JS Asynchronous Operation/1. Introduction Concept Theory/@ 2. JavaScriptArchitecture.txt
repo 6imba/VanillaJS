@@ -1,0 +1,50 @@
+- Synchronous Client vs Asynchronous Client,
+- Synchronous Server vs Asynchronous Server,
+
+- when we make a function/method-call (i.e network-call, local-call, server-call, disk-call), fetching something.
+- As a client if i decided to wait for the result/response of coressponding request from the sources(network, local, server)before excuting futher code, then i am acting as a synchronous client.
+- In contrast;
+- In Asynchronous, when you make a request to sources(network, local, server), so to calculate response, it might take time. But this time we will not wait untill resopnse get ready, instead we provide callback-function which will execute when ever response(success/fail) is ready and continue executing our code.
+
+- Synchronous: wait until the execution of current code statement is finished inorder to run futher code-execution,
+- Asynchronous: no wait until the execution of current code statement is finished inorder to run futher code-execution,
+
+- Both architecture has pros and cons.
+
+- Example of Synchronous Architeture:
+    function upload(){
+        print("Youtube vedio uploading")
+        v = YoutubeUploader() // here YoutubeUploader is synchronous, so excution of code stops here until success/failure response.
+        print("Success", v) // then this line get executed.
+    }
+- In Synchronous, you can see when you upload vedio on youtube your youtube-UI is blocked untill success/fail.
+- In constrast,
+- In Asynchronous, you can see when you upload vedio on youtube your youtube-UI is not blocked untill success/fail, you can change title of vedio, get url of vedio even uploading is still in process.
+
+- callback function is called inside asynchronous function.
+
+- callback can be used in both synchronous and asynchronous
+- synchronous callback
+- asynchronous callback
+
+- synchronous function
+- asynchronous function
+
+- Synchronous: wait,
+- Asynchronous: not wait.
+
+# Reference:
+    - https://www.youtube.com/watch?v=N5Ky-mz6n-8
+
+
+
+- asynchronous & callback
+- promise| then| catch
+- async - await
+
+- some of native browser asynchronous function(that takes some time to return response):
+    - setTimeout(),
+    - fetch(),
+
+
+

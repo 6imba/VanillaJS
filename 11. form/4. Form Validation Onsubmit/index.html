@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Validation Form</title>
+</head>
+
+<body>
+    <form onsubmit="return validate()">
+        <h1>FORM</h1>
+        <p id="error"></p>
+
+        <pre>
+        First Name       :<input type="text"      id="fname"    name=""   value=""  >
+        Last Name        :<input type="text"      id="lname"    name=""   value=""  >
+        Username         :<input type="text"      id="uname"    name=""   value=""  >
+        Password         :<input type="password"  id="pass"     name=""   value=""  >
+        Confirm Password :<input type="password"  id="cpass"    name=""   value=""  >
+
+        <input type="submit"  value="Submit">  <button type="reset"> Reset </button>
+        </pre>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

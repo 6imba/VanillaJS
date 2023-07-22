@@ -1,0 +1,42 @@
+- web storage: store some of details about web_sites on web_browser_memory.
+- also known as storage.
+- supports persistent data storage in web browser(see data of web page even when you close and open browser again{local storage})
+- storage varies from browser to browser(MB).
+
+# HTML5 web storage VS cookies.
+    - Web Storage(local and session): 8MB  
+    - cookie: 4KB  
+
+# What is HTML5 Web Storage?
+    - With web storage, web applications can store data locally within the user's browser.
+    - The Web Storage API provides mechanisms by which browsers can store key/value pairs, in a much more intuitive fashion than using cookies.
+
+    - Before HTML5, application data had to be stored in cookies, included in every server request.
+    - Web storage is more secure, and large amounts of data can be stored locally, without affecting website performance.
+    - Unlike cookies, the storage limit is far larger (at least 5MB) and information is never transferred to the server.
+    - Web storage is per origin (per domain and protocol). All pages, from one origin, can store and access the same data.
+
+# HTML Web Storage Objects(HTML web storage provides two objects for storing data on the client:):
+    - window.localStorage - stores data with no expiration date
+    - window.sessionStorage - stores data for one session (data is lost when the browser tab is closed)
+
+# HTML5 Web Local Storage VS HTML5 Web Session Storage:
+    > Local Storage:
+        - The data will not be deleted when the browser is closed, and will be available the next day, week, or year.
+        - Accessible from all window tab.
+        - window.localStorage.setItem("key":"value")
+        - window.localStorage.getItem("key")
+        - window.localStorage.key = "value"
+        - window.localStorage.key
+        - localStorage.removeItem('key')
+        - localStorage.clear()
+    > Session Storage:
+        - The data is deleted when the user closes the specific browser tab.
+        - Accessible from same window tab only.
+        - It stores data only for one session. Here one session is one window tab.
+        - window.sessionStorage.hits
+
+# Reference:
+    - https://www.w3schools.com/html/html5_webstorage.asp
+    - https://web.dev/storage-for-the-web/
+    - 

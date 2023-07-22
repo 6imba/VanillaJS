@@ -1,0 +1,16 @@
+# How to handle errors in XMLHttpRequest thats the main thing:
+    - const xhr = new XMLHttpRequest();
+    - xhr.response && xhr.status; //mainly needed properties.
+
+    - see the response-status of respective HTTP-Request. (0, 2xx, 3xx, 4xx, 5xx)
+    1. and apply conditions accordingly. //gets hits when HTTP-Request-is-sent || connection-is-established_&_error-response-is-returned by XMLHttpRequest.
+    2. use onerro event-listener. //gets hits when technical errorerror takes place like: network-failure.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+    - see the response status of respective HTTP-Request. (0, 1xx, 2xx, 3xx, 4xx, 5xx)
+        HTTP response status codes
+        Informational responses ( 100 – 199 )
+        Successful responses ( 200 – 299 )
+        Redirection messages ( 300 – 399 )
+        Client error responses ( 400 – 499 )
+        Server error responses ( 500 – 599 )

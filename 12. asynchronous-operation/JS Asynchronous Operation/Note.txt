@@ -1,0 +1,1 @@
+- Like xhr, fetch, axois in client-side. Similarly requests in server-side.

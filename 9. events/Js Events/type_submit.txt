@@ -1,0 +1,16 @@
+Q.What happens when you press submit button?
+    - "Upon clicking the submit button: It calls any button class handlers, then any  attached javascript handlers, and then the submit form handler.
+    - All button class objects have built in methods.
+
+# 1.
+    <form action="/action_page.php" onsubmit="JS">
+        <input type="submit" value="Submit" onclick="Js">
+    </form>
+
+* onclick="Js" ==> button-class-handlers
+* onsubmit="JS" ==> form-attached-javascript-handlers
+* action="/action_page.php" ==> form-action-handler or simply form handler.
+
+
+
+https://coderanch.com/t/599987/languages/click-HTML-submit-button

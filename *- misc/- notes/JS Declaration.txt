@@ -1,0 +1,5 @@
+- Declare JavaScript Variable using var, let, const keyword.
+- Declare JavaScript Function using function keyword.
+- Declare JavaScript Array and Objects using const keyword.
+- Declare JavaScript Variable holding Function-Expression as data/values using const keyword.
+- Declare JavaScript RegExp using const keyword.

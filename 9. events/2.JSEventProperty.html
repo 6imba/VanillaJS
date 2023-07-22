@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id='myTime'>Time?</p>
+    <script>
+        // document.getElementById('myTime').onclick = document.getElementById('myTime').innerHTML = Date();
+        // document.getElementById('myTime').onclick = function(){document.getElementById('myTime').innerHTML = Date()};
+        // document.getElementById('myTime').onclick = () => document.getElementById('myTime').innerHTML = Date();
+        // document.getElementById('myTime').onclick = () => document.getElementById('myTime').innerHTML = typeof(Date);
+        // document.getElementById('myTime').onclick = () => document.getElementById('myTime').innerHTML = typeof(Date());
+        // document.getElementById('myTime').onclick = this.innerHTML = Date();// this keyword doesnt run inside script
+        // document.getElementById('myTime').onclick = `document.getElementById('myTime').innerHTML = Date()`; //jus try
+        // alert(Date) //function Date() { [native code] } // Date is the native JS-Function.
+        // alert(Date()) //Fri Mar 18 2022 11:46:13 GMT+0545 (Nepal Time) //Date is the native JS-Function which returns string when called/invoked.
+        // alert(new Date()) //Fri Mar 18 2022 11:46:20 GMT+0545 (Nepal Time) // invoked Date along with new keyword.
+        // alert(typeof(Date)) //function
+        // alert(typeof(Date())) //string
+        // alert(typeof(new Date())) //objects
+    </script>
+</body>
+</html>
+
+<!--
+    //see:
+    - case1: document.getElementById('myTime').innerHTML = Date(), part runs as its getting hit so onclick event doesnt matter
+        <p id='myTime1' onclick = "document.getElementById('myTime1').innerHTML = Date()">Time?</p>
+    but,
+    - case2: () => document.getElementById('myTime').innerHTML = Date();, part runs only when onclick event gets hit.
+        document.getElementById('myTime').onclick = document.getElementById('myTime').innerHTML = Date();
+
+    - because event_handling_code must be inside function & should get invoke only when event is trigger.
+    - Here, In case1 event_handling_code is not wrapped inside function whereas in case2 it is.
+    - In HTML: its(onclick) html_event_handler_attributes, In JavaScipt: its(onclick) is js_event_handler_methods,
+-->

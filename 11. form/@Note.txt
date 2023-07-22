@@ -1,0 +1,11 @@
+# click button:
+    1. onclick
+    2. onsubmit
+    3. action
+    4. route
+    5. controller
+    ~ coresponsding end point.
+
+- onclick open new tab.
+- onsubmit reload cuurent page.
+- 

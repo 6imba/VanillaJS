@@ -1,0 +1,47 @@
+# Example_1:
+    setTimeout(function() { myFunction("I love You !!!"); }, 3000);
+    function myFunction(value) {
+    document.getElementById("demo").innerHTML = value;
+    }
+
+    - In the example above:
+        - function(){ myFunction("I love You !!!"); }: is used as a callback. It is a complete function. The complete function is passed to setTimeout() as an argument.
+        - setTimeout(): is asynchronous.
+
+# Example_2:
+    setTimeout(()=>console.log("I am callback), 5000)
+
+    - In the example above:
+    - ()=>console.log("I am callback) ==>Callbacks
+    - setTimeout() ==> Asynchronous
+
+# Example_3:
+    setInterval(()=>console.log("I am callback), 1000)
+
+    - In the example above:
+    - ()=>console.log("I am callback) ==>Callbacks
+    - setInterval() ==> Asynchronous
+
+# Example_4:
+        function loadData(myCallback){
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", 'myTextData.txt', true);
+            xhr.onload = () => myCallback(xhr.responseText);
+            xhr.send();
+        }
+        loadData(myDisplayer);
+
+    - In the example above:
+        - myDisplayer ==> Callbacks
+        - loadData() ==> Asynchronous
+    - Also:
+        - () => myCallback(xhr.responseText) ==> Callbacks
+        - onload() ==> Asynchronous
+
+
+# Asynchronous fucntion takes functions(callback) as argument and execute that callback after Asynchronous-fucntion itself gets done.
+    - execute that callback after Asynchronous-fucntion itself gets done: means makes callback wait inorder to get executed:
+        - Waiting for a Timeout: setTimeout()
+        - Waiting for Intervals: setInterval()
+        - Waiting for Files: XMLHttpRequest()
+

@@ -1,0 +1,28 @@
+# Browser Support for ECMAScript 1 - 6 is fully supported in all modern browsers.
+
+# Browser Support for ES5 (2009):
+    Browser	    Version	    From Date
+    Chrome	    23	        Nov 2012
+    Firefox	    21	        May 2013
+    IE      	9*	        Mar 2011
+    IE / Edge	10	        Sep 2012
+    Safari	    6	        Jul 2012
+    Opera	    15	        Jul 2013
+    # Internet Explorer 9 does not support ECMAScript 5 "use strict".
+
+# Browser Support for ES6 (2015):
+    Browser	    Version	    Date
+    Chrome	    51	        May 2016
+    Firefox	    52	        Mar 2017
+    Edge	    14	        Aug 2016
+    Safari	    10	        Sep 2016
+    Opera	    38	        Jun 2016
+    # Internet Explorer does not support ECMAScript 2015.
+
+# Browser Support for ECMAScript 2016:
+    Browser	    Version	    Date
+    Chrome	    52	        Jul 2016
+    Firefox	    54	        Jun 2017
+    Edge	    14	        Aug 2016
+    Safari	    10.1	    Mar 2017
+    Opera	    39	        Aug 2016

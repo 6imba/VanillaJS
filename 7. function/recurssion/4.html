@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <aSide id="myASide">
+        <div>
+            <h1>234</h1>
+            <h2>haha</h2>
+            <div>
+                <span>spananana</span>
+                <p>apple</p>
+            </div>
+        </div>
+        <div>
+            <h1>h1_1</h1>
+            <h2>H2_1</h2>
+            <span>span_1</span>
+        </div>
+        <div>
+            <h1>h1_2</h1>
+            <h2>h2_2</h2>
+            <div>
+                <span>span2</span>
+                <p>para2</p>
+            </div>
+            <div>
+                <span>span3</span>
+                <p>para3</p>
+            </div>
+        </div>
+    </aSide>
+</body>
+<script>
+    const elementsArray = [];
+
+    function collectElements(element) {
+        elementsArray.push(element);
+
+        const childNodes = element.childNodes;
+        childNodes.forEach((child) => {
+            if (child.nodeType === Node.ELEMENT_NODE) {
+                collectElements(child);
+            }
+        });
+    }
+
+    const aSideElement = document.getElementById('myASide');
+    collectElements(aSideElement);
+
+    console.log(elementsArray);
+</script>
+</html>
+

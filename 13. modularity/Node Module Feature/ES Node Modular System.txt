@@ -1,0 +1,10 @@
+1. There are two types of modular system in javascript:
+    - Common JS module
+    - ES Module
+
+2. ES Module:
+    # Implement ES_Module in node:
+        i. add "type": "module" in package.json
+        ii. keep .mjs extension for module script.
+
+3. 

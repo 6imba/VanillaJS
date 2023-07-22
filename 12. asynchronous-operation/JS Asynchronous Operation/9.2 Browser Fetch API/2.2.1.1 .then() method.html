@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>.then() method</h3>
+    <script>
+
+        // .then() methods returns Fullfilled-PromiseObject.
+
+
+        // // 1:
+        // console.log(fetch("https://jsonplaceholder.typicode.com/todos/1")) //fetch() methods returns PromiseObject with [[PromiseResult]]: Response
+
+
+        // // 2. :
+        // fetch("https://jsonplaceholder.typicode.com/todos/1")
+        //     .then(responseData => responseData)
+
+
+
+        // // 3.1 :
+        // fetch("https://jsonplaceholder.typicode.com/todos/1")
+        //     .then(responseData => console.log(responseData)) // "value-argument of callback inisdie .then() -> responseData", is "Response return by Promise of fetch method()->[[PromiseResult]]:Response" inside PromiseObject:Promise {<pending>} return by fetch method().
+
+        // // 3.2
+        // fetch("https://jsonplaceholder.typicode.com/todos/1")
+        //     .then(res => console.log(res.type))
+
+        // // 3.3
+        // fetch("https://jsonplaceholder.typicode.com/todos/1")
+        //     .then(res => {
+        //         console.log(res.type);
+        //         console.log(res.url);
+        //         console.log(res.redirected);
+        //     })
+
+        // // 4. :
+        // const promiseObj = fetch("https://jsonplaceholder.typicode.com/todos/1")
+        // console.log(promiseObj.then(responseData => responseData)) // .then() method also returns PromiseObject with [[PromiseResult]]: Response
+
+
+        // // 5: See res.json() & then-chain in next file.
+        // const promiseObj = fetch("https://jsonplaceholder.typicode.com/todos/1")
+        // promiseObj.then(responseData => responseData.json()).then( responseData => console.log("Response: ",responseData))
+        // // then also return ptomise object
+
+
+
+        // // 6. : See the promise state in each interval, you can see in browser.
+        // const promiseObj = new Promise((fullfil, reject) => {
+        //     // operation or data processing (produnction code)
+        //     setTimeout(()=> fullfil({location: "Kathmandu", temperature: "15 Celcius", rain: false}), 3000)
+        // })
+        // setInterval(()=>console.log(promiseObj.then(responseData => responseData)), 1000);
+
+    </script>
+</body>
+</html>

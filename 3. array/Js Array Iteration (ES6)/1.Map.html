@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map Array Method</title>
+  </head>
+  <body>
+    <script>
+      const fruits1 = ["apple", "banana", "coconut", "Desert Lime", "Eggplant"];
+      const fruits2 = fruits1.map(myFruits);
+      // console.log(fruits2)
+
+      function myFruits(fruit_value) {
+        console.log("Hello ", fruit_value); //[undefined, undefined, undefined, undefined, undefined]
+        // return "Hello " + fruit_value; //['Hello apple', 'Hello banana', 'Hello coconut', 'Hello Desert Lime', 'Hello Eggplant']
+        // every time callback function gets invokded returns will push the value into new array
+      }
+
+      // function myFruits(fruit_value, index_number, fruits_array) {
+      //   return fruit_value; //['apple', 'banana', 'coconut', 'Desert Lime', 'Eggplant']
+      //   // return index_number; //[0, 1, 2, 3, 4]
+      //   // return fruits_array; //[0, 1, 2, 3, 4]
+      // }
+      // console.log(fruits2);
+    </script>
+  </body>
+</html>

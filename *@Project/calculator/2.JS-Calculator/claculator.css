@@ -1,0 +1,78 @@
+.container{
+    /* border: 2px solid red; */
+    /* background-color: yellow; */
+    /* color: rebeccapurple; */
+    width: 45%;
+    margin: auto;
+}
+.calculator{
+    /* border: 2px solid blue; */
+    background-color: black;
+    color: white;
+}
+.input-view{
+    /* border: 2px solid rgb(126, 126, 108);
+    background-color: orange; */
+    border-bottom: 2px solid gray;
+}
+#input-view{
+    text-align: right;
+    font-size: 30px;
+    height: 10vh;
+    padding-top: 25px;
+    margin: 0px 0px 15px 0px;
+    box-sizing: border-box;
+}
+#result-view{
+    text-align: right;
+    font-size: 30px;
+    margin: 0px;
+}
+.input-key{
+    /* border: 2px solid green; */
+    font-size: 25px;
+    height: 65vh;
+    padding: 30px;
+    box-sizing: border-box;
+    color: black;
+    margin: auto;
+}
+.key{
+    background-color: rgb(183, 216, 240);
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 15px;
+    text-align: center;
+    padding-top: 18px;
+    box-sizing: border-box;
+}
+.equalsto{
+    background-color: rgb(183, 216, 240);
+    display: inline-block;
+    width: 180px;
+    height: 70px;
+    margin: 15px;
+    text-align: center;
+    padding-top: 18px;
+    box-sizing: border-box;
+}
+.key:hover, .equalsto:hover{
+    box-shadow: 0 0 0 0.2rem white;
+    background-color: black;
+    color: white;
+    /* font-size: 40px;
+    box-sizing: border-box; */
+}
+.clear:hover{
+    box-shadow: 0 0 0 0.2rem rgb(118, 0, 0);
+    color:rgb(213, 38, 38);
+}
+.del:hover{
+    box-shadow: 0 0 0 0.2rem rgb(240, 99, 6);
+    color:rgb(255, 166, 1);
+}
+.result:hover{
+    box-shadow: 0 0 0 0.2rem rgb(7, 66, 1);
+    color:rgb(81, 253, 65)
+}

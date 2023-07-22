@@ -1,0 +1,137 @@
+- Before going deep into promise, first lets know why we really need promise?
+
+- Use Promise to handle Asynchronous Operation Function in JS.
+
+- Promise is like a contract that garenty to return some response after the completion of given task/operation(that takes some time).
+- A Promise is an object representing the eventual completion or failure of an asynchronous operation.
+- Promise is used as substitute to callback.
+
+# Handle Asynchronous JavaScript using Promises| Promises+Callback.
+
+Q. What are things that return promises_object called?
+    - Promise(): new Promise constructor,
+    - fetch(): Pre-defined browser methods.
+    - async: keyword in JavaScript to declare function as asynchronous.
+
+1. Promise Object Properties
+    - A JavaScript Promise object can be:
+        - Pending
+        - Fulfilled
+        - Rejected 
+
+2. The Promise object supports two properties: state and result.
+    when state of a Promise object is "pending" (working), the result is undefined.
+    When state of a Promise object is "fulfilled", the result is a value.
+    When state of a Promise object is "rejected", the result is an error object.
+    # i.e:
+    - myPromise.state: myPromise.result
+    - state: result
+    - pending: undefined
+    - fulfilled: value(response data)
+    - rejected: error(an error object)
+
+    - You cannot access the Promise properties state and result.
+    - You must use a Promise method to handle promises.
+
+- return new Promise((resolve, reject))
+- here, Promise is just a constructor or an object, that takes a HOF, where HOF takes two callback: promiseResolved and promiseReject
+
+3. - promise object is constructed using new-Promise()-constructor
+   - You must use a Promise method to handle promises.
+   - and some of methods of promise objects are: then, catch
+
+3.1. - Promise.then() takes two arguments, a callback for success and another for failure.
+     - Both are optional, so you can add a callback for success or failure only.
+    <script>
+        let myPromise = new Promise(function(myResolve, myReject) {
+            let x = 0;
+            if (x == 1) {
+                myResolve("OK");
+            } else {
+                myReject("Error");
+            }
+        });
+        myPromise.then(
+        function(value) {console.log(value)},
+        function(error) {console.log(error)}
+        );
+    </script>
+
+4. Here, resolved runs .then(), whereas reject runs .catch().
+
+6. JavaScript Promises:
+    - "I Promise a Result!"
+    - "Producing code" is code that can take some time
+    - "Consuming code" is code that must wait for the result
+    - A Promise is a JavaScript object that links producing code and consuming code
+
+7. - promise object is constructed using new-Promise()-constructor
+   - You must use a Promise method to handle promises.
+   - and some of methods of promise objects are: then, catch
+
+8. Ways to initialized Promise object:
+    1. In Variable -> hold return promise object in variable.(in case, no arg needed to be passed)
+        - const PromiseObject = new Promise(resolve, reject){}
+        - PromiseObject.then();
+        - PromiseObject.catch();
+    2. In Function -> hold return promise object in Function.(in case, arg needed to be passed)
+        - function myFun(num1, num2) {
+            return new Promise((resolve, reject) =>{});
+          }
+          myFun(70, 30).then();
+          myFun(70, 30).catch();
+
+9. .fetch() funtion returns promise object. So we can use .then() on fetch() method to handle promise.
+
+10.
+    .then() used in some objects.(i.e promise object, )
+    - then: function(onFulfilled)?
+
+- Pending is return untill Fullffill or Rejected status is returned while promise producing code is being excuted.
+
+
+# The Promise API proposes the following:
+    - Each asynchronous task will return a promise object.
+    - Each promise object will have a then function that can take two arguments, a success handler and an error handler.
+    - The success or the error handler in the then function will be called only once, after the asynchronous task finishes.
+    - The then function will also return a promise, to allow chaining multiple calls.
+    - Each handler (success or error) can return a value, which will be passed to the next function as an argument, in the chain of promises.
+    - If a handler returns a promise (makes another asynchronous request), then the next handler (success or error) will be called only after that request is finished.
+
+- new Promise constructor returns a Promise object with either of state(Pending, Fullfil, Rejected).
+- .then() also returns a Promise object.
+
+11. Promise chaining:
+    - .then() also returns a Promise object.
+    - resolved()~.then()~.then(callback) & reject()~.catch()~.catch(callback) are known as promise handler function.
+
+- Async functions always return a promise.
+- function that returns promise is asynchronous.
+
+- Promise is like a contract that garenty to return some response after the completion of given task/operation(that takes some time).
+- Promise is not the actual data we needed as response, but contain our required response data inside its body.
+- So, inorder to get the response value we use .then() methods, once promise status is fulfilled.
+- So, inorder to get the error object we use .catch() methods, once promise status is rejected.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+12. Promise: callback hell is solved using promise at the time when large asynchronous operation needs to be performed.
+    - Promise: Pending, Fullfil, Reject.
+    - const promiseObj = new Promise((fullfil, reject) => { fullfil(value); reject(errorObj) }, optional);
+    - promiseObj.then() // gets excuted if promise status is Fulfilled.
+    - promiseObj.catch() // gets excuted if promise status is Rejected.
+
+    - excution of fullfil(value), will pass value into and run .then().
+    - excution of reject(errorObj), will pass value into and run .then().
+
+    - .then chaining.
+    - .then() return promise.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+- fetch() returns promiseObject.
+- So, to handle that promise object we use .then(), .catch().
+- fetch is promise base API. What does this mean?
+
+
+- Using callback in asynchronous function can execute code after time but cant return data whereas using Promise in asynchronous function can execute code as well as return data with resolve/reject method after time.
+- Promise solve callback_hell.
+- Promise with then&catch in asynchronous is used as substitute to callback in asynchronous.

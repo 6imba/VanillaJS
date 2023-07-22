@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+        // console.log(axios)
+        // console.log(typeof axios)
+        // console.log(axios instanceof Function)
+        // console.log(axios.get)
+        // console.log(axios.get("https://reqres.in/api/users?page=1"))
+
+        // const proObj = axios.get("https://reqres.in/api/users?page=1")
+        // proObj.then(res => console.log(res))
+
+        // const proObj = axios.get("https://reqres.in/api/users?page=1")
+        // proObj.then(res => {
+        //     console.log(res)
+        //     console.log(res.data.data)
+        // })
+        
+        // console.log(axios.get("https://reqres.in/api/users?page=1"))
+        console.log(await axios.get("https://reqres.in/api/users?page=1"))
+        // console.log((await axios.get("https://reqres.in/api/users?page=1")).data)
+        // console.log((await axios.get("https://reqres.in/api/users?page=1")).data.data)
+
+        // // # post api: syntax example
+        // console.log(await axios.post("https://reqres.in/api/users",{name:'Amir',age:23}))
+
+        // # extra:
+        // const func_1 = () => axios.get("https://reqres.in/api/users?page=1")
+        // const func_2 = () => axios.get("https://reqres.in/api/users?page=2")
+        // console.log(func_1(),func_2())
+        // Promise.all([func_1(), func_2()])
+        //     .then(responses => {
+        //         const user_1 = responses[0];
+        //         const user_2 = responses[1];
+        //         console.log(user_1)
+        //         console.log(user_2)
+        //     }
+        // );
+
+
+        // Requests can be made by passing the relevant config to axios:
+        let config = {
+            method: 'get',
+            url: 'https://reqres.in/api/users?page=1',
+            responseType: 'json'
+        }
+        
+        // const promiseObj = axios(config)
+        // console.log(promiseObj)
+        // promiseObj.then(res=>console.log(res))
+
+        // const func_1 = async () => {
+        //     const res = await axios(config)
+        //     console.log(res)
+        // }
+        // func_1()
+        // here func_1 ~ callback inside then
+
+        
+        // console.log("End !")
+        
+        // Request method aliases:
+            // For convenience aliases have been provided for all supported request methods.
+
+            // axios.request(config)
+            // axios.get(url[, config])
+            // axios.delete(url[, config])
+            // axios.head(url[, config])
+            // axios.options(url[, config])
+            // axios.post(url[, data[, config]])
+            // axios.put(url[, data[, config]])
+            // axios.patch(url[, data[, config]])
+            // axios.create()
+
+            // responseType: 'json'
+            // responseType: 'stream'
+
+            // let config = {
+            //     method: 'get',
+            //     url: 'users?page=1',
+            //     baseURL: 'https://reqres.in/api/'
+            //     headers: {},
+            //     params: {},
+            //     responseType: 'json',
+            //     cancelToken: new CancelToken(),
+            //     timeout 5000,
+                // data: {}
+            // }
+    </script>
+</body>
+</html>
+
+
+<!-- 
+    https://axios-http.com/docs/config_defaults
+    https://www.youtube.com/watch?v=AriyBKPIHkk
+ -->

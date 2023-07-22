@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CIRCLE</title>
+</head>
+<body>
+  <input type ="text" placeholder ="Enter the radius of circle" id ="calc">
+  <input type = "button" value ="Calculate" onclick = abc()>
+  <script>
+    function abc()
+    {
+    var pie = Math.PI;
+    var radius = document.getElementById("calc").value;
+    var area = radius*radius*pie;
+    var perimeter = 2*pie*radius;
+    document.write("the area is: ",area,"<br/>");
+    document.write("the perimeter is: ",perimeter);
+
+  }
+
+
+
+    </script>
+    </body>
+    </html>

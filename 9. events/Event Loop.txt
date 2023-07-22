@@ -1,0 +1,18 @@
+- Asynchronous. 
+- Event Loop.
+- Event Queue.
+- Single Thread.
+- Multiple Events.
+- Callback Tree(Call Stack).
+- Execution Stack
+- Event-Driven Architecture in Node.js
+- Execution Context
+    - Memory Component | Variable Environment.
+    - Code Component | Thread of Execution.
+- Call Stack
+# Reference:
+    - https://www.youtube.com/watch?v=EI7sN1dDwcY
+
+
+- JavaScript is a synchronous single-threaded language.
+- 

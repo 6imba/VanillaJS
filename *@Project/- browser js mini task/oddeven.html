@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Check</title>
+	</head>
+	<body>
+		<input type="number" placeholder="Enter the number" id="oddeven">
+		<button type="button" onclick=check();>Check</button>
+		<p id="result"></p>
+		<script>
+			function check()
+			{
+				var n=document.getElementById("oddeven").value;
+				if(n%2==0)
+				{
+					document.getElementById("result").innerHTMl= "Even";
+				}
+				else{
+					document.getElementById("result").innerHTMl= "Odd";
+				}
+			}
+		</script>
+	</body>
+</html>

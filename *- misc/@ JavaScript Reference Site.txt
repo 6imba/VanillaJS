@@ -1,0 +1,5 @@
+https://javascript.info/
+https://www.javascripttutorial.net/
+https://risingstars.js.org/2019/en
+https://tc39.es/ecma262/
+http://es6-features.org/#Constants

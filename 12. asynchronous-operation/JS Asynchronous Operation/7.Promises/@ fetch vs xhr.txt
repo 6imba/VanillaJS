@@ -1,0 +1,2 @@
+- xhr: custome promise
+- fetch: auto/own promise

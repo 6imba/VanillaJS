@@ -1,0 +1,4 @@
+# Program -> Statement -> Function -> JS_Engine -> Code_Execute -> Execution_Context -> Local_Meromry_Space -> Ancestor_Meromry_Space -> Global_Meromry_Space.
+    > Scope chaining.
+
+# Lexical evnironment.

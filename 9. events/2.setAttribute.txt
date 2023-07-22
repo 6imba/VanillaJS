@@ -1,0 +1,32 @@
+# HTML DOM setAttribute() Method:
+    - adds the specified-attribute to an element, and gives it the specified value.
+    - adds the specified-attribute(either event_handler_attributes or common-attribute) to an element,
+
+* Sets the value of an attribute on the specified element.
+* If the attribute already exists, the value is updated; otherwise a new attribute is added with the specified name and value.
+
+* Syntax:
+    Element.setAttribute(name, value);
+
+-------------------------------------------------------------------------------------------------------------------------------
+* Example_1: Sts common attribute;
+<body>
+    <p id='myTime'>Color</p>
+    <script>
+        document.getElementById('myTime').setAttribute('style', 'color:green;');
+    </script>
+</body>
+
+* Example_2: Sets Event_handler_attributes;
+<body>
+    <p id='myTime'>Color</p>
+    <button id='c1'>Click</button>
+    <script>
+        document.getElementById('c1').setAttribute('onclick', 'color()');
+        function color(){
+            document.getElementById('c1').style.color = 'red';
+        }
+    </script>
+</body>
+
+-------------------------------------------------------------------------------------------------------------------------------

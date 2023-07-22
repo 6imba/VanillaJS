@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var Hoisting</title>
+</head>
+<body>
+    <h1>var Hoisting</h1>
+    <hr>
+
+    <h3>My Script</h3>
+        <h5>
+                var x = 11;</br>
+                let y = 12;</br>
+                const z = 13;</br>
+                function func1(){</br>
+                    console.log("Hi function_1 !");</br>
+                }</br>
+                var func2 = function (){</br>
+                    console.log("Hi function_2 !");</br>
+                }</br>
+                let func3 = function(){</br>
+                    console.log("Hi function_3 !");</br>
+                }</br>
+                const func4 = function(){</br>
+                    console.log("Hi function_4 !");</br>
+                }</br>
+                var func5 = () => {</br>
+                    console.log("Hi function_5 !");</br>
+                }</br>
+                let func6 = () => {</br>
+                    console.log("Hi function_6 !");</br>
+                }</br>
+                const func7 = () => {</br>
+                    console.log("Hi function_7 !");</br>
+                }</br>
+                class Apple{</br>
+                    constructor(name, year) {</br>
+                        this.name = name;</br>
+                        this.year = year;</br>
+                    }</br>
+                }</br>
+        </h5>
+        <hr>
+
+    <h3>Global Scope/MemorySpace/Stack:</h3>
+        <p>
+            func1: ƒ func1()</br>
+            func2: undefined</br>
+            func5: undefined</br>
+            x: undefined</br>
+        </p>
+    <h3>Script Scope/MemorySpace/Stack:</h3>
+        <p>
+            Apple: undefined</br>
+            func3: undefined</br>
+            func4: undefined</br>
+            func6: undefined</br>
+            func7: undefined</br>
+            y: undefined</br>
+            z: undefined</br>
+        </p>
+        <hr>
+
+    <h3>Invoking var,let,const variable before declaration&assignment:</h3>
+    <pre>
+        <b>Invokation before declare&assign</b> <b>//Output</b>
+        console.log(x); //undefined
+        console.log(y); //ReferenceError: Cannot access 'y' before initialization at Object.
+        console.log(z); //ReferenceError: Cannot access 'z' before initialization at Object.
+        console.log(func1); //[Function: func1]
+        console.log(func2); //undefined
+        console.log(func3); // ReferenceError: Cannot access 'func3' before initialization at Object.
+        console.log(func4); // ReferenceError: Cannot access 'func4' before initialization at Object.
+        console.log(func5); //undefined
+        console.log(func6); //ReferenceError: Cannot access 'func6' before initialization at Object.
+        console.log(func7); //ReferenceError: Cannot access 'func7' before initialization at Object.
+        console.log(Apple); //ReferenceError: Cannot access 'Apple' before initialization at Object.
+        var x = 11;
+        let y = 12;
+        const z = 13;
+        function func1(){
+            console.log("Hi function_1 !");
+        }
+        var func2 = function (){
+            console.log("Hi function_2 !");
+        }
+        let func3 = function(){
+            console.log("Hi function_3 !");
+        }
+        const func4 = function(){
+            console.log("Hi function_4 !");
+        }
+        var func5 = () => {
+            console.log("Hi function_5 !");
+        }
+        let func6 = () => {
+            console.log("Hi function_6 !");
+        }
+        const func7 = () => {
+            console.log("Hi function_7 !");
+        }
+        class Apple{
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+        }
+    </pre>
+    <hr>
+
+    <h1>Finnally;</h1>
+    <ul>
+        <li> var variable are hoisted on Global-Scope/MemorySpace/Stack but let&const variable are hoisted on Script-Scope/MemorySpace/Stack</li>
+        <li>variable are hoisted with value as undefined where as function&class are hoisted with value as their defination.</li>
+        <li>arrow function and funtion_expression hold by variable is hoisted with value as undefined as they act as normal variable</li>
+        <li>even though all variable(var,let,const) are hoisted, we can only invoke/access Global_Scope variable before declaration/assignment; i.e: variable declared using var keyword. Where as invoking/accessing Script_Scope variable before declaration/assignment; i.e: variable declared using let&const keyword gives ReferenceError even though they are hoisted. <b>(Means we cannot access/invoke let&const variable before they are initialized.)</b> </li>
+        <li><b>classes</b> are hoisted in Script-Scope. So give ReferenceError when you try to access/invoke it before declaration.</li>
+    </ul>
+    <h2># Variables declared with let and const are also hoisted but, unlike var , they are not hoisted in Global_Scope so we cannot access them which lead to ReferenceError.</h2>
+    <p>Note: So if let & const are not hoisted in GlobalScope, where are they hoisted? ==> They are hoisted in TemporalDeadZone in the time being.(Lets Dive into TDZ)</p>
+    <script>
+        var x = 11;
+        let y = 12;
+        const z = 13;
+        function func1(){
+            console.log("Hi function_1 !");
+        }
+        var func2 = function (){
+            console.log("Hi function_2 !");
+        }
+        let func3 = function(){
+            console.log("Hi function_3 !");
+        }
+        const func4 = function(){
+            console.log("Hi function_4 !");
+        }
+        var func5 = () => {
+            console.log("Hi function_5 !");
+        }
+        let func6 = () => {
+            console.log("Hi function_6 !");
+        }
+        const func7 = () => {
+            console.log("Hi function_7 !");
+        }
+        class Apple{
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+        }
+    </script>
+</body>
+</html>

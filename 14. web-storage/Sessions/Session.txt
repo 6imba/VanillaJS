@@ -1,0 +1,27 @@
+- keep track of per user state.
+
+
+
+
+
+****************************************************
+# Express Session Configuration:
+    - npm i express-session
+
+    const express = require('express');
+    const server = express();
+    const session = express-session;
+
+    server.use(session({
+        secret: "secret-key",
+        resave: false,
+        saveUninitialized: false,
+    }))
+
+****************************************************
+# Store values into Express Session and later retive them:
+
+- try to run server1 and server2 in different browser
+
+---------------------------------------------------------------------------------
+https://hazelcast.com/glossary/web-session/

@@ -1,0 +1,2 @@
+Date.now()
+myNumber.toString(10);  // returns 32

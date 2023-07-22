@@ -1,0 +1,19 @@
+# ECMA_JavaScript 8th Edition:
+    - Published_Date: June 2017: ECMAScript_2017(ES2017)
+    - Editor: Brian Terlson
+    - The JavaScript naming convention started with ES1, ES2, ES3, ES5 and ES6.
+    - But, ECMAScript 2016 and 2017 was not called ES7 and ES8.
+    - Since 2016 new versions are named by year (ECMAScript 2016 / 2017 / 2018).
+
+    # Features included:
+        > JavaScript String padding,
+        > JavaScript Object.entries,
+        > JavaScript Object.values,
+        > JavaScript async functions: async / await constructions which use generators and promises,
+        > JavaScript shared memory,
+        > Object.getOwnPropertyDescriptors functions  for easy manipulation of Objects,
+        > additional features for concurrency and atomics.
+
+# Reference:
+    - https://en.wikipedia.org/wiki/ECMAScript#ES2017
+    - https://www.w3schools.com/js/js_2017.asp

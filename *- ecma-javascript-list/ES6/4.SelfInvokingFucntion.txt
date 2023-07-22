@@ -1,0 +1,9 @@
+# Self-Invoking Function without parameter:
+    (function () {
+        let x = "Hello!!";  // I will invoke myself
+    })();
+
+# Self-Invoking Function with parameter:
+    (function (i) {
+        let x = "Hello!!";  // I will invoke myself
+    })(i);

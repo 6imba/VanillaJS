@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Birthdate</title>
+</head>
+
+<body>
+
+	<p>Enter your D.O.B :</p>
+	<input type="date" id="age">
+	<br>
+	<br>
+	<button onclick="agecalc()">Find the Age?</button>
+
+	<script type="text/javascript">
+
+		function agecalc() {
+			var todaydate = new Date();
+			var CurrentYear = todaydate.getFullYear();
+			var CurrentMonth = todaydate.getMonth();
+			var CurrentDay = todaydate.getDate();
+			var DOB = document.getElementById("age").value;
+			var DXD = DOB.split("-");
+			//var DOB=documentgetElementById("age").value.split("-");
+			var dobyear = DXD[0];
+			var dobmonth = DXD[1];
+			var dobday = DXD[2];
+
+			var year = CurrentYear - dobyear;
+			var month = CurrentMonth - dobmonth;
+			var day = CurrentDay - dobday;
+
+
+			if (CurrentMonth < dobmonth) {
+				year = year - 1;
+			}
+			if (CurrentDay < dobday) {
+				month = month - 1;
+			}
+			document.write(year, "/", month, "/", day);
+		};
+
+	</script>
+</body>
+
+</html>

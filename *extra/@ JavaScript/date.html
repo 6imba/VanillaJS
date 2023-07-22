@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date</title>
+</head>
+<body>
+<p id="Kemo"></p>
+<p id="demo"></p>
+<p id="temo"></p>
+<p id="memo"></p>
+<p id="remo"></p>
+<p id="yemo"></p>
+<p id="semo"></p>
+<p id="lemo"></p>
+<p id="cemo"></p>
+<p id="aemo"></p>
+<p id="hemo"></p>
+<p id="nemo"></p>
+
+<script type="text/javascript">
+
+	document.getElementById("Kemo").innerHTML=new Date().getMonth();
+
+	document.getElementById("demo").innerHTML=new Date();
+	document.getElementById("temo").innerHTML=new Date().getMonth();
+	var X=new Date();
+	document.getElementById("memo").innerHTML=X.getFullYear();
+	document.getElementById("remo").innerHTML=X.getDate();
+	document.getElementById("yemo").innerHTML=X.getHours();
+	document.getElementById("semo").innerHTML=X.getMinutes();
+	document.getElementById("lemo").innerHTML="Second = " + new Date().getSeconds();
+	document.getElementById("cemo").innerHTML="Milliseconds = " + X.getMilliseconds();
+	document.getElementById("aemo").innerHTML= X.getDay();
+	document.getElementById("hemo").innerHTML= X.getTime();
+
+</script>
+
+</body>
+</html>

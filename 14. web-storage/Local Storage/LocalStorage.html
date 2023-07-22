@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <h3>window.localStorage</h3>
+    <p>- localStorage property of window object.</p>
+
+    <script>
+        // let inputedData = taskInputFieldBox.value; //get every used inputted data
+        let inputedData = "amir"; //get every used inputted data
+        console.log(inputedData)
+        console.log(typeof(inputedData))
+        console.log([inputedData])
+        console.log(typeof([inputedData]))
+        console.log([inputedData] instanceof Array)
+        localStorage.setItem("task1", inputedData)
+        localStorage.setItem("task2", [inputedData])
+        localStorage.setItem("task3", ["amir", "yatri"])
+        localStorage.setItem("task4", JSON.stringify(["amir", "yatri"]))
+
+        var task1 = localStorage.getItem("task1")
+        var task2 = localStorage.getItem("task2")
+        var task3 = localStorage.getItem("task3")
+        var task4 = localStorage.getItem("task4")
+
+        console.log(task1)
+        console.log(typeof(task1))
+        console.log(task2)
+        console.log(typeof(task2))
+        console.log(task3)
+        console.log(typeof(task3))
+        console.log(task4)
+        console.log(typeof(task4))
+    </script>
+</body>
+</html>

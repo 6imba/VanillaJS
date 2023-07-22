@@ -1,0 +1,48 @@
+- Spread Operator:
+    - const arr2 = [2,4,6, ...arr1,16,18,20];
+    - func1(...[1,2,3,4]) //function invocation
+    - we also have object_spread_operator(ECMAScript_2018)
+- Rest Parameter: 
+    - function(a, b, ...params) //function_defination
+- Destructure Assignment:
+    - [var1, var2, ...arr1] = [1,2,3,4,5,6]
+    - {var1, var2, ...obj1} = {a:1,b:2,c:3,d:4,e:5,f:6}
+
+
+
+- The spread operator (...) unpacks the elements of an iterable object.
+- The rest parameter (...) packs the elements into an array.
+- The rest_parameters and destructuring_assignment must be the last arguments of a function. However, the spread operator can be anywhere.
+
+
+
+# Reference:
+    - https://www.programiz.com/javascript/spread-operator
+    - https://www.javascripttutorial.net/es6/javascript-spread/
+
+
+
+# Destructuring Array and Object using Destructuring assignment:
+    - [a, b, ...rest] = [10, 20, 30, 40, 50];
+    - ({a, b, ...rest} = {a:1,b:2,c:3,d:4,e:5,f:6});
+
+
+
+# Function Rest parameter:
+    function sum(x,y,...theArgs) {
+        let total = 0;
+        console.log(x)
+        console.log(y)
+        for (const arg of theArgs) {
+          console.log(arg)
+        }
+    }
+    sum(1, 2, 3, 4, 5);
+
+
+
+# Spread Operator:
+    const numbersOne = [1, 2, 3];
+    const numbersTwo = [...numbersOne]; //copy by value
+
+

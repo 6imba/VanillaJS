@@ -1,0 +1,17 @@
+- fetch() method always only work with server that returns data.
+- so you cannot just fetch data from file in your local system, you also have to host them.
+    - either host by Xampp, Wampp, VS_Code_LiveServer, Node_http_module_Server, Experss_Server, etc.
+- if you want to just fetch data from file in your local system, you can use node fs module.
+
+- Some of Liver Server: Xampp, Wampp, VS_Code_LiveServer.
+
+- here, fetch() method in fetch.html request and get response of text_data inside content/localTextFile.txt beecause of LiverServer extention of VS_Code.
+
+# Note:
+    - when we open fetch.html from vscode liver server we get response.
+    - but if we open fetch.html directly from OS_file_explorer you get error: TypeError: Failed to fetch.
+
+# Reference:
+    - https://www.youtube.com/watch?v=9YNGAxXGJzM
+
+

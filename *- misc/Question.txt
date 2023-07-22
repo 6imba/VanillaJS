@@ -1,0 +1,1 @@
+1. Can we access the address of JavaScript varaible?

@@ -1,0 +1,79 @@
+- AJAX can be performed/implemented using browser's built-in #XMLHttpResponse object along with #JavaScript and #HTML_DOM (to display or use the data)
+
+- We know JavaScript, we know HTML_DOM, now lets know XMLHttpRequest.
+
+# XMLHttpRequest object:
+    const xhr = new XMLHttpRequest();
+    xhr.open('Method', 'file_path', asyn-blocking/non-blocking-boolean_value);
+    xhr.onprogress = () => console.log('On progress!');
+    xhr.onload = () => console.log(this.responseText);
+
+- XMLHttpRequest(XHR) objects are used to interact with servers.
+- You can retrieve data from a URL/server without having to do a full page refresh.
+- This enables a Web page to update just part of a page without disrupting what the user is doing.
+- XMLHttpRequest is used heavily in AJAX programming.
+- Despite its name, XMLHttpRequest can be used to retrieve any type of data, not just XML. (i.e XML, .txt, .json, .html, etc.)
+- All modern browsers have a built-in XMLHttpRequest object to request data from a server.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# XMLHttpRequest object:
+    - Constructor:
+        - XMLHttpRequest():
+            - XMLHttpRequest object constructor.
+            - The constructor initializes an XMLHttpRequest. It must be called before any other method calls.
+
+    - Properties of XMLHttpRequest object:
+        - .responseText
+        - .status
+        - .responseXML
+        - .responseURL
+        - .onreadystatechange
+        - etc...
+
+    - Methods of XMLHttpRequest object:
+        - .open()
+        - .send()
+        - .getResponseHeader()
+        - .abort()
+        - etc...
+
+    - Events of XMLHttpRequest object:
+        - load
+        - progress
+        - timeout
+        - etc...
+
+# XMLHttpRequest object woring:
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'index.txt', true);
+    xhr.onprogress = () => console.log('On progress!');
+    xhr.onload = () => console.log(this.responseText);
+    xhe.send();
+
+
+# Reference:
+    - https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
+
+
+# The XMLHttpRequest Object:
+    - The XMLHttpRequest object can be used to request data from a web server.
+    - The XMLHttpRequest object is a developers dream, because you can:
+        - Update a web page without reloading the page
+        - Request data from a server - after the page has loaded
+        - Receive data from a server  - after the page has loaded
+        - Send data to a server - in the background
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- XMLHttpRequest is an API that can be used by JavaScript, JScript, VBScript, and other web browser scripting languages to transfer and manipulate data to/from web server using HTTP(establishing an independent connection channel betwwen client and server).
+- XMLHttpRequest Object is used for asynchronous communication btween client and server.
+- XMLHttpRequest Object does:
+    - Sends data from client in th background,
+    - Receives tha data from the server,
+    - Updates the webpage without reloading,
+
+- Sending JavaScript Http Requests with XMLHttpRequest.
+- Retrieving JSON with AJAX: retrieve some JSON data from external sources via AJAX using the XMLHttpRequest object.
+
+https://scriptverse.academy/tutorials/ajax-json.html#:~:text=Retrieving%20JSON%20with%20AJAX,JSON%20from%20URL%20without%20jQuery.
+
+- new XMLHttpRequest constructor returns XMLHttpRequest objects.

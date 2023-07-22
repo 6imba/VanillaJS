@@ -1,0 +1,9 @@
+- css selector in js:
+    javascript:
+        ==> <div class="inputField">
+                <button class="fas fa-plus"></button>
+            </div>
+    css:
+        ==> let taskInputButton = document.querySelector(".inputField button");
+
+- 

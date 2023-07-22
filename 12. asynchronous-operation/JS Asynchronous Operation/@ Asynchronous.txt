@@ -1,0 +1,3 @@
+- function that takes time to finish.
+- funtion that returns promise object.
+- 

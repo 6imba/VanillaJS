@@ -1,0 +1,7 @@
+> setTimeout(()=>greet, 2000)
+
+# Here,
+    - asynchronous function: setTimeout
+    - HOF: ()=>{}
+    - callback: greet
+

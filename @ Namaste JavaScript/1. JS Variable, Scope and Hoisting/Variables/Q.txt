@@ -1,0 +1,26 @@
+- How is varaible stored in JavaScript?
+- Can we access the memory address of variable in JavaScript?
+- How Memory Allocation done in JavaScript?
+- How Memory Use done in JavaScript?
+- How Memory Realease done in JavaScript?
+- How does JavaScript memory Management work?
+- How JS engine Garbage collection?
+- Solve memory leakages?
+- How JavaScript_Engine runs the Garbage_Collection algorithm?
+- Handle Memory leakages?
+- Two types of storages for JavaScript Engine (Stack & Heap).
+- Stack(Static Memory Allocation, Primitive types can be stored, FIFO) && Heap(Dynamic Memory Aloocation)
+- optimal
+
+
+
+# Reference:
+    - https://www.youtube.com/watch?v=fpqFM1AaF0c
+    - 
+
+- "string alkna cascnl" is just a string, so IE 9 will not throw an error even if it does not understand it.
+
+
+- Memory Life Cycle in JavaScript by JavaScript_Engine:
+    # Phases:
+        - Memory -> Allocate -> Use -> Realease

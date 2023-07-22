@@ -1,0 +1,15 @@
+- fetech()
+- .json()
+- async
+- new Promise()
+
+
+
+
+
+response.json() returns a promise resolved to a JSON object
+response.text() returns a promise resolved to raw text
+response.formData() returns a promise resolved to FormData
+response.blob() returns a promise resolved to a Blob (a file-like object of raw data)
+
+- fetech(), async, new Promise() returns promise object.

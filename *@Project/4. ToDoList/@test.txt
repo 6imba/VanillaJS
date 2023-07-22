@@ -1,0 +1,27 @@
+// Example_1:
+taskInputButton.onclick = () => {
+    let inputedData = taskInputFieldBox.value; //get every used inputted data
+    let getLocalStorage = localStorage.getItem("tasks"); get data in localStorage
+    if(getLocalStorage == null){
+        taskArray = [inputedData]; //Create
+    }else{
+        taskArray = JSON.parse(getLocalStorage)
+        console.log(taskArray)
+        console.log(typeof(taskArray))
+        taskArray.push(inputedData); //Append
+    }
+    localStorage.setItem("tasks",JSON.stringify(taskArray))
+}
+
+// Example_2:
+taskInputButton.onclick = () => {
+    let inputedData = taskInputFieldBox.value; //get every used inputted data
+    let getLocalStorage = localStorage.getItem("tasks"); get data in localStorage
+    if(getLocalStorage == null){
+        taskArray = []; //Create
+    }else{
+        taskArray = JSON.parse(getLocalStorage)
+    }
+    taskArray.push(inputedData); //Append
+    localStorage.setItem("tasks",JSON.stringify(taskArray))
+}

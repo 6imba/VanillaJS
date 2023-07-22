@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this</title>
+</head>
+<body>
+    <p>this keyword</p>
+    <p> <a href="https://www.w3schools.com/js/js_objects.asp"> Reference </a></p>
+    <script>
+        "apple"
+        console.log(this)
+        const obj1 = {
+            name: "Amir",
+            method1: () => console.log(this.name)
+        }
+        obj1.method1()
+        const func1 = () => console.log(this);
+        func1()
+
+    </script>
+</body>
+</html>

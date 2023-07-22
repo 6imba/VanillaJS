@@ -1,0 +1,192 @@
+# Question 1:
+
+    Q. What is the JavaScript Event Delegation Model?
+        - JavaScript Event Delegation Model is the model that define technique to handle events in our webpages in better way. As we know that how event propagates to up to hierarchy in DOM tree.
+        - Capturing and bubbling allow us to implement one of the most powerful event handling patterns called event delegation.
+        - According to geeksforgeeks "Event Delegation is basically a pattern to handle events efficiently. Instead of adding an event listener to each and every similar element, we can add an event listener to a parent element and call an event on a particular target using the .target property of the event object."
+
+********************************************************************************************************************************************************************************
+
+# Question 2:
+    
+    Q. What will be the output of this code?
+        # Code:
+            const myArray = [10, 12, 15, 21];
+            for (var i = 0; i < myArray.length; i++) {
+                setTimeout(function() {
+                    console.log(`Current index is ${i} and the element is ${myArray[i]}`);
+                }, 3000);
+            }
+        # Output:
+            Current index is 4 and the element is undefined
+            Current index is 4 and the element is undefined
+            Current index is 4 and the element is undefined
+            Current index is 4 and the element is undefined
+
+    Q. How can we fix this so that it print all the index with their value? What is the actual problem explained?
+        # Solution_1:
+            const myArray = [10, 12, 15, 21];
+            for (var i = 0; i < myArray.length; i++) {
+                function close(r){
+                    setTimeout(function() {
+                        console.log(`Current index is ${r} and the element is ${myArray[r]}`);
+                    }, 3000);     
+                }
+                close(i)
+            }
+        # Output_1:
+            Current index is 0 and the element is 10
+            Current index is 1 and the element is 12
+            Current index is 2 and the element is 15
+            Current index is 3 and the element is 21
+        # Conclusion_1:
+            - This is because at the time for loop finish iterating, value of iterator is setted as 4 within fraction of milisecond. But our  callback in asynchronous setTimeout are placed in callstack which get execute after 3000 milisecond which prints 4 as value of i.
+            - That is because each iteration increases the value of iterator"i".
+            - So we can solve this problem by keep the asynchronous setTimeout inside a nested function and pass i as argument into that nested function.
+            - As we know that in Javascript function argument are passed by value. So in each iteration new increment value is passed.
+
+        # Solution_2:
+            const myArray = [10, 12, 15, 21];
+            for (let i = 0; i < myArray.length; i++) {
+                setTimeout(function() {
+                    console.log(`Current index is ${i} and the element is ${myArray[i]}`);
+                }, 3000);
+            }
+        # Output_2:
+            Current index is 0 and the element is 10
+            Current index is 1 and the element is 12
+            Current index is 2 and the element is 15
+            Current index is 3 and the element is 21
+        # Conclusion_2:
+            - We can also solve this by replacing var keyword with let while assigning iterator"i" in For loop.
+            - As we know that variable defined with var keyword has block scope and variable defined with let keyword has block scope.
+            - So, value of i for each iteration is uniquely pass by value while incase of var it was pass by reference to i.
+
+********************************************************************************************************************************************************************************
+
+# Question 3:
+    Q. What is a prototype in js? 
+        - A prototype is an existing inbuilt functionality/mechanism in JavaScript, by which JavaScript Variables(Datatype) inherit features/properties another Object.
+        - Every variable in JavaScript is chained with respective prototype and actually down the prototype chain ends up being an object.
+        - That's why its called everything is JS is object.
+
+    Q. How can we create empty objects even without prototype chaining?
+        1. We can create empty objects even without prototype chaining using Object.create() method by passing null as argument in it.
+            - Try Code:
+                const x = Object.create(null)
+                console.log(x)
+                console.log(x.__proto__) // See no prototype chaing
+
+        2. We can also do it by Overwriting the Object inheritance Prototype.
+            - Try Code:
+                const obj1 = {}
+                obj1.__proto__ = null
+                console.log(obj1)
+        - But its(2nd way) is not prefered way.
+
+********************************************************************************************************************************************************************************
+
+# Question 4: Explore git and github. Get some knowledge about git cherry-pick, what are popular Branching strategies of git.
+
+	Q. What is Git?
+		- Git is a popular distributed version control system. It was created by Linus Torvalds in 2005, and has been maintained by Junio Hamano since then.
+	Q. Why Git?
+		- Track project.
+		- Tracking code changes.
+		- Tracking who made changes.
+		- Coding collaboration.
+	Q. What is GitHub?
+		- GitHub is a code hosting platform for version control and collaboration. Github is where we host all of our files on remote server. Simply github manages git repo.
+	Q. What is cherry pick in git?
+		- Cherry picking is the act of picking a commit from a branch and applying it to another.
+		- git cherry-pick can be useful for undoing changes.
+		- to select the best or most desirable
+		- For example, say a commit is accidently made to the wrong branch. You can switch to the correct branch and cherry-pick the commit to where it should belong.
+		- Command for cherry pic: git cherry-pick commitSha
+	Q. What are popular Branching strategies of git?
+		> Among many avialable branching strategies, four of most used are mentioned below:
+			- GitFlow: GitFlow is a branching model for Git, that consists of the following branches: Master,Develeop,Feature,Release,Hotfix.
+			- GitHub Flow: GitHub Flow is a simpler alternative to GitFlow ideal for smaller teams as they don’t need to manage multiple versions.
+			- GitLab Flow: GitLab Flow is a simpler alternative to GitFlow that combines feature-driven development and feature branching with issue tracking.
+			- Trunk-based development: Trunk-based development is a branching strategy that in fact requires no branches but instead, developers integrate their changes into a shared trunk at least once a day. 
+
+********************************************************************************************************************************************************************************
+
+# Question 5:
+
+    Q. What is scrum methodology?
+        - Scrum is an agile development methodology used in the development of Software based on an iterative and incremental processes.
+        - Actually scrum is a framework to implment agile methodology. Scrum is about contineously shipping value to customer.
+
+    Q. How does agile methodology work?
+        - SDLC is a process used by the software industry to manage and produce high quality softwar.
+        - It has generally 6-7 stages phases such as requirement,planning,design,developing,testing,deployment,feedback.
+        - There are various models/methologies avialable with their respective phases order.
+        - Some of them are Waterfall Model, Spiral Model, V-Model, Big Bang Model, and so on.
+        - Among which Agile methodology is also one of them.
+        - According to Agile atlassian.com "Agile methodology is an iterative approach to project management and software development that helps teams deliver value to their customers faster and with fewer headaches.
+          Instead of betting everything on a "big bang" launch, an agile team delivers work in small, but consumable, increments. Requirements, plans, and results are evaluated continuously so teams have a natural mechanism for responding to change quickly."
+        - In today rapidly growing industry Agile methodology is more pefered by most of the tope companies such as goggle,fb,amazone,adobe,etc.
+
+        - How agile methodology actually works is it implement iterative approach, whoch means  Instead of betting everything on a "big bang" launch, an agile team delivers work in small, but consumable, increments.
+        - Requirements, plans, and results are evaluated continuously so teams have a natural mechanism for responding to change quickly. 
+        - Big project is divided into small chunks called as iteration. Team works on each of iteration which is released and again re-released if needed after feedback.
+        - Phases included in agile methodology are requirement gathering, planing, designing,developing,testing,deploying,observer feedback(repeat).
+
+********************************************************************************************************************************************************************************
+
+# Question 6:
+    
+    Q. What is execution context?
+        - Execution context is the concept for describing the internal working of a code.
+        - Everything in JavaScript happens inside Execution Context.
+        - In JavaScript, the environment that enables the JavaScript code to get executed is what we call JavaScript Execution Context.
+        - So, Execution Context environment or a place where javascript gets executed.
+        - JavaScript isnt possible without Execution Context.
+        - You can assume a execution context as a container in which whole JavaScript code is executed.
+        - Execution Context has two component: Memory and Code.
+        - Memory component is where all the variables&function are stored as a key-value pair. This memory component is also known as variable_environment.
+        - Code component is where code is executed one line at a time. This Code component is also known as thread_of_execution(single thread: execute code oneline at a time).
+        - So JavaScript is a synchronous single-threaded language.
+        - Single-threaded means JavaScript can only execute single/one command/statement line at a time.
+        - and Synchronous means can only execute one command at a time in a specififc order leading to blocking/waiting execution flow. So move to next line once current line has finished its execution.
+        - Therefore JavaScript is synchronous single-threaded language.
+
+    > So, how is JavaScript gets executed in Execution Context?
+        - Whenever we run JavaScript program, an Execution Conext is created.
+        - How is Execution Context created?
+            Example: In test.js;
+                var z = 3;
+                function square(x){
+                    return x*x;
+                }
+                var result1 = square(5)
+                var result1 = square(n)
+
+            So, when you run this code:
+                - First, a global_execution_context is created.
+                - As we said earlier execution_context has two component Memory and Code.
+                - Means Execution_Context is created in two phases:
+                    * Creation phase(Memory creation phase)
+                    * Execution phase(Code execution phase)
+                    
+                    > Creation phase(Memory creation phase):
+                        So in first Memory creation phase, JS_Engine move from top to buttom of JS program.
+                        and JS will allocate the memory for all variables and function known as memory space.
+                        Means memory allocated for variable z,result1,result2 and function square is alocated with value undefined.
+                        Memory allocated for variable zresult1,result2 with value stored as undefined initially and function square with value stored as whole code of function in this memory space.
+                        
+                    > Execution phase(Code execution phase)
+                        Once, memory allocation for variable for that particular scope is done. JS_Engine again moves and run program statement line by line from top to buttom of JS program.
+                        So this is the point where JS start executing.
+                        Means at first line z = 3; So undefined value of variable z in memory space is placed as 3 now;
+                        And so on in square(5); function is invoked so function code is executed. Which create a new Local execution context.
+                        So when ever new function,sub_program is invoked a new local execution context is created with same two phase: local memory allocation and code execution phases.
+                        and when this function returns this particular local execution context gets deleted.
+                        and once whole program finish excuting whole global execution context get deleted.
+
+                    - Here all these deep stack of execution context from global to local is managed using concept named as CallStack(works in the LIFO) by JavaScript.
+
+********************************************************************************************************************************************************************************
+
+# Thank You !

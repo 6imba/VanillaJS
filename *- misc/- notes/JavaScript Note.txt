@@ -1,0 +1,144 @@
+
+************************************************************************************************************************
+
+var = 10; var/let <==> Variable 
+const pi = 3.14; const <==> Conatant
+answer.toFixwd(1);
+let name = "Amir";
+let full_name = name + "Shrestha";
+pascel_case -> myAge
+camel_case -> MyAge
+
+************************************************************************************************************************
+
+# condition:
+if (myAge < 18){
+	document.write("You are kid!");
+}else if(myAge > 18 & myAge < 30){
+	document.write("You are adult!");
+}else{
+	document.write("You are man!");
+}
+
+************************************************************************************************************************
+
+# looping:
+for, while, do while, forEach
+
+// for loop
+for(let i=0; i<=100; i++){
+	document.write(i+"<br>");
+}
+..............................................
+
+
+// while loop
+let i=0;
+while(i<=100){
+	document.write(i+"<br>");
+	i++;
+}
+..............................................
+
+
+// do while loop
+let i=0;
+do{
+   document.write(i+"<br>");
+   i++;
+}while(i<=100)
+..............................................
+
+//forEach loop
+
+const days = ['Sunday', 'Monday', 'Tuesday','Wednusday','Thursday','Friday','Saturday']
+days.forEach( function(day){ document.write(day); } ) -> SundayMondayTuesdayWednusdayThursdayFridaySaturday
+
+************************************************************************************************************************
+
+//Array
+const days = ['Sunday', 'Monday', 'Tuesday','Wednusday','Thursday','Friday','Saturday']
+console.log(days); -> Sunday, Monday, Tuesday,Wednusday,Thursday,Friday,Saturday
+console.log(days[0]); -> Sunday
+console.log(days[9]); -> undefined
+
+built-in function of js_array:
+days.shift(); -> add first element of array
+days.shift("Baar"); -> add passed argument as first element of array
+days.pop(); -> remove last element of array
+days.push(); -> add passed argument as last element of array
+days.splice(2,3,"TWT") -> add add passed argument in after the passed index inplace of passed indexed-> SundayMondayTWTFridaySaturday
+days.length
+days.sort()
+
+************************************************************************************************************************
+
+# function:
+
+//function_defination
+function printName(){
+	document.getElementById("id_1").innerHTML="Hello World!";
+}
+
+//function_call
+<p id="id_1"></p>
+<button onclick="printName()">ClickMe</button>
+
+
+************************************************************************************************************************
+
+//object
+
+let person = {
+	fname: "Amir",
+	lname: "Shrestha",
+	age: 21,
+	gender: "male",
+	address: "Sindhupalchok",
+	occupation: "student",
+
+	fullName: function(){
+		return this.fname + " " + this.lname;
+	}
+}
+
+document.write(person.fullName()); ----> Amir Shrestha ----> object_method_call
+document.write(person.age); ----> 21 ----> object_property
+
+
+i.e:
+// person -> object_name
+// name: "Amir", lname: "Shrestha", age: 21, gender: "male", address: "Sindhupalchok", occupation: "student", ----> object_properties(key/value_pair)
+// fname, lname, age, gender, address, occupation ----> object_properties_keyes
+// "Amir", "Shrestha", 21, "male", "Sindhupalchok", "student" ----> object_properties_values
+// fullName ----> object_method
+// In a function definition, this refers to the "owner/object" of the function.
+
+************************************************************************************************************************
+
+The Difference Between Arrays and Objects
+In JavaScript, arrays use numbered indexes.  
+In JavaScript, objects use named indexes.
+
+************************************************************************************************************************
+
+// Math
+let a = Math.PI;
+let a = Math.round(2.3453454353);
+let a = Math.pow(2,3);
+let a = Math.sqrt(25);
+let a = (Math.random());
+let a = (Math.random()*6);
+let a = (Math.random()*6).toFixed(0);
+let a = Math.ceil(0.1); --> return 1
+let a = Math.floor(2.6); --> return 2
+
+************************************************************************************************************************
+
+typeof array_variable_name 
+Array.isArray(array_variable_name) --> return true
+fruits instanceof Array; --> return true
+
+************************************************************************************************************************
+
+

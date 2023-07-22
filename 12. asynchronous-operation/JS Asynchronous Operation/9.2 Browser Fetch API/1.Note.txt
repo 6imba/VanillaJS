@@ -1,0 +1,53 @@
+- Fetch API built-in into the browser.
+- Fetch API built-in into the browser inorder to make asynchronous request.
+- Fetch API built-in into the browser inorder to make asynchronous request to different network resources.
+- Fetch API built-in into the browser inorder to make asynchronous request to different network resources by using HTTP methods (get, post, put, patch, etc).
+
+- The Fetch API provides a JavaScript interface.
+- The Fetch API provides a JavaScript-Interface with fetch() method.
+- The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses.
+  It also provides a global fetch() method that provides an easy, logical way to fetch resources asynchronously across the network.
+- This kind of functionality was previously achieved using XMLHttpRequest.
+
+- As window is global object of browser and window object owns fetch(). See as fetch() is not recognized in node.js.
+    - console.log(fetch()) ==> ReferenceError: fetch is not defined
+
+- So, use fetch() in browser/ client side. 3.fetchAPI.html.
+
+- JavaScript | fetch() Method.
+    - The fetch() method in JavaScript is used to request to the server and load the information in the webpages.
+    - The request can be of any APIs that returns the data of the format JSON or XML. This method returns a promise.
+
+- As we know that our API url response array of only 10 user data.
+  - So if request for worng id API-url it will return error.
+  - See file 8.fetchAPI.html
+
+
+
+----------------------------------------------------------------------------------------------------------------------
+- The Fetch API interface allows web browser to make HTTP requests to web servers.
+- No need for XMLHttpRequest anymore.
+- fecth() method returns promises.
+
+// https://www.youtube.com/watch?v=cuEtnrL9-H0&t=200s
+
+
+Q. How fetch data from API using Fetch?
+  - Approach: First make the necessary JavaScript file, HTML file and CSS file. Then store the API URL in a variable (here api_url). Define a async function (here getapi()) and pass api_url in that function. Define a constant response and store the fetched data by await fetch() method.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Fetch API provides a method call fetch: fetch().
+- This fetch() method is already defined in window_object.
+  - & window_object is global_variable of a browser.
+- This fetch() method returns a promise_object.
+- & We know that wheever promise_object is returned by any object/method, we can retrive/fetch/get the promise_object using .then()&.catch() method manipulated the resopnse in promise_object.
+-
+
+- fetch() method takes two argument: url & object
+  - where url is required & object is optional
+  - url: The URL on which the request is to be made.
+  - object:  An object which consists of additional properties that can be sent to the server.
+
+# Reference:
+  - https://dmitripavlutin.com/javascript-fetch-async-await/#1-intro-to-fetch

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function</title>
+  </head>
+  <body>
+    <div>function</div>
+    <script>
+      function greet() {
+        return "Function1 !";
+      }
+      console.log(greet());
+
+      function greetPerson(name1, name2) {
+        return "Function2: Hey ! " + name1 + " Hi ! " + name2;
+      }
+      console.log(greetPerson("Function3: Amir", "Lina"));
+
+      function greetPerson1(city) {
+        console.log("Function4: Good Morning " + city);
+      }
+      console.log(greetPerson1("Function5: Kathmandu")); //greetPerson1 function returns nothing
+
+      let greetPerson2 = (city) => city; //returns the value
+      console.log(greetPerson2("Function6: Pokhara"));
+    </script>
+  </body>
+</html>

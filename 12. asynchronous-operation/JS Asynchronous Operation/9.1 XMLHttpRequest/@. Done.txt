@@ -1,0 +1,9 @@
+const xhr = new XMLHttpRequest(); // contruct/create/initialized XMLHttpRequest-Object.
+xhr.open("method", "URL_to_API"); // Preaparation/Make API-call in the prototype.
+xhr.send() // Send HTTP-Request || Connection Established: (now you can see the HTTP-Reponse in Network tab of console.)
+xhr.onload() // Handlenow HTTP-Response-either data-object||error-object: (now you can see the HTTP-Reponse in browser's console || pass HTTP-Reponse to HTML-Templates using HTML-DOM as well)
+xhr.onerror() // Handles Network-Failure.
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+

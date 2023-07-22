@@ -1,0 +1,19 @@
+// thread
+// thread & request ~ relation
+// thread & processes ~ relation
+// multiple thread single thread
+// assign single thread to handle miultiple request
+// When request arise or is detected then single thread is assign to handle all request
+// event queue //event loop //event-based //message
+
+// Ubuntu?
+
+- How to pass argument into call back:
+    https://www.youtube.com/watch?v=ec26pgfnYPM&list=PLbGui_ZYuhihZ-pDxNZuQ7xOQ8IS2z3XI&index=131
+
+- Q. what if we need the data that is  returned by asynchronous function after some time?
+
+Q. Are JavaScript events asynchronous?
+    - Because these events happen at unpredictable times and in an unpredictable order, we say that the handling of the events, and therefore the invocation of their handling functions, is asynchronous.
+
+Q. Q. As console.log("Hi") is also a function why cant we use it as callback instead of ()=>console.log("Hi")?

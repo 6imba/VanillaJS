@@ -1,0 +1,84 @@
+# Variable declare with let and const is hoisted in TDZ.
+    - var is hoisted in global space but let&const are hoisted in some other memory space than global. Means the are not in global object.
+
+Q. Are let and const declaration hoisted in javascript?
+    - Yes, but let and const declaration are hoisted differently than var declarations.
+    - Unlike var they are not hoisted in GlobalScope, instead they are hoisted in BlockScope/ScriptScope for TDZ.
+    - Means let & const variable are hoisted in BlockScope/ScriptScope for a particular time period.
+    - And that period of time in call Temporal Dead Zone.
+    - Means let&const varaible are in the TDZ for the time being.
+    - It's not that let and const are not hoisted, infact these are in the Temporal_Dead_Zone for the time being.
+    - var alloacted in memory,attached to Global_Space(Global_Object) whereas let is also allocated in memory but they are stored in different memory space(Script) than global.
+    - Here you can not access this seperate memory space untill they are assigned with some value.
+    - So Temporal_Dead_Zone is the time from the point when the let variable is initialized to point when its actually assigned with some value.
+        # let variable declare: TDZ start.
+        # let variable assigned: TDZ end.
+
+    - you cannot access the let & const variable as they are hoisted in ScriptBlock-Scope/MemorySpace.
+    - you cannot access the let & const variable for the time they are in TemporalDeadZone.
+    - They are in TemporalDeadZone untill they assigned with some value.
+    - Therefore, you cannot access the let & const variable untill they assigned with some value.
+
+# Temporal death zone (TDZ):
+    - A variable declared by the let & const keyword has a so-called temporal dead zone (TDZ).
+    - The TDZ is the time from the start of the block until the variable declaration is processed.
+    - Simply TemporalDeadZone is the time since when particular let&const varaible was hoisted till when they are initialzed some value. So the time between is call TDZ.
+    - Note that TDZ ends when value is assigned to let&const variable.
+
+# Finally;
+    - Simply TemporalDeadZone is the time since when particular let&const varaible was hoisted till when they are initialzed some value. So the time between is call TDZ.
+    - So when ever you try to access the variable inside TDZ, it gives temporal error.
+    - Measn cannot access them untill they are initialized.
+    - Once you initialize let&const variable TDZ ends and you can access them.
+    - Note that TDZ ends when value is assigned to let&const variable.
+
+# Sometime TDZ might lead to some unexpected error so always keep declaration and assignment/initialization on the top of the script or current_block.
+    - So that as soon as interpretter start executing our script, interpreter hits our initialiaztion_part first, and then you go to the logical_part.
+    - Doing that actually we are strinking/decreasing the TDZ.
+    
+# Reference:
+    https://www.freecodecamp.org/news/what-is-the-temporal-dead-zone/
+    https://www.freecodecamp.org/news/javascript-temporal-dead-zone-and-hoisting-explained/
+    https://www.javascripttutorial.net/es6/javascript-let/
+    https://www.youtube.com/results?search_query=temporal+dead+zone
+
+# ReferenceError:
+    - a is not defined. (incase you have not declare nor assign varaible called a.)
+    - Cannot access 'a' before initialization. (incase variable called a is in TDZ.)
+    
+# let is not attach to window object. (As we know that window is a global object.)
+
+Q. SyntaxError,ReferenceError,TypeError?
+
+# Errors:
+    - ReferenceError: (Try to access a specific variable inside a memory space and cannot find/access it.): Try to access let variable before its assigned with somer value.
+    - SyntaxError: (When no proper/standered syntax.): Try to re-declare let/const variable, Try to declare variable with same identifier regardless of var,let,const, Try to declare const variable without assigning any value.
+    - TypeError:(When you try do some operation particular datatype which is not possible.): Try to reassign const variable.
+
+# Incase of ReferenceError, script execution flow stops at that particular line/statement where error is detected.
+# Incase of SyntaxError, script doenst even start executing.
+# Incase of TypeError, script execution flow stops at that particular line/statement where error is detected.
+
+# Redeclare:
+    - let x = 3;
+    - let x = 4; //Redeclare
+
+# Ressing:
+    - let x = 3;
+    - x = 4; //Reassign
+
+---------------------------------------------------------------------------------------
+
+# const: declare and initialize at the same statment/line.
+# var & let declaring first and assigning later is possible.
+
+# const: not possible to re-assign 
+# let and var: possible to re-assign.
+
+# const and let no redeclaration.
+# var is possible to redeclare.
+
+# var: has global scope.
+# const & let: has bloack scope.
+
+---------------------------------------------------------------------------------------

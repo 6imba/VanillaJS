@@ -1,0 +1,35 @@
+# Variable declaration using var,let,const-keyword and where? As well as their scope,use, and hoisting.
+
+    - var keyword ==>
+        - if declare outside function|block ==> scope: global.
+        - if declare inside function ==> scope: function/local.
+        - if declare inside block{} ==> scope: block.
+        - var varaible can be re-declare & update value(reassigned).
+        - If users use the var variable before the declaration, it is initialize with undefined.
+        - variable witout declaration is var by default
+
+    - let keyword ==>
+        - if declare outside function|block ==> scope: global.
+        - if declare inside function ==> scope: function/local or block.
+        - if declare inside block{} ==> scope: block. ===> i.e function,ifelse,for
+        - let varaible cannot be re-declare but update value(reassigned).
+        - if users use the let variable before the declaration, it does not initialize with undefined just like a var variable and return an error.
+        - not hoisted at top so declare before assigning.
+
+    - const keyword ==>
+        - if declare outside function|block ==> scope: global.
+        - if declare inside function ==> scope: function/local or block.
+        - if declare inside block{} ==> scope: block. ===> i.e function,ifelse,for
+        - the const keyword has all the properties that are the same as the let keyword,
+        - except the user cannot be re-declare and re-assign/update its value.
+
+# can declare the variable with the same name in different blocks
+# variable witout declaration is var by default
+
+Summary:
+    - var declarations are globally scoped or function scoped, while let and const are block scoped.
+    - var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared; const variables can neither be updated nor re-declared.
+    - They are all hoisted to the top of their scope. But while var variables are initialized with undefined, let and const variables are not initialized.
+    - While var and let can be declared without being initialized, const must be initialized during declaration.
+
+

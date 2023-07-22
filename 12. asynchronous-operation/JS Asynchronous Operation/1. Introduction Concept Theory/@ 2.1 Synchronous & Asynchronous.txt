@@ -1,0 +1,8 @@
+- Synchronous = happens at the same time. (Wait). Serially together hand-in-hand.
+- Asynchronous = doesn't happen at the same time. (Not Wait). At own pace/time.
+
+- Synchronous: serial/not-parallel, occuring at same time, waits,
+- Asynchronous: parallel, not occuring at same time|At own pace/time, doesn't wait,
+
+- Synchronous: same time serially.
+- Asynchronous: same time parallelly.

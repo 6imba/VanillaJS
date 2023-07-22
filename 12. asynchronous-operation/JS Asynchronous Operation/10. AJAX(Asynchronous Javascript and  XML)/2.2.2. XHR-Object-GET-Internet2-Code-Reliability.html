@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- 1 -->
+<!-- <body>
+    <h3>XMLHttpResponse Object</h3>
+    <button onclick="loadData('GET', 'https://reqres.in/api/users',)">Load Data</button>
+    <script>
+        function loadData(method, url){
+            const xhr = new XMLHttpRequest();
+            xhr.open(method, url, true);
+            xhr.responseType = "json";
+            xhr.onload = () => {
+                console.log(xhr.response)
+            };
+            xhr.send();
+        }
+    </script>
+</body> -->
+
+<!-- 2.1 Problem: addEventListener function call irrespective to event trigger -->
+<!-- <body>
+    <h3>XMLHttpResponse Object</h3>
+    <button id="getDataBtn">Load Data</button>
+    <script>
+
+        function loadData(method, url){
+            const xhr = new XMLHttpRequest();
+            xhr.open(method, url, true); // while fetching data from file path it might take time so async true.
+            xhr.responseType = "json";
+            xhr.onload = () => {
+                console.log(xhr.response)
+            };
+            xhr.send();
+        }
+
+        const getBtn = document.getElementById("getDataBtn");
+        getBtn.addEventListener("click", loadData('GET', 'https://reqres.in/api/users')); // here function gets call without clicking button as we have call loadData() function
+    </script>
+</body> -->
+
+<!-- 2.2 Solution: callback -> call-function inside callback when event is hits -->
+<!-- <body>
+    <h3>XMLHttpResponse Object</h3>
+    <button id="getDataBtn">Load Data</button>
+    <script>
+
+        function loadData(method, url){
+            const xhr = new XMLHttpRequest();
+            xhr.open(method, url, true); // while fetching data from file path it might take time so async true.
+            // console.log(xhr.status) // why is status 0 it should be 200
+            xhr.responseType = "json";
+            xhr.onload = () => {
+                console.log(xhr.response)
+            };
+            xhr.send();
+        }
+
+        const getBtn = document.getElementById("getDataBtn");
+        getBtn.addEventListener("click", ()=>loadData('GET', 'https://reqres.in/api/users'));
+    </script>
+</body> -->
+
+<!-- 3.1 Synchronous-HTTP-Request-->
+<!-- <body>
+    <h3>XMLHttpResponse Object</h3>
+    <button id="getDataBtn">Load Data</button>
+    <script>
+
+        function loadData(method, url){
+            const xhr = new XMLHttpRequest();
+            xhr.open(method, url); //
+            xhr.open(method, url, false); // async false.
+            xhr.responseType = "json";
+            xhr.onload = () => {
+                console.log(xhr.response)
+            };
+            xhr.send();
+        }
+
+        const getBtn = document.getElementById("getDataBtn");
+        getBtn.addEventListener("click", ()=>loadData('GET', 'https://reqres.in/api/users'));
+    </script>
+</body> -->
+
+<!-- 3.2 Synchronous-HTTP-Request: The response type cannot be changed for synchronous requests made from a document.-->
+<!-- <body>
+    <h3>XMLHttpResponse Object</h3>
+    <button id="getDataBtn">Load Data</button>
+    <script>
+        function loadData(method, url){
+            const xhr = new XMLHttpRequest();
+            xhr.open(method, url); //
+            xhr.open(method, url, false); // async false.
+            xhr.responseType = "json"; // The response type cannot be changed for synchronous requests made from a document.
+            xhr.onload = () => {
+                console.log(xhr.response)
+            };
+            xhr.send();
+        }
+        const getBtn = document.getElementById("getDataBtn");
+        getBtn.addEventListener("click", ()=>loadData('GET', 'https://reqres.in/api/users'));
+    </script>
+</body> -->
+
+
+<!-- 4.1. HTTP-Request & Response-Status-Code: tatus == 0 -->
+<!-- <body>
+    <h3>XMLHttpResponse Object</h3>
+    <button id="getDataBtn">Load Data</button>
+    <script>
+
+        function loadData(method, url){
+            const xhr = new XMLHttpRequest();
+            xhr.open(method, url);
+            // xhr.open(method, url, true); // async true by default.
+            if(xhr.status == 0){
+                console.log('Error: ',xhr.status)
+            }else{
+                xhr.responseType = "json";
+                xhr.onload = () => {
+                    if(xhr.status == 200){
+                        console.log(xhr.response)
+                    }
+                };
+            }
+            xhr.send();
+        }
+
+        const getBtn = document.getElementById("getDataBtn");
+        getBtn.addEventListener("click", ()=>loadData('GET', 'https://req'));
+    </script>
+</body> -->
+
+
+<!-- 4.2 -->
+<!-- <body>
+    <h3>XMLHttpResponse Object</h3>
+    <button id="getDataBtn">Load Data</button>
+    <script>
+        function loadData(method, url){
+            const xhr = new XMLHttpRequest();
+            xhr.open(method, url);
+            if(xhr.status == 0){
+                console.log('Error: ',xhr.status)
+            }else{
+                xhr.responseType = "json";
+                xhr.onload = () => {
+                    if(xhr.status == 200){
+                        console.log(xhr.response)
+                    }
+                };
+                xhr.send(); // this line is not even executed ?
+            }
+        }
+        const getBtn = document.getElementById("getDataBtn");
+        getBtn.addEventListener("click", ()=>loadData('GET', 'https://req'));
+    </script>
+</body> -->
+
+</html>

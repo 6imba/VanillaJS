@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FetchAPI</title>
+  </head>
+  <body>
+    <h1>Fetch API</h1>
+    <script>
+
+        const promiseObj = new Promise((fullfil, reject) => {
+            // operation or data processing (produnction code)
+            setTimeout(()=> fullfil({location: "Kathmandu", temperature: "15 Celcius", rain: false}), 3000)
+        })
+        setInterval(()=>console.log(promiseObj.then(responseData => responseData)), 1000);
+
+    </script>
+  </body>
+</html>
+
+<!-- Open pending object as soon as it get printed in browser console and see the PromiseSate in each interval -->

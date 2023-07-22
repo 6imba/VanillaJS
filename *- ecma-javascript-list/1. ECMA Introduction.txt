@@ -1,0 +1,43 @@
+# Introduction to JavaScript:
+    - JavaScript is a general-purpose scripting language.
+    - JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
+    
+# ECMA standard:
+    - ECMA standard is the standard developed to ensure the interoperability of web pages across different web browsers.
+    - It is standardized by ECMA International according to the document ECMA-262.
+
+# ECMAScript:
+    - ECMAScript is the official name of the language that follow and fullfil ECMA standard.
+    - ECMAScript specification is a blueprint for creating a scripting language maintaining the ECMA standard.
+
+# ECMA International:
+    - European Computer Manufacturers Association,
+    - ECMA International is a non-profit organization that develops standards in computer hardware, communications, and programming languages.
+
+# ECMAScript and JavaScript:
+    - ECMAScript is the official name of the language that follow and fullfil ECMA standard.
+    - ECMAScript specification is a blueprint for creating a scripting language maintaining the ECMA standard.
+    - ECMAScript(ES) is a JavaScript standard meant to ensure the interoperability of web pages across different web browsers.
+    - It is standardized by ECMA International according to the document ECMA-262.
+    - The ECMAScript specification is a blueprint for creating a scripting language.
+    - ECMAScript is a Standard for scripting languages such as JavaScript, JScript, etc.
+    - It is a trademark scripting language specification.
+    - ECMA international is responsible for the creation and maintenance of ECMAScript.
+    - ECMA International (formally European Computer Manufacturers Association) is a non-profit organization that develops standards in computer hardware, communications, and programming languages.
+
+    - JavaScript is a general-purpose scripting language that conforms to the ECMAScript specification.
+    - JavaScript is a language based on ECMAScript.
+    - ES5 which was javascript standardized in 2009.
+    - ES6 which is javascript updatation in 2015, likewise we have ES7 in 2016, ES8 in 2017, ES9 in 2018, ES10 in 2019, ES11 in 2020, ES12 in 2021, ES_Next...
+    - Every year in June new Edition of ECMAScript is published.
+    - The 6th edition was initially named as "ECMAScript 6 (ES6)" and later renamed to ECMAScript 2015.
+    - So ECMAScript 2015 is correct name for ES6(6th Edition of the ECMA-262 standard JavaScript)
+
+    - 6th Edition of the ECMA-262 standard JavaScript.
+
+# Finally:
+    - The first public release of JavaScript was integrated in Netscape Navigator 2.0, released in 1995.
+    - The first edition of ECMA-262 was adopted by the Ecma General Assembly in June 1997(time from when JavaScript followed ECMAScript).
+    - JavaScript became an ECMA standard in 1997.
+
+# Every year in June ECMA International publish new edition for JavaScript.(i.e ECMAScript for JavaScript.)

@@ -1,0 +1,32 @@
+- higher order function: function passed as an argument to another function
+- callback: higher order function which must be called inside another function.
+- callback hell: callback inside callback(multiple callback tree creates bit complication & confusion to read program flow.).
+- callback hell challenge, introduced promise.
+
+- small asynchronous operation: callback
+- large asynchronous operation: promise(solve callback hell)
+
+
+# Example_1:
+    function callbackCallLater(){
+        console.log('I am callBack!');
+    }
+    function asynchronousFinishLater(callback){ //setTimeout(asynchronous) with callback
+        callback();
+    }
+    asynchronousFinishLater(callbackCallLater);
+
+
+
+# Example_2:
+    setTimeout(function() { myFunction("I love me !!!"); }, 3000);
+    function myFunction(value) {
+    console.log(value)
+    }
+
+    - Here;
+        - asynchronousFinishLater: setTimeout
+        - higher order function: function() { myFunction("I love me !!!"); }
+        - callback: myFunction("I love me !!!")
+
+

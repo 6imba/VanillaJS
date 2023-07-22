@@ -1,0 +1,23 @@
+2 Golden Rules:
+1. Variable declarations are scanned and are made undefined
+2. Function declarations are scanned and are made available
+
+- Browser JS Engine
+    - Socpe
+        - Global (Global Space | Global Execution Context | Global Level Object)
+            - Window
+            - this
+        - Local (Local Space | Local Execution Context)
+
+        > var a = 1;
+        > console.log(a)
+        > console.log(window.a)
+        > console.log(this.a)
+        > console.log(a === window.a === this.a)
+    - In a browser it is named window , for Node. js it is global , for other environments it may have another name.
+
+- Server JS Engine
+    - Socpe
+        - Global (Global Space | Global Execution Context | Global Level Object)
+            - global
+        - Local (Local Space | Local Execution Context)

@@ -1,0 +1,7 @@
+# Fetch API:
+    - Fetch API provides a method call fetch: fetch().
+    - This fetch() method is already defined in window_object.
+    - & window_object is global_variable of a browser.
+    - This fetch() method returns a promise_object.
+    - & We know that wheever promise_object is returned by any object/method, we can retrive/fetch/get the promise_object using .then()&.catch() method manipulated the resopnse in promise_object.
+    - then() & .catch() also returns promises.

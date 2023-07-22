@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<title>Form Validation</title>
+	</head>
+	<body>
+		<form action="" target="_blank">
+			<h2><b><u>Registration Form</u></b></h2>
+			<p id="error-msg"></p>
+			First Name<br><input type="text" name="first_name" id="fname"><br><br>
+			Last Name<br><input type="text" name="Last_name" id="lname"><br><br>
+			User Name<br><input type="text" name="user_name" id="uname"><br><br>
+			Password<br><input type="password" name="password" id="pass"><br><br>
+			Confirm password<br><input type="password" name="password" id="cpass"><br><br>
+			<button type="submit" onclick="return validate()">Submit</button>
+			<button type="reset" onclick="clearAll()">Reset</button><!-- ...........type reset will clear all the inputed data by default -->
+			<script src="script.js"></script>
+		</form>
+	</body>
+</html>
+
+

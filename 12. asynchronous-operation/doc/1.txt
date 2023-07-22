@@ -1,0 +1,33 @@
+💥 Asynchronous #JavaScript Explained.
+
+Asynchronous JavaScript works by enabling your program to start a potentially long-running task and still be able to be responsive to other events while that task runs, rather than having to wait until that task has finished. Once that task has finished, your program is presented with the result.
+
+This is important because many functions provided by browsers, especially the most interesting ones, can potentially take a long time, and therefore, are asynchronous.
+
+Here are some key points about how asynchronous JavaScript works:
+
+💠 JavaScript always runs only one task at a time, but the "magic" of asynchronism is made possible by the existence of the web APIs, the callback queue, and the event loop, which are responsible for managing asynchronous tasks
+
+💠 Asynchronous functions allow your code to do several things at the same time without stopping or blocking the main thread.
+
+💠 Asynchronous programming is achieved through various techniques, including callbacks, promises, and async/await.
+
+💠 Callbacks are functions that are passed as arguments to other functions and are executed when the other function has completed its task.
+
+💠 Promises are objects that represent the eventual completion (or failure) of an asynchronous operation and allow you to handle the result or error of that operation when it eventually completes.
+
+💠 Async/await is a modern way of dealing with asynchronous behavior in JavaScript that allows you to write asynchronous code that looks and behaves like synchronous code.
+
+💠 The event loop is a key part of how JavaScript handles asynchronous code. It executes the code, collects and processes events, and performs queued tasks.
+
+💠 The event loop has two elements: the stack and the queue. The stack is where synchronous code is executed, while the queue is where asynchronous code is executed.
+
+💠 Web APIs are used to achieve asynchronicity in JavaScript. They allow you to start a long-running operation by calling a function, have that function start the operation and return immediately, so that your program can still be responsive to other events, and notify you with the result of the operation when it eventually completes.
+
+Asynchronous JavaScript is a complex topic, but it's an essential concept for JavaScript developers to understand in order to write efficient and responsive code
+
+If you Liked it a bit, please LIKE and SHARE it.
+
+For more such Posts, FOLLOW Shankar Dayal Singh.
+
+Animation: Lydia Hallie

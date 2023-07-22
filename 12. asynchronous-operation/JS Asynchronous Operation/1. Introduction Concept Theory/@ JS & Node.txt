@@ -1,0 +1,2 @@
+- JavaScript is Synchronous.
+- NodeJS is an asynchronous event-driven JavaScript runtime environment designed to build scalable network applications.

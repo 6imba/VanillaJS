@@ -1,0 +1,158 @@
+- Lints: Linting is the act or process of checking your code for errors of any kind. ... When it comes to JavaScript linting, there are a handful of tools that stand apart.
+         Let's look at four linters that can help you get started or refine your linting process: JSLint, standardJS, JSHint, and ESLint.
+- A Lint or a Linter is a program that supports linting (verifying code quality). They are available for most languages like JavaScript, CSS, HTML, Python, etc..
+    Some of the useful linters are JSLint, CSSLint, JSHint, Pylint.
+
+- Lints, Babel are the tools,software,program that verifying our code quality and auto correct if needed.
+- Is Prettier a linter?
+
+- Lint, Lints, Linter, Linting.
+
+- Example of Lints: ESLint, JSLint, Prettier,
+
+- When we code in framework we have a library, which needs to be configured and hit command to use linter.
+- But when we code in vailla JS(not framework) we use code-editor/IDE/working-environment, we can set lints using/installing extension.
+- Thus In this way we can do linting or achive lints tools.
+
+- Prettier: Does both linting and code formating for many PL.
+- Prettier is a lint.
+- Prettier is a tool for linting.
+- Prettier is a linting tools.
+- Prettier actually is code formatter but also does Linting work so we can say Prettier as a Linter as well.
+
+- formatting: The way in which something is arranged or set out.
+- Code linter VS Code formatter.
+
+- Node, React, Veu has some other linting libraries i.e ESLint, and we have to configure it in (package.json-file or some-other-configuration-file).
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Babels:
+- Executing JS in browser depends upon syntax defined in browser's engine.
+- So old browser doent support/runs/execute Latest ECMAScript standard JS.
+- Dhus, here comes Babel to solve this issue.
+- Where Babel converts Latest ECMAScript standard JS(2015+) code into backward compatible version so that code can be understood and executed by older JS Engines.
+- Babel can be called transcompiler.
+- Babel Repl.
+- Same process as Lint to set up Babel. In stratch PL,  install extension in code-editor and in framework configure the configuation-file(i.e package.json etc)
+- https://babeljs.io/
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+- Destructring
+- Spread Operatos
+- Destructring & Spread Operatos:
+- Spread Operatos is used for Destructring terable object.
+- Spread Operatos ==> ...
+- Iterable is an object which can be looped over or iterated over with the help of a for loop.
+- iterate: perform or utter repeatedly.
+
+- Destructring & Spread Operatos: [...rest] = [30, 40, 50]
+- Destructuring assignment: [let a,  let b] = [10, 20];
+
+- Destructring with Spread Operatos & Destructuring assignment:
+  let a, b, rest;
+  [a, b] = [10, 20];
+  [a, b, ...rest] = [10, 20, 30, 40, 50];
+
+
+- [a, b, ...rest] = [10, 20, 30, 40, 50] VS [a, b, rest] = [10, 20, 30, 40, 50];
+  - [a, b, ...rest] = [10, 20, 30, 40, 50]
+    console.log(rest) ==> Array [30, 40, 50]
+  - [a, b, rest] = [10, 20, 30, 40, 50]
+    console.log(rest) ==> 30
+------------------------------------------------------------------------------------
+
+- Array Destructring:
+- var [a, b, c] = ["Table", "Chair", "Fan"];  Using Destructuring assignment.
+- var [a, ...b] = ["Table", "Chair", "Fan"];  Using Destructuring assignment+ Spread Operator.
+
+- Interchanging Or Swapping Variables:
+  var a, b;
+  [a, b] = ["Male", "Female"];
+  [a, b] = [b, a];
+
+- Nested Array Destructuring:
+  var numbers = [8, [1, 2, 3], 10, 12];
+  var  [a, [d, e, f]] = numbers;
+
+- Multiple Array Destructuring:
+  var places = ["first", "second", "third", "fourth"];
+  var [a, b, , d] = [f, ...rest] = places;
+
+@ https://www.freecodecamp.org/news/array-destructuring-in-es6-30e398f21d10/
+
+- Array Destructring: Using Spread Operator:
+  var planet1 = ['Mecury', 'Venus', 'Earth'];
+  var planet2 = ['Mars', 'Jupiter', 'Saturn', 'Neptune', 'Uranus'];
+  var planets = [...planet1, ...planet2]
+  console.log(...planet1)
+  console.log([...planet1])
+  // console.log(typeof(...planet1))
+  console.log(typeof([...planet1]))
+------------------------------------------------------------------------------------
+
+- Object Destructring: Using Destructuring assignment.
+  let person = {
+    firstName: 'John',
+    lastName: 'Doe'
+  };
+
+  - let firstName = person.firstName;
+    let lastName = person.lastName;
+
+
+  - let { firstName, lastName } = person;
+  - let { firstName, lastName123 } = person;
+  - let { firstName, lastName, lastName123="hi" } = person;
+  - let { firstName="Hero", lastName, lastName123="hi" } = person;
+
+  - ({firstName, lastName} = person);
+
+  - let { firstName: fname, lastName: lname } = person; //syntax: let { property1: variable1, property2: variable2 } = object;
+
+  - let { firstName,  lastName, middleName = '', currentAge: age = 18 } = person;
+
+  @ https://www.javascripttutorial.net/es6/javascript-object-destructuring/
+
+
+- Object Destructring: Using Spread Operator.
+  let person1 = {...person};
+  let person1 = {...person, age:22};
+
+
+- let person1 = {...person} VS let person1 = person;
+
+- Destructring with Spread Operatos & Destructuring assignment is used for assignment, copying, sharing, changing the values of objects and array.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- JSON:
+- JSON is just a file format for text just like PNG is file format for image. (i.e .txt, jpg, .png, .json)
+- JSON is just a file format for text with structured text data.
+
+- Before JSON you need to know that in web-application or desktop-application, we have generally 3 file format: CSV, JSON, XML.
+- All file format have their own representational structure & syntax which make us easly to read and write data in our application.
+- Like if our mobile application need to communicate with server, we can use JSON_file or CSV_file or XML_file.
+- Simply JSON is a normal file where our data is defined in well structured manner, so that when sending and receving data its easy for reading.
+- And as our data is easily readable we can easily extract, mnipulate, work on data.
+- Dhus JSON is used for data exchange/sharing/(sending and receiving).
+- Good usability and readability.
+
+const JSON_DATA = `
+                    "id": 1;
+                    "name": "Amir";
+                    "age": "22";
+                   `
+- JSON data is simply plain mutiline string text.
+- JSON data is simply mutiline string with JS object like structure.
+- JSON data is simply mutiline string with JS object like structure, thus can be converted/parse into JS object.
+- Change Obbject into String and vise-versa.
+- In JS array is also object.
+
+- Fake JSON Fake API: https://jsonplaceholder.typicode.com/
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- JSON fetching technique.
+  - Using AJAX
+  - https://www.youtube.com/watch?v=9i3JQJTecgg&list=PLkHMopSWmw_SbTmLEZ8V6bP1cPoOoJRDO&index=4
+  - 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
