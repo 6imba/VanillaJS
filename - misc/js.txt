@@ -1,0 +1,15 @@
+- alert(""!=0) ==> false
+- alert("amir"!=0) ==> true
+- alert("   "!=0) ==> false
+
+# onkeyup:
+<input type="text" id="fname" onkeyup="myFunction()">
+<script>
+function myFunction() {
+  alert( document.getElementById("fname").value);
+}
+
+console.log("   amir    shrestha 6               ".trim()) ==> "amir    shrestha 6"
+
+underscore in js?
+

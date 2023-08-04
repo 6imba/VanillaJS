@@ -1,0 +1,3 @@
+- window -> document -> html(root_element) :-> (head :-> title, link, script && body :-> h1, table, img, script)
+
+Q. window vs screen vs iframe vs document?

@@ -1,0 +1,49 @@
+<!--
+	DOM stands for Document Object Model.
+	eg: document.getElementById('demoo').innerHTML=Namaste;
+	document:
+	The HTML DOM document object is the owner of all other objects in your web page.
+	Method:
+	getElementById- access html element -method use id="demo" to find element........Find an element by element id
+	Properties:
+	innerHTML- get to content of element-property use to edit content in element.......Find an element by element id
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Java Script</title>
+</head>
+
+<body>
+
+	<p id="demo"></p>
+	<hr>
+	<img  src="kumari.png">IMAGE</img>
+	<hr>
+	<img   id="image">REPLACED IMAGE</img>
+	<hr>
+	<input type="text" id="my-text" value="">
+	<hr>
+	<p id="rang">GreeN</p>
+	<hr>
+	<p class="one">fontSize</p>
+	<hr>
+
+	<button id="id1" onclick="document.getElementById('id1').style.color='red'";>Magic Click</button>
+
+	<hr>
+	<script>
+	document.getElementById("demo").innerHTML='Empty p filled with (Namaste)';//Findelement by id="demo" and fill/replace it by innerHTML
+	document.getElementById("image").src="photo.jpeg";
+	document.write(Date());//write directly to the HTML time stream:
+	document.getElementById("my-text").value="Namaste Nepal";
+	document.getElementById("rang").style.color="green";
+	//document.getElementsByClassName("one").style.fontSize="40px";????
+	</script>
+</body>
+
+</html>

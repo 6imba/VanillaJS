@@ -1,0 +1,173 @@
+# Browser ------> WebPage ---abstraction--> DOM(tree/object) ---abstraction-->  VDOM ------> HtmlFile
+Q. Shallow DOM?
+
+Browser ~ WebPage ~ DOM ~ XXX_WebFile_XXX ~ WebDocument(HtmlFile)
+
+- DOM is a Web_documents_programming_interface, represents the structure of HTML or XML documents as a tree-like model.
+- The DOM provides methods and properties that allow programs to access and manipulate the content, structure, and style of a web document.
+
+Is DOM javascript specific or web broswer specific or HTML file specific
+
+The Document Object Model (DOM) is not specific to JavaScript or any particular programming language. It is a programming interface for web documents, which represents the structure of HTML or XML documents as a tree-like model. The DOM provides methods and properties that allow programs to access and manipulate the content, structure, and style of a web document.
+
+While JavaScript is commonly used to interact with the DOM, other programming languages can also be used. For example, languages like Python or Java have libraries that provide DOM manipulation capabilities.
+
+The DOM itself is not tied to any specific web browser either. It is a standard defined by the World Wide Web Consortium (W3C), which is a community-driven organization that develops and maintains web standards. All major web browsers, such as Chrome, Firefox, Safari, and Edge, implement the DOM specification, allowing web developers to use the same DOM APIs across different browsers.
+
+In summary, the DOM is a general-purpose interface for accessing and manipulating the structure of web documents. It is not specific to JavaScript, web browsers, or HTML files, although JavaScript is commonly used to work with the DOM in web development.
+
+The DOM (Document Object Model) is a programming interface that represents the structure of both HTML and XML documents as a tree-like model. It provides a way for programs to interact with the elements, attributes, and text content of a document.
+
+# DOM aka ProgrammingInterface
+    - HTML DOM: programming interface of HTML document
+    - XML DOM: programming interface of XML document
+    - SVG DOM: programming interface of SVG document
+    - MathML DOM: programming interface of MathML document
+    - XUL DOM: programming interface of XUL document
+
+# There DOM is a programming interface that represents the structure of any document.
+
+# Is html file and html document same?
+
+# Browser ---> window ---> global_window_object ---> web_page ---> parsed_html_file|document|DOM ---manipulate---> parent&child_element|node|tag ---> element_node|text_node|attribute_node
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+window.document
+window.document.head
+window.document.body
+window.document.getElementById
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+DOM & Event
+
+Q.What happens when we change the element text, how is the changes catched and rendered in browser?
+    - When you change the text of an element using the DOM, the changes are captured and rendered in the browser through a process called reflow or repaint.
+
+Q. Is broswer is responsible or language or framwork uesd is responsible for Repainting changed element?
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+I have following template:
+
+<div>
+      myContent
+      <h1>my heading</h1>
+      <span>my heading</span>
+<div>
+
+SO my question is when text in roote level of div tag i.e myContent is change, DO broswer engine repaint the changes content inside dive tag or also repaint h1 and span tag as it's inchage the div tag whose content is changed?
+
+what if the text length before and after is different?
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+# change DOM, will change html_document|DOM|web_page --------------------------------------- sync browser web apge and browser manipulated dom
+
+
+
+DOM is programming interface avialable in browser to manipulated the web page.
+
+
+Changes made to the DOM can trigger reflows, repaints, and updates in the browser's rendering.
+
+
+
+web page vs html file
+In essence, an HTML file is a text file that contains the code responsible for creating the structure and content of a web page. It is saved as a file on a computer or server. When a web browser receives an HTML file, it interprets the code and renders it into a visual representation, which is the web page displayed to the user.
+
+
+Web Document:
+A web document, on the other hand, is a broader term that encompasses the entire collection of content, information, and resources associated with a specific URL or web address. It refers to the underlying file or set of files that make up the content of a web page. This includes the HTML, CSS, JavaScript, images, videos, and other resources that are necessary for the presentation and functionality of the web page.
+
+In simpler terms, a web page is a single viewable representation of a document on the web, while a web document refers to the entire collection of files and resources that make up that web page.
+
+
+Browser(chrome,firefox,brave) ~ WebPage ~ DOM(web page programming interface) ~ WebDocument(markup, text, images, scripts, and other resources that make up the webpage)
+
+# server ---> WebDocument(html,css,js,img) ---> browser_parse/construct ---> DOM(programmig interface) ---> brower_interpet_css/calculate_layout/render_visiual_representation ---> Webpage_on_browser_screen.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+DOM is a programming interface of web page.
+or
+DOM is a programming interface of web document.
+
+which one is correct
+ChatGPT
+The correct statement is:
+
+DOM is a programming interface of the web document.
+
+The Document Object Model (DOM) is an API (Application Programming Interface) provided by web browsers that allows developers to programmatically interact with the structure, content, and styles of a web document. It represents the web document as a tree-like structure of objects, where each object corresponds to an element, attribute, or text node in the document. Through the DOM API, developers can access, modify, add, or remove elements, attributes, and content of the web document using programming languages like JavaScript.
+
+In summary, the DOM is a programming interface that provides a way to manipulate the elements and content of a web document, making it possible to dynamically modify the web page's structure and appearance at runtime.
+
+
+
+
+
+User
+what is web document here being more specific?
+ChatGPT
+In the context of web development, a web document refers to an HTML document. HTML (Hypertext Markup Language) is the standard markup language used to create the structure and content of web pages.
+
+A web document, or HTML document, is a text file that contains HTML markup. It defines the structure of a webpage and includes various elements such as headings, paragraphs, images, links, forms, and more. The web document provides the instructions for the web browser on how to render and display the content on the user's screen.
+
+The web document specifies the layout, formatting, and organization of the webpage's content. It may also reference external resources such as CSS (Cascading Style Sheets) for styling and JavaScript for adding interactivity.
+
+In summary, a web document, specifically an HTML document, is a file that contains the markup and instructions for a web browser to render and display the content of a webpage.
+
+
+
+
+
+User
+so web document means html document only not css or js document?
+ChatGPT
+Apologies for any confusion caused. The term "web document" can refer to both an HTML document and associated external resources such as CSS and JavaScript files.
+
+In a broader sense, a web document encompasses the HTML document along with any linked or embedded CSS stylesheets and JavaScript files. These external resources play a crucial role in defining the presentation and interactivity of the webpage.
+
+Here's a breakdown of the components:
+
+HTML Document: The main component of a web document is the HTML file, which contains the structure and content of the webpage. It defines the elements, their hierarchy, and the textual content that makes up the webpage.
+
+CSS Stylesheets: CSS files are external resources that define the styles, layouts, and visual appearance of the HTML elements within the webpage. CSS rules and selectors specify how the content should be presented, including aspects such as colors, fonts, positioning, and responsiveness.
+
+JavaScript Files: JavaScript files provide programming logic and interactivity to the web document. They enable dynamic behavior, user interactions, and manipulation of the HTML and CSS elements. JavaScript can be used to add animations, handle user input, perform calculations, make network requests, and more.
+
+Collectively, the HTML document, CSS stylesheets, and JavaScript files form a cohesive web document that determines how the webpage is structured, styled, and behaves.
+
+In summary, a web document typically consists of an HTML document along with associated CSS stylesheets and JavaScript files. Together, they define the structure, presentation, and interactivity of a webpage.
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+who owns/create/generate/make DOM aviable, is its javascript/browser?
+ChatGPT
+The Document Object Model (DOM) is made available by web browsers. Browsers are responsible for creating and exposing the DOM as a programming interface that can be accessed and manipulated using JavaScript or other scripting languages.
+
+When a web browser loads a web document (such as an HTML file), it parses the document and constructs the corresponding DOM representation of that document. The browser then provides access to the DOM through the DOM API, which allows developers to interact with and modify the structure, content, and styles of the web document.
+
+JavaScript, being a commonly used scripting language for web development, is particularly used to interact with the DOM. It provides methods and properties to access, query, modify, and update the elements and attributes within the DOM tree.
+
+To summarize, the web browser, as the software running on the user's device, generates and makes the DOM available to developers. JavaScript is the primary language used to interact with the DOM, leveraging the DOM API provided by the browser to manipulate the web document dynamically.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+# DOM:
+    - is a Programming Interface of Web document
+    - is created and exposed by a Web browser
+    - is accessed and manipulated using scripting language
+
+    Moreover:
+    - The DOM is a programming interface of a web document.
+    - It is created and exposed by a web browser when it parses the web document.
+    - The DOM can be accessed and manipulated using scripting languages like JavaScript.
+

@@ -1,0 +1,781 @@
+Const vs let vs var 
+
+const cannot be updated or re-declared 
+
+ 
+
+Suppose we have declared let a= 10 outside the function and again declared let a = 20 inside the function and did console.log(a) inside and outside the function what is the output? 
+
+The console.log(a) inside the function should show 20 and outside the function should show 10. 
+
+ 
+
+Undefined vs not defined vs null 
+
+Whenever we declare a variable without assigning any value to it, JavaScript implicitly assigns its value as undefined. 
+
+let name; 
+console.log(name); //undefined 
+
+null is a reserved keyword in javascript. We can assign a null value to a variable explicitly using the keyword null. Null essentially represents a non-existent or an empty value 
+
+let life = null; 
+console.log(life); //null 
+
+A not defined is a variable which is not declared at a given point of time with declaration keyword like var, let or const.  
+
+console.log(b); 
+b = 5; 
+//Output:- "ReferenceError: b is not defined 
+
+ 
+
+Array.map vs Array.foreach 
+
+forEach 
+
+Iterates through the elements in an array. 
+
+Executes a callback for each element. 
+
+Does not return a value. 
+
+Map 
+
+Iterates through the elements in an array. 
+
+“Maps” each element to a new element by calling the function on each element, creating a new array as a result. 
+
+ 
+
+The main difference between map and forEach is that the map method returns a new array by applying the callback function on each element of an array, while the forEach method doesn’t return anything. 
+
+If you’re planning to alter the array elements by applying a function, you should use the map method, since it doesn’t modify the original array and returns a new array. In this way, the original array is kept intact. On the other hand, if you want to loop through all the elements of an array and don’t need a returned array, use the forEach method. 
+
+ForEach vs for 
+
+ 
+
+Why do we use keys for list? 
+
+To provide a unique identity to each list element from lists. 
+
+It is used to identify which items have changed, updated, or deleted from the Lists. 
+
+ 
+
+Array.reduce 
+
+Array.reduce will have two arguments callback function and initial value (optional) 
+
+array.reduce(callbackFn [, initialValue]) 
+
+ 
+
+Function Declaration and Function Expression 
+
+Function Declaration 
+
+Can be hoisted  
+
+function add(first,second){ 
+
+return first+second; 
+
+} 
+
+ 
+
+Function Expression 
+
+Cannot be hoisted 
+
+Const subtract = function sub (first, second) { 
+
+return first - second; 
+
+}  
+
+ 
+
+Arrow Function (function vs arrow function) 
+
+Self-invoked function / IIFEs (Immediately Invoked Function Expressions) 
+
+This 
+
+Call vs bind vs apply 
+
+Call:- The call() method calls a function with a given this value and arguments provided individually. 
+
+Syntax- 
+
+1 
+
+fun.call(thisArg[, arg1[, arg2[, ...]]]) 
+
+ 
+
+Apply:- The apply() method calls a function with a given this value, and arguments provided as an array. 
+
+Syntax- 
+
+1 
+
+fun.apply(thisArg, [argsArray]) 
+
+Bind: -The Bind method returns a new function, allowing you to pass in a this array and any number of arguments. Use it when you want that function to later be called with a certain context like events. 
+
+== vs ===? 
+
+Explain the difference between Object.freeze() vs const 
+
+const applies to bindings (“variables”). It creates an immutable binding, i.e. you cannot assign a new value to the binding. 
+
+Object.freeze works on values, and more specifically, object values. It makes an object immutable, i.e. you cannot change its properties. 
+
+What is generator in JS? 
+
+Generators are functions which can be exited and later re-entered. Their context (variable bindings) will be saved across re-entrances. Generator functions are written using the function* syntax. When called initially, generator functions do not execute any of their code, instead returning a type of iterator called a Generator. When a value is consumed by calling the generator’s next method, the Generator function executes until it encounters the yield keyword. 
+
+function* makeRangeIterator(start = 0, end = Infinity, step = 1) {  
+
+let iterationCount = 0;  
+
+for (let i = start; i < end; i += step) {  
+
+iterationCount++;  
+
+yield i;  
+
+}  
+
+return iterationCount;  
+
+} 
+
+What is the Temporal Dead Zone in ES6? 
+
+In ES6 let and const are hoisted (like var, class and function), but there is a period between entering scope and being declared where they cannot be accessed. This period is the temporal dead zone (TDZ) 
+
+ 
+
+Local storage, session storage, cookies 
+
+Basic event loop 
+
+Async/await vs .then.catch 
+
+Date vs new Date() 
+
+Spread operator (…) 
+
+Immutability 
+
+OOP-Private and public methods (x) 
+
+Functional programming? _loadash or _underscore or ramda 
+
+Time complexity basic? 
+
+Shallow copy and deep copy 
+
+Hoisting, Closure 
+
+setTimeout vs setInterval 
+
+ 
+
+Swap two numbers without using third variables 
+
+A = 50; 
+
+B= 20; 
+
+[b,a] = [a,b]; 
+
+ 
+
+A = 20; 
+
+B = 30; 
+
+A = a+b = 20+30 = 50; 
+
+B = a-b = 50 – 30 = 20; 
+
+A = a – b = 50 – 20 = 30; 
+
+ 
+
+ 
+
+Git flow 
+
+ 
+
+Restful API 
+
+Axios - Axios instance, interceptor  
+
+Handling click event for parent and child div 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Advantages of Vuejs 
+
+Easy to Understand and Use 
+
+The framework of Vue.js is very easy to understand, and it is one of the reasons for the popularity of this framework. The users can easily add Vue.js to their web project because of its simple structure and develop applications. 
+
+Simple Integration with Existing Applications 
+
+Vue.js framework can be integrated with the existing applications very easily. Vue.js has a lot of components for everything. You can integrate it with any application that is written in JavaScript. 
+
+Flexible in nature 
+
+The flexible nature of Vue.js also makes it easy to understand for the developers of React.js, Angular.js, and any other new JavaScript framework. It provides a lot of flexibility to use virtual nodes to write HTML files, JavaScript files, and pure JavaScript files. 
+
+Components 
+
+You can create reusable custom elements in Vue.js applications. 
+
+Easy & comprehensive documentation 
+
+The documentation of Vue.js is very easy and comprehensive so that developers can develop applications or web pages, only having little knowledge about HTML. 
+
+Virtual DOM 
+
+Vue.js uses virtual DOM like other existing frameworks such as ReactJS, Ember, etc. Virtual DOM is a lightweight in-memory tree representation of the original HTML DOM and updated without affecting the original DOM. 
+
+Two-Way Communication 
+
+Vue.js provides two-way communications with its MVVM architecture that makes it very easy to handle HTML blocks. 
+
+Reactivity 
+
+Whenever you make any changes in data value then it triggers page update to reflect data changes. Vue data property, computed property are reactive. Services in Vue.js are not reactive. 
+
+ 
+
+What is Virtual DOM? 
+
+ 
+
+ 
+
+Props in Vuejs 
+
+Props (or properties) are custom attributes you can register in a component. They are used to pass data from a parent component to its child components. When a value is passed as a prop attribute, it becomes a property on the component instance and can be accessed using this keyword. 
+
+ 
+
+how the data flows between components in a Vue 
+
+Vue uses props and events to communicate between components. Data is passed from the parent component to its child using a prop or a custom attribute. This then becomes a property on the child component instance. The following snippet shows us how the parent component passes a prop named title to the ChildComponent. 
+
+<ChildComponent title="Hello!" /> 
+
+the children components use an event to communicate back to their parents. The parent can listen to these events by attaching an event listener to any event the child emits. 
+
+<!-- child.vue -->  
+
+<button @click="$emit('childevent')">click me</button>  
+
+<!-- parent listening to the event -->  
+
+<ChildComponent @childevent="callback" /> 
+
+ 
+
+What are slots? 
+
+Slot is another way a parent component can pass in content to its children. However, instead of JavaScript values, slots allow us to pass in template content or fragments to another component. 
+
+ 
+
+Slot and Scoped Slot 
+
+In the slot, the component is compiled in the parent's scope and then passed to the child component. So, it is not possible to use child component properties in a slot's content. 
+
+In Scoped slot, you can pass child component data to the parent scope and then use it in slot content. 
+
+Data bindings in Vue 
+
+In one-way data flow the view(UI) part of application does not updates automatically when data Model is change we need to write some custom code to make it updated every time a data model is changed.  
+
+In Vue js v-bind is used for one-way data flow or binding. 
+
+In two-way data binding the view(UI) part of application automatically updates when data Model is changed. In Vue.js v-model directive is used for two way data binding. 
+
+ 
+
+ How do you create two-way bindings in Vue? 
+
+Vue simplifies user input handling and synchronization by using the v-model directive. The v-model directive updates the model whenever the template changes and updates the template when the model changes. 
+
+export default { 
+
+data () { 
+
+return {name: 'Bob’} 
+
+ },  
+
+template: ` <h2>Hello {{name}} </h2> 
+
+ <input v-model="name"/> `  
+
+} 
+
+ 
+
+What is filters in Vue.js? 
+
+A Filter is a simple JavaScript function which is used to change the output of a data to the browser. Filters in Vue.JS don’t change the data directly wherever we store them, it only applies formatting to our data. The data remains the same only the output of a data to a browser is changed. 
+
+Global and local filters are the filters available in vuejs. 
+
+{{ message | makeCapitalize }} 
+
+// makeCapitalize is custom filter defined in your component 
+
+filters: { 
+
+  makeCapitalize: function (value) { 
+
+    if (!value) return '' 
+
+    value = value.toString() 
+
+    return value.charAt(0).toUpperCase() + value.slice(1) 
+
+  } 
+
+} 
+
+What are directives in Vue? 
+
+Directives provides a way to extend the HTML components with new attributes and tags. Directives are mainly intended for reusing logic that involves low-level DOM access on plain elements. 
+
+Vue provides a set of built-in directives to help developers with common use cases. Below are the commonly used directives along with their behavior: 
+
+v-show – toggles the element’s visibility 
+
+v-if – conditionally render an element or a template fragment 
+
+v-else – the else block to v-if 
+
+v-for – renders the element or template block multiple times based on the source data 
+
+ 
+
+ 
+
+Lifecycle of vuejs 
+
+Before Create - This is the first lifecycle hook that is called when a Vue instance has been created. 
+
+Created - It's called immediately after the 'Before creates' hook, but the Vue instance has already set initial properties, data, etc. 
+
+Before mount - invoked right before the instance is mounted on the DOM. The template has been completed at this time. 
+
+Mounted - This is the name given to the template once it has been filled with data and is fully functional. 
+
+Before Updated - When any changes to data require the DOM to be changed, this method is called before the update. 
+
+Updated - It's called after the DOM has been updated. 
+
+Before destroy - It's a location where you can clean up your resources before terminating the Vue instance. 
+
+Destroyed - When all Vue instances have been destroyed, this method is called. When you call the destruct method on an object in code, it will be activated. 
+
+ 	               Component lifecycle diagram 
+
+Directives in vuejs 
+
+Conditional Directives 
+
+v-if: The v-if directive adds or removes DOM elements based on the given expression. 
+
+v-else: This directive is used to display content only when the expression adjacent v-if resolves to false.  
+
+v-else-if: This directive is used when we need more than two options to be checked.  
+
+v-show: This directive is similar to v-if but it renders all elements to the DOM and then uses the CSS display property to show/hide elements. 
+
+v-model is used for two-way data bindings. 
+
+v-on attaches an event listener to the element. 
+
+ 
+
+What are the supported modifiers on model? 
+
+There are three modifiers supported for v-model directive. 
+
+1. lazy: By default, v-model syncs the input with the data after each input event. You can add the lazy modifier to instead sync after change events. 
+
+<!-- synced after "change" instead of "input" --> 
+
+<input v-model.lazy="msg" > 
+
+ 
+
+2. number: If you want user input to be automatically typecast as a number, you can add the number modifier to your v-model. Even with type="number", the value of HTML input elements always returns a string. So, this typecast modifier is required. 
+
+<input v-model.number="age" type="number"> 
+
+ 
+
+3. trim: If you want whitespace from user input to be trimmed automatically, you can add the trim modifier to your v-model. 
+
+<input v-model.trim="msg"> 
+
+ 
+
+v-show vs v-if 
+
+v-if only renders the element on the DOM if the expression is truthy. v-if has a higher toggle cost as the elements are added and removed from the DOM. This characteristic improves the initial render time as there are fewer elements to render. However, v-if is not ideal for elements that are displayed and hidden often. 
+
+v-show on the other hand, renders the element on the DOM and uses CSS to show or hide the element based on the result of the expression. Unlike v-if, v-show doesn’t affect the initial render costs as all the elements are added to the DOM. However, because elements aren’t being added and removed, the cost of displaying and hiding an element is lower compared to v-if.	 
+
+v-if only renders the element to the DOM if the expression passes whereas v-show renders all elements to the DOM and then uses the CSS display property to show/hide elements based on expression. 
+
+v-if supports v-else and v-else-if directives whereas v-show doesn't support else directives. 
+
+v-if has higher toggle costs while v-show has higher initial render costs. i.e, v-show has a performance advantage if the elements are switched on and off frequently, while the v-if has the advantage when it comes to initial render time. 
+
+v-if supports <template> tab but v-show doesn't support. 
+
+ 
+
+Why should not use if and for directives together on the same element? 
+
+It is recommended not to use v-if on the same element as v-for. Because v-for directive has a higher priority than v-if. 
+
+There are two cases where developers try to use this combination, 
+
+To filter items in a list 
+
+<ul> 
+
+    <li 
+
+      v-for="user in users" 
+
+      v-if="user.isActive" 
+
+      :key="user.id" 
+
+    > 
+
+      {{ user.name }} 
+
+    <li> 
+
+  </ul> 
+
+This can be avoided by preparing the filtered list using computed property on the initial list 
+
+computed: { 
+
+    activeUsers: function () { 
+
+      return this.users.filter(function (user) { 
+
+        return user.isActive 
+
+      }) 
+
+    } 
+
+  } 
+
+  ...... // 
+
+  ...... // 
+
+  <ul> 
+
+    <li 
+
+      v-for="user in activeUsers" 
+
+      :key="user.id"> 
+
+      {{ user.name }} 
+
+    <li> 
+
+  </ul> 
+
+To avoid rendering a list if it should be hidden 
+
+<ul> 
+
+    <li 
+
+      v-for="user in users" 
+
+      v-if="shouldShowUsers" 
+
+      :key="user.id" 
+
+    > 
+
+      {{ user.name }} 
+
+    <li> 
+
+  </ul> 
+
+This can be solved by moving the condition to a parent by avoiding this check for each user 
+
+<ul v-if="shouldShowUsers"> 
+
+    <li 
+
+      v-for="user in users" 
+
+      :key="user.id" 
+
+    > 
+
+      {{ user.name }} 
+
+    <li> 
+
+  </ul> 
+
+ 
+
+What are mixins? 
+
+Mixins are a versatile approach to sharing reusable Vue component functionality. Any component choices can be included in a mixin object. When a component employs a mixin, all of the mixin's options are "mixed" into the component's own. 
+
+single file component 
+
+Single File components or SFCs are like any other component except that they are self-contained in their own files. SFCs come with the following advantages. 
+
+Global Definitions - means all SFCs are registered globally so they have unique names. 
+
+Strong Templates - you can write the template code easily in SFCs instead of a single template property like in other components. 
+
+CSS Support - SFCs provide support to add CSS style to the component itself. 
+
+Preprocessors Support - can easily use preprocessors like babel, SAAS etc in SFCs. 
+
+ 
+
+How can performance of vuejs application be improved? 
+
+ Your Vue application may become delayed for various reasons: 
+
+You're relying on too many third-party libraries that are either too large or misused. 
+
+You have many unoptimized and compressed photos. 
+
+You don't use lazy loading to load your images. 
+
+To reduce redundant code, you aren't reusing functionalities across your program. 
+
+You have a lot of pages and want to load them all at once. 
+
+ 
+
+Why should arrow functions not be utilized in Vue instances when writing lifecycle hooks? 
+
+Because arrow functions are not self-contained, they cannot define a 'this' of their own. The arrow functions are confined to the context of their parent function. 
+
+The keyword 'this' does not bind to the Vue instance when the arrow function (=>) is used in the Vue app, resulting in problems. 
+
+ 
+
+Watchers 
+
+Instead of utilizing computed properties, watchers are a more generic way to react to data changes. 
+
+When asynchronous or expensive actions must be performed in response to changing data, they should be employed. 
+
+Array Detection Mutation Methods 
+
+Below is the list of array mutation methods which trigger view updates. 
+
+push() 
+
+pop() 
+
+shift() 
+
+unshift() 
+
+splice() 
+
+sort() 
+
+reverse() 
+
+Array Detection non-mutation methods 
+
+Below is the list of non-mutation methods, 
+
+filter() 
+
+concat() 
+
+slice() 
+
+What is Props Drilling? And how do we resolve this? 
+
+Props Drilling (Threading) is a concept that refers to the process you pass the data from the parent component to the exact child Component BUT in between, other components owning the props just to pass it down the chain. 
+
+We can solve props drilling with provide and inject. A parent component can serve as a dependency provider for all its descendants. Any component in the descendant tree, regardless of how deep it is, can inject dependencies provided by components up in its parent chain. 
+
+How to avoid memory leaks in Vue.js?  
+
+Memory leaks could be avoided in Vue.js by using the beforeDestroy() lifecycle hooks. The cleanup should be done manually using this hook. 
+
+Vuex Library 
+
+The Vuex library is a centralized state management library for Vue.js. It enables users to establish a global state for applications with multiple components. This way, all parts of the application can access the state and react while avoiding race conditions, stale data, and complex data passing.  
+
+Vuex is established on certain fundamental concepts, each described below: 
+
+State: The state is called a store within Vuex, and it is accessible to all the components. Each component can have its own state too. You can create a store within the root component through the createStore() method. 
+
+Mutations: Mutations are functions that change the state in Vuex. These are synchronous and take the value as an argument along with the state as the first argument. 
+
+Actions: Actions can contain asynchronous transactions, and they commit mutations. 
+
+Modules: Vuex offers the ability to divide the store into modules, each with its dedicated store, mutations, and actions. 
+
+ 
+
+Package.json vs Package-lock.json 
+
+package-lock.json: records the exact version of each installed package which allows you to re-install them. Future installs will be able to build an identical dependency tree. 
+
+package.json: records the minimum version you app needs. If you update the versions of a particular package, the change is not going to be reflected here. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+What are state and props? 
+
+What is the purpose of useRef()? 
+
+What are Higher Order Components (HOC) and why to use it? 
+
+Code reuse, logic and bootstrap abstraction 
+
+Render High jacking 
+
+State abstraction and manipulation 
+
+Props manipulation 
+
+What is the purpose of using super constructor with props argument in React? 
+
+A child class constructor cannot make use of this reference until super() method has been called. The same applies for ES6 sub-classes as well. The main reason of passing props parameter to super() call is to access this.props in your child constructors. 
+
+setState is asynchronous.? 
+
+Does React useState Hook update immediately? 
+
+Problem 
+
+And how do you perform an action after useState hook has triggered? 
+
+Answer 
+
+React useState and setState don’t make changes directly to the state object; they create queues to optimize performance, which is why the changes don’t update immediately. The process to update React state is asynchronous for performance reasons. 
+
+To perform side effects after state has change, you must use the useEffect 
+
+ 
+
+What is the difference between ShadowDOM and VirtualDOM? 
+
+Virtual DOM 
+
+Virtual DOM is about avoiding unnecessary changes to the DOM, which are expensive performance-wise, because changes to the DOM usually cause re-rendering of the page. Virtual DOM also allows to collect several changes to be applied at once, so not every single change causes a re-render, but instead re-rendering only happens once after a set of changes was applied to the DOM. 
+
+ 
+
+Shadow DOM 
+
+Shadow dom is mostly about encapsulation of the implementation. A single custom element can implement more-or-less complex logic combined with more-or-less complex DOM. An entire web application of arbitrary complexity can be added to a page by an import and <body><my-app></my-app> but also simpler reusable and composable components can be implemented as custom elements where the internal representation is hidden in the shadow DOM like <date-picker></date-picker>. 
+
+ 
+
+Why we should not update state directly? 
+
+If you try to update state directly then it won’t re-render the component. 
+
+ 
+
+What's the difference between useCallback and useMemo in practice? 
+
+With useCallback you memoize functions, useMemo memoizes any computed value: 
+
+const fn = () => 42 // assuming expensive calculation here 
+
+const memoFn = useCallback(fn, [dep]) // (1) 
+
+const memoFnReturn = useMemo(fn, [dep]) // (2) 
+
+(1) will return a memoized version of fn - same reference across multiple renders, as long as dep is the same. But every time you invoke memoFn, that complex computation starts again. 
+
+(2) will invoke fn every time dep changes and remember its returned value (42 here), which is then stored in memoFnReturn. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 

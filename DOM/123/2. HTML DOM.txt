@@ -1,0 +1,106 @@
+# The HTML DOM (Document Object Model):
+
+
+    - The HTML DOM is an Object Model for HTML. It defines:
+        HTML elements as objects
+        Properties for all HTML elements
+        Methods for all HTML elements
+        Events for all HTML elements
+
+    - The HTML DOM is an API (Programming Interface) for JavaScript:
+        JavaScript can add/change/remove HTML elements
+        JavaScript can add/change/remove HTML attributes
+        JavaScript can add/change/remove CSS styles
+        JavaScript can react to HTML events
+        JavaScript can add/change/remove HTML events
+
+    - When a web page is loaded, the browser creates a Document Object Model of the page.
+    - The HTML DOM model is constructed as a tree of Objects:
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    1. The HTML DOM's Document Object:
+        - When an HTML document/file/page is loaded into a web browser, it becomes a document object.
+        - The document object is the root node of the HTML document.
+        - The document object is a property of the window object.
+        - The document object is accessed with: window.document or just document.
+            e.g: let url = window.document.URL; or let url = document.URL;
+
+        # Document Object's Properties and Methods:
+            # Document Object Properties:
+                - head
+                - body
+                - defaultView
+                - doctype
+                - forms
+                - images
+                - links
+                - links
+                - readyState
+                - title
+                - URL
+                - scripts
+                - etc.
+
+            # Document Object Methods:
+                - addEventListener
+                - getElementById
+                - getElementsByClassName
+                - getElementsByTagName
+                - getElementsByName
+                - querySelector
+                - querySelectorAll
+                - write
+                - etc.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    2. The HTML DOM's Element Object:
+        - In the HTML DOM, the Element object represents an HTML element, like P, DIV, A, TABLE, or any other HTML element.
+
+        # Element Object's Properties and Methods:
+            # Element Object's Properties:
+                - style
+                - attributes
+                - tagName
+                - childElementCount
+                - childNodes
+                - classList
+                - className
+                - dir
+                - firstChild
+                - innerHTML
+                - innerText
+                - nodeName
+                - scripts
+                - title
+                - etc.
+
+            # Element Object's Methods:
+                - addEventListener
+                - setAttribute
+                - appendChild
+                - getAttributeNode
+                - click
+                - getAttribute
+                - getAttributeNode
+                - getElementsByClassName
+                - hasAttribute
+                - querySelector
+                - querySelectorAll
+                - removeAttribute
+                - etc.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    3. The HTML DOM Element's Attributes:
+
+        - In the HTML DOM, an Attr object represents an HTML attribute.An HTML attribute always belongs to an HTML element.
+        - The Attr Object
+        - NamedNodeMap
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    4. The HTML DOM Events:
+
+        - HTML DOM events allow JavaScript to register different event handlers on elements in an HTML document.
+        - Events: onclick, 

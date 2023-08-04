@@ -1,0 +1,98 @@
+vanilla old javascript
+es6 ~ modern javascript
+node.js
+
+
+JavaScript runs in client side in browser console.
+JS makes website interactive.
+JS and CSS is found embedded inside HTML.
+
+HTML: Structure/ Skeleton (Markup Language)
+CSS: Style/ Design (Style Sheet Language)
+JS: Interactive/ Client Side Scripting/ Events/ engine of website/ makes page alive. (Programming Scripting Language)
+
+### We can also set css using scripting.
+
+Web server uses dynamic language like php, python(Django/Flask), JavaScript(node.js) for processing.
+
+Why javascript and why node.js? 
+
+JavaScript was developed to runs in client side in browser but later we were able to also use JavaScript in server side for data processing here come the role of node.js
+node.js is a back-end JavaScript runtime environment that executes JavaScript code outside a web browser.(node.js: javascript used in backend)
+
+Some JS transpiled language: coffee script, typescript.
+
+wew can write js in browser-console, code-editor.
+
+Output or print some text ins JS: alert(), console.log(), innerHTML, document.write()
+  * Writing into an HTML element, using innerHTML.
+  * Writing into the HTML output using document.write().
+  * Writing into an alert box, using window.alert().
+  * Writing into the browser console, using console.log().
+
+JavaScript Print
+JavaScript does not have any print object or print methods.
+You cannot access output devices from JavaScript.
+The only exception is that you can call the window.print() method in the browser to print the content of the current window.
+
+* DOM manipulate.
+* document.getElementByTagName('h1') ==> return HTMLCollection ~ as a document can have numbers of h1 tag
+* document.getElementByTagName('h1')[0]
+* document.getElementByTagName('h1')[0].style.fontSize = "60px"; ==> we can also set css using scripting.
+
+JavaScript is hosted by HTML means, JavaScript is embedded in HTML, inside <body></body> tag, just above closing bosy </body> tag.
+
+JavaScript console API {console.log(), console.error(), console.clear(), console.assert(), }
+* fetch API
+
+Where to JavaScipt: External, Internal, Inline.
+
+* computer program ~ set of instruction(statement)
+
+* variables are the container to store data values. (keyword to create variable: var, let, const)
+
+// comments */
+
+var -> function scope
+let -> block scope
+const -> block scope
+
+// Function Scope: When a variable is declared inside a function, it is only accessible within that function and cannot be used outside that function. Block Scope: A variable when declared inside the if or switch conditions or inside for or while loops, are accessible within that particular condition or loop.
+
+access object preperty and method either using dot . notation or bracket [] notation.
+
+this keyword in js. -> returns the reference to the js object.
+
+standalone function ~ this ~ window object
+
+every function in js is object having certain object members(properties and methods)
+
+
+# Arrow function:
+
+function square (numb){
+	return numb * numb;
+}
+
+#1 NormalFunction as variable.
+const square = function (numb){
+	return numb * numb;
+}
+
+#2
+const square = (numb) => {
+	return numb * numb;
+}
+
+#3
+const square = numb => {
+	return numb * numb;
+}
+
+#4
+const square = numb => numb * numb;
+
+#5
+const square = () => 2*2;
+
+# filter() methods
