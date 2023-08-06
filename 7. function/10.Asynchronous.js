@@ -1,3 +1,6 @@
+// In synchronous operations tasks are performed one at a time and only when one is completed, where following execution is blocked. In other words, you need to wait for a task to finish to move to the next one.
+// In asynchronous operations, on the other hand, you can move to another task before the previous one finishes. (No wait, No block)
+
 // Parent function or any function that takes function as argument is HOF.
 // Function that takes ttime to complete execution is asynchronous function.
 // Function that takes ttime to complete execution and for that it makes use of callback(passed as argument in it) is HOF asynchronous function.

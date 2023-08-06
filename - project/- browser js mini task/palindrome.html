@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Palindrome</title>
+</head>
+<body>
+	<input type="text" id="pal" placeholder="Enter the string">
+	<button type="button" onclick=palindrome()>Check for palindrome</button>
+	<script>
+		function palindrome()
+		{
+			var str=document.getElementById('pal').value;
+			var str1=str.toUpperCase(str);
+			var strsplit=str1.split("");
+			var strreverse=strsplit.reverse();
+			var strjoin=strreverse.join("");
+			if(str1==strjoin)
+			{
+				window.alert(str+" "+"is palindrome");
+			}
+			else{
+				window.alert(str+" "+"is not palindrome");
+			}
+			
+		}
+	</script>
+</body>
+</html>

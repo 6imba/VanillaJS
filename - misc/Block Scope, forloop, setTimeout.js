@@ -112,9 +112,9 @@
 //     })(i)
 // }
 
-// # 8:
-for(var i=0;i<5;i++){
-    (function(j){
-        setTimeout(()=>console.log(i), `${i}000`)
-    })(i)
-}
+// // # 8:
+// for(var i=0;i<5;i++){
+//     (function(j){
+//         setTimeout(()=>console.log(i), `${i}000`)
+//     })(i)
+// }

@@ -1,3 +1,40 @@
+// // 1:
+//     const double = (x) => {
+//         return x*2;
+//     }
+//     console.log(double(3))
+    
+// 2:
+const double = x => x*2;
+console.log(double(3))
+
+// #1 NormalFunction as variable.
+const square = function (numb){
+	return numb * numb;
+}
+
+// #2
+const square2 = (numb) => {
+	return numb * numb;
+}
+
+// #3
+const square3 = numb => {
+	return numb * numb;
+}
+
+// #4
+const square4 = numb => numb * numb;
+
+// #5
+const square5 = () => 2 * 2;
+
+
+// Note:
+    // - you dont have to write parenthesis if there is only one parameter in function.
+    // - no need of curly braces & return keyword incase fuinction has only one statement to be runned.
+
+
 
 
 //     // <title>ArrowFunction</title>

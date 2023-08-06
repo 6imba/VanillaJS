@@ -1,0 +1,28 @@
+- Object Destructuring in JavaScript
+- Spread Syntax in JavaScript
+- JavaScript Object Rest Properties/Parameter
+
+# Object Destructuring in JavaScript:
+    const user = { 
+        'name': 'Alex',
+        'address': '15th Park Avenue',
+        'age': 43
+    }
+    const {name,address,age} = user; //Object Destructuring
+
+# Spread Syntax in JavaScript:
+    const user = { 
+        'name': 'Alex',
+        'address': '15th Park Avenue',
+        'age': 43
+    }
+    const clone = {...user} 
+
+
+# JavaScript Object Rest Properties/Parameter:
+    const user = { 
+        'name': 'Alex',
+        'address': '15th Park Avenue',
+        'age': 43
+    }
+    const {age, ...rest} = user;

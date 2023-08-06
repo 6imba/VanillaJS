@@ -1,0 +1,33 @@
+# ECMA_JavaScript 7th Edition:
+    - Published_Date: June 2009: ECMAScript_2009(ES2009)
+    - Editor: Pratap Lakshman, Allen Wirfs-Brock
+
+    # Features included:
+        > "use strict"
+        > String[number] access
+        > Multiline strings
+        > String.trim()
+        > Array.isArray()
+        > Array forEach()
+        > Array map()
+        > Array filter()
+        > Array reduce()
+        > Array reduceRight()
+        > Array every()
+        > Array some()
+        > Array indexOf()
+        > Array lastIndexOf()
+        > JSON.parse()
+        > JSON.stringify()
+        > Date.now()
+        > Date toISOString()
+        > Date toJSON()
+        > Property getters and setters
+        > Reserved words as property names
+        > Object methods
+        > Object defineProperty()
+        > Function bind()
+        > Trailing commas
+
+# Reference:
+    -  https://www.w3schools.com/js/js_es5.asp

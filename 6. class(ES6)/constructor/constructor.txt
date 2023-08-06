@@ -1,7 +1,0 @@
-# Reference:
-    - https://www.w3schools.com/js/js_object_constructors.asp
-    - https://rollbar.com/blog/javascript-constructors/#:~:text=A%20constructor%20is%20a%20special,for%20any%20existing%20object%20properties.
-    - https://www.youtube.com/watch?v=U7wgCc9aTSk
-
-# Object instance are created with constructor(special function that prepare new instance of an object for use.)
-# 

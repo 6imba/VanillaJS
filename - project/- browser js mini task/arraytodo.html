@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TODO</title>
+	<style type="text/css">
+		.list{
+			border:1px solid #5f9ea0;
+			margin-top:20px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			color:white;
+			padding:10px;
+
+		}
+		.list:hover{
+			background-color:#5f9ea0;
+			color:black; 
+		}
+		.heading{
+			color: #5f9ea0;
+			font-size: 300%;
+			text-align: center;
+		}
+		body{
+			background-color: black;
+		}
+		
+		.btn{
+			background-color:#5f9ea0 ;
+			margin-left: 1129px
+
+		}
+		.btn:hover{
+			background-color:gray ;
+		}
+		#todolist
+		{
+			margin-left: 60px;
+			margin-top:30px;
+			padding:0 10px 0 10px ;
+			margin-right: 60px;
+		}
+		#todo{
+			margin-left:60px;
+		}
+		
+	</style>
+</head>
+<body>
+
+	<h1 class="heading">ToDo List</h1>
+	<textarea type="text" id="todo" rows="2" cols="150" placeholder="Type...."></textarea><br/>
+	<button onclick=add() class="btn" >Add ToDo</button>
+	<div id="todolist"></div>
+	<script type="text/javascript">
+		var todoarr=JSON.parse(localStorage.getItem('user_todo'))?JSON.parse(localStorage.getItem('user_todo')):[];
+		window.onload=function(){
+			getTodo();
+		}
+		function add()
+		{
+			var a=document.getElementById('todo').value;
+			todoarr.push(a);
+			getTodo();
+		}
+		function getTodo()
+		{
+			var list='';
+			todoarr.forEach(function(value){
+				list=list+'<div class="list">'+value+'</div>';
+				
+			}); 
+			localStorage.setItem('user_todo',JSON.stringify(todoarr)); 
+			document.getElementById('todolist').innerHTML=list;
+			document.getElementById('todo').value='';
+		}	
+		
+	</script>
+
+</body>
+</html>

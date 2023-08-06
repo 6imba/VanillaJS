@@ -1,0 +1,26 @@
+# ECMA_JavaScript 11th Edition:
+    - Published_Date: June 2020: ECMAScript_2020(ES2020)
+    - Editor: Jordan Harband, Kevin Smith
+
+    # Features Introduced:
+        > BigInt primitive type for arbitrary-sized integers,
+        > the nullish coalescing operator,
+        > the globalThis object,
+        > Dynamic import
+        > Import meta data: import.meta
+        > New export syntax
+        > Optional Chaining
+        > Promise.allSettled
+        > String#matchAll: String.prototype.matchAll
+        > globalThis
+        > Module Namespace Exports
+        > arbitrary precision integers
+        > Well defined for-in order
+        > matchAll() 
+        > Auth0 Authentication
+        > Promise.allSettled
+        > for-in mechanics
+
+# Reference:
+    - https://en.wikipedia.org/wiki/ECMAScript#ES2020
+

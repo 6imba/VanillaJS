@@ -1,2 +1,0 @@
-[InternetShortcut]
-URL=https://www.tutorialride.com/javascript/javascript-built-in-objects.htm

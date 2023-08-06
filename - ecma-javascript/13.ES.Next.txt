@@ -1,0 +1,6 @@
+# Wikipedia:
+    - ES.Next is a dynamic name that refers to whatever the next version is at the time of writing.
+    - ES.Next features include finished proposals (aka "stage 4 proposals") as listed at finished proposals that are not part of a ratified specification.
+    - The language committee follows a "living spec" model, so these changes are part of the standard, and ratification is a formality.
+
+# 

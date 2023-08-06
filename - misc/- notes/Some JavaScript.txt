@@ -1,3 +1,0 @@
-- Object.keys(messages).len()
-- window.location
-- window.open()

@@ -1,0 +1,38 @@
+Q. what is chaocolatey?
+Q. what is Latin letters and Non-Latin letters. There are eight alphabet groups in use today - Arabic, Aramaic, Armenian, Brahmi, Cyrillic, Georgian, Greek and Latin (The one that you are reading this page in).
+Q. How to define global object?
+Q. Where are global object placed?
+Q. Can we access the address of JavaScript varaible?
+Q. underscore in js?
+
+
+when & why to use callback? why is it call callback? meaning and reason behind the name.
+meaning of asynchronous word?
+Synchronous vs Asynchronous
+program vs statement vs code
+Functions often compute a return value ?
+see the memory address in js?
+is it possible to href at certain part of a external web page?
+
+
+
+here arrow function needed {}(curly brackets) but not below?
+    filteredUsers = customeUsersData.map((user_obj) => {
+      return user_obj;
+    });
+
+vs
+
+    filteredUsers = customeUsersData.filter(
+      (user_obj) => user_obj.user_Id == selectedUser
+    );
+
+
+
+
+
+How to get memory address of js variable?
+
+Mutable vs Immutable Data Types in js?
+
+Shallow Copy Only?

@@ -1,9 +1,0 @@
-Modularity in js means to split the code in different files.
-When a single file contains huge line of codes it create confussion and difficulty while read the code. So here comes the concept of modularity which simply means to split/break related code/statement accross different modules/files.
-And each files are call modules.
-Modules concept in JavaScript begins from ES6.
-Modularizing an application. like moving each classes in seperate files. due to which our application is more maintainable.
-Make class, function in module public by exporting it and import the exported class, function from other module.
-Default exports. -> import ... from '';
-Name export. -> import {...} from '';
-importing from own module vs  importing from third party libary(install first).

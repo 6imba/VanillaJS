@@ -1,0 +1,54 @@
+# ECMAScript Editions:
+    - Every year in June ECMA International publish new edition for all Scriptoing lanaguage.
+    - That means every year in June ECMA International publish new edition for JavaScript as well.(i.e ECMAScript for JavaScript.)
+    - Each edition is regards as a new version of JavaScript.
+    - ECMAScript versions have been abbreviated to ES1, ES2, ES3, ES5, and ES6.
+
+
+
+# ECMAScript JavaScript Edition(Edition of the ECMA-262 standard for JavaScript.):
+    #Edition     #Published_Date        #Official_Name
+    1.           June 1997              ECMAScript 1(ES1)
+    2.           June 1998              ECMAScript 2(ES2)
+    3.           December 1999          ECMAScript 3(ES3)
+    4.           June 2003              ECMAScript 4(ES4)
+    5.           December 2009          ECMAScript 5(ES5)
+    5.1	         June 2011              ES5.1
+    6.           June 2015              ECMAScript 2015(initially ES6)
+    7.           June 2016              ECMAScript 2016
+    8.           June 2017              ECMAScript 2017
+    9.           June 2018              ECMAScript 2018
+    10.          June 2019              ECMAScript 2019
+    11.          June 2020              ECMAScript 2020
+    12.          June 2021              ECMAScript 2021
+
+
+
+#  ECMA-262, ECMAScript,
+    - ES6/ECMAScript_2015/ES2015/ECMAJavaScript_6th_Edition
+    - ES7/ECMAScript_2016/ES2016/ECMAJavaScript_7th_Edition
+    - ES8/ECMAScript_2017/ES2017/ECMAJavaScript_8th_Edition
+    - ES9/ECMAScript_2018/ES2018/ECMAJavaScript_9th_Edition
+    - ES10/ECMAScript_2019/ES2019/ECMAJavaScript_10th_Edition
+    - ES11/ECMAScript_2020/ES2020/ECMAJavaScript_11th_Edition
+    - ES12/ECMAScript_2021/ES2021/ECMAJavaScript_12th_Edition
+
+
+
+# Every version of JavaScript:
+    - The Original JavaScript ES1 ES2 ES3 (1997-1999)
+    - The First Main Revision ES5 (2009)
+    - The Second Revision ES6 (2015)
+    - Yearly Additions (2016, 2017, 2018)
+
+
+
+# Reference:
+    - wikipedia
+    - https://262.ecma-international.org/6.0/
+    - https://www.javascripttutorial.net/es6/
+    - https://www.w3schools.com/js/js_versions.asp
+    - https://www.w3schools.com/js/js_versions.asp
+    
+    # You can check all versions from TC39 finished proposals.
+        - https://bytearcher.com/articles/es6-vs-es2015-name/

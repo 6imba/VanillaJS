@@ -1,15 +1,40 @@
-- alert(""!=0) ==> false
-- alert("amir"!=0) ==> true
-- alert("   "!=0) ==> false
+- JavaScript is synchronous, blocking, single-threaded language by default.
+- That just means that only one operation can be in progress at a time.
+- JavaScript, however, is single threaded and only one line of code can be executed at any given time.
+- Since, JavaScript is a single-threaded language, it is synchronous in nature.
+- Synchronous JavaScript: As the name suggests synchronous means to be in a sequence. i.e. every statement of the code gets executed one by one(back to back). So, basically a statement has to wait for the earlier statement to get executed.
+- Synchronous with a single thread : Tasks are executed one after another. Each task waits for its previous task to get executed.
+- Thus, JavaScript is single-threaded, blocking , synchronous language by default.
 
-# onkeyup:
-<input type="text" id="fname" onkeyup="myFunction()">
-<script>
-function myFunction() {
-  alert( document.getElementById("fname").value);
-}
 
-console.log("   amir    shrestha 6               ".trim()) ==> "amir    shrestha 6"
+- JavaScript is only asynchronous in the sense that it can make, for example, Ajax calls.
+- In the context of programming, Parallelism is the utilization of multiple threads in an operating system.
+- JavaScript is a single-threaded language because while running code on a single thread, it can be really easy to implement as we don't have to deal with the complicated scenarios that arise in the multi-threaded environment like deadlock.
+- Since, JavaScript is a single-threaded language, it is synchronous in nature.
 
-underscore in js?
+- Async programming is about non-blocking execution between functions, and we can apply async with single-threaded or multithreaded programming.
+- 
 
+- When is JavaScript Synchronous and when is JavaScript Asynchronous.
+
+
+https://www.youtube.com/watch?v=2WJL19wDH68
+https://www.google.com/search?q=is+single+thread+alwasys+synchronous%3F&oq=is+single+thread+alwasys+synchronous%3F&aqs=chrome..69i57j33i10i160.11530j0j7&sourceid=chrome&ie=UTF-8
+https://www.google.com/search?q=what+do+you+mean+by+JavaScript+bing+synchronous%3F&oq=what+do+you+mean+by+JavaScript+bing+synchronous%3F&aqs=chrome..69i57j33i160l2.15106j0j7&sourceid=chrome&ie=UTF-8
+https://betterprogramming.pub/is-javascript-synchronous-or-asynchronous-what-the-hell-is-a-promise-7aa9dd8f3bfb
+https://www.google.com/search?q=is+javascript+synchronous+or+asynchronous&oq=is+javascript+synchronous&aqs=chrome.0.0i512j69i57j0i512l2j0i22i30l5j0i390.7649j0j7&sourceid=chrome&ie=UTF-8
+https://frontendmasters.com/courses/rethinking-async-js/single-threaded-javascript/#:~:text=In%20the%20context%20of%20programming,executed%20at%20any%20given%20time.
+https://www.google.com/search?q=is+javascript+single+tread&oq=is+javascript+single+tread&aqs=chrome..69i57j0i13j0i8i13i30l2j0i390l2.10930j0j4&sourceid=chrome&ie=UTF-8
+https://www.google.com/search?q=architecture+of+javascript&oq=architecture+of+javascript&aqs=chrome.0.0i512j0i22i30l2.7458j0j7&sourceid=chrome&ie=UTF-8
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+-JavaScript is a single-threaded, non-blocking, asynchronous, concurrent programming language with lots of flexibility.
+
+
+https://www.freecodecamp.org/news/synchronous-vs-asynchronous-in-javascript/#:~:text=JavaScript%20is%20a%20single%2Dthreaded,language%20with%20lots%20of%20flexibility.
+https://stackoverflow.com/questions/15141118/are-javascript-functions-asynchronous/15141138

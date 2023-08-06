@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time</title>
+</head>
+<body>
+<script>
+
+    var da =new Date();
+    var y=da.getFullYear();
+    var m=da.getMonth()+1;
+    var d=da.getDate();
+    var hh=da.getHours();
+    var mm=da.getMinutes();
+    var ss=da.getSeconds();
+    document.write(y+"/"+m+"/"+d+","+hh+":"+mm+":"+ss+" ");
+    if(hh<12)
+    {
+        document.write("AM");
+    }
+    else
+    {
+        document.write("PM");
+    }
+
+
+</script>
+</body>
+</html>

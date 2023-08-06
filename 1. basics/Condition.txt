@@ -2,3 +2,5 @@ if else statement
 switch statement
 ternery operator
 && operator
+
+  - A contrasting example could be a ternary expression vs. an if statement. Both are used for conditional branching in the code.

@@ -1,0 +1,21 @@
+# ECMA_JavaScript 12th Edition:
+    - Published_Date: June 2021: ECMAScript_2021(ES2021)
+    - Editor: Jordan Harband, Shu-yu Guo, Michael Ficarra, Kevin Gibbons
+
+    # Features Introduced:
+        > String.prototype.ReplaceAll: replaceAll method for strings;
+        > Promise.any(), a promise combinator that short-circuits when an input value is fulfilled;
+        > AggregateError, a new error type to represent multiple errors at once;
+        > WeakRef, for referring to a target object without preserving it from garbage collection,
+        > FinalizationRegistry, to manage registration and unregistration of cleanup operations performed when target objects are garbage collected;
+        > Numeric Separators: separators for numeric literals (1_000);
+        > logical assignment operators (??=, &&=, ||=);
+            - Logical OR assignment operator ||=
+            - Logical AND assignment operator &&=
+            - Nullish coalescing assignment operator ??=
+        > Array.prototype.sort was made more precise, reducing the amount of cases that result in an implementation-defined sort order.
+        > Private Class Methods and Accessors
+
+# Reference:
+    - https://en.wikipedia.org/wiki/ECMAScript#ES2021
+

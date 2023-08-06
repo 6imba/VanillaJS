@@ -1,0 +1,19 @@
+# ECMA_JavaScript 10th Edition:
+    - Published_Date: June 2019: ECMAScript_2019(ES2019)
+    - Editor: Brian Terlson, Bradley Farias, Jordan Harband
+
+    # Features included:
+        > Array.prototype.flat,
+        > Array.prototype.flatMap,
+        > changes to Array.sort,
+            - Array.sort is now guaranteed to be stable, meaning that elements with the same sorting precedence will appear in the same order in the sorted array.
+        > changes to Object.fromEntries,
+            - Array.prototype.flat(depth=1) flattens an array to a specified depth, meaning that all subarray elements (up to the specified depth) are concatenated recursively.
+        > Another notable change is that so-called catch binding became optional.
+        > Changes to JavaScript Classes:  field declarations, private methods and fields, and static methods and fields.
+        > String trimStart() and trimEnd()
+        > Bigger Numbers with BigInt
+        > Flatten Arrays with flat() and flatMap()
+
+# Reference:
+    - https://en.wikipedia.org/wiki/ECMAScript#ES2019
