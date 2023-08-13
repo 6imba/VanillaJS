@@ -1,0 +1,67 @@
+# Variables:
+	- Variables are containers for storing data (storing data values).
+	- Variable can store: Value(Number, String, Boolean, undefined), Expression, Function, Object, Array etc.
+	- Data-Type of variable depends upon value stored/hold in/by it: Number, String, Boolean, Array, Object, undefined
+	- Know the datatype of variable using JavaScript Type Operators: typeof, instanceof
+	- Naming convention: under_score, UpperCamelCase, lowerCamelCase, $myDollar, MY_CONSTANT.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+# Keywords to Declare a JavaScript Variable:
+	- Using var keyword,
+	- Using let keyword,
+	- Using const keyword,
+	- Using nothing.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+# Variable uasge flow:
+	1. Declare,
+	2. Defined/Assign,
+	3. Call.
+
+	- var x; (Declare variable x)
+	- x = 2; (Define variable x)
+	- var y = x+3; (Call variable x)
+
+	- Declare and Define variable at same time.
+		- var x = 2; (Declare and Define)
+	- (Define means to assing value to the declared variable)
+
+	> You can declare many variables in one statement.
+		- let person = "John Doe", carName = "Volvo", price = 200;
+
+	> You can declare many variables in one statement but in multiple line span together.
+		let person = "John Doe",
+		carName = "Volvo",
+		price = 200;
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+# Constant Objects and Arrays
+	- The keyword const is a little misleading.
+	- It does not define a constant value. It defines a constant reference to a value.
+
+	> Because of this you can NOT:
+		- Reassign a constant value
+		- Reassign a constant array
+		- Reassign a constant object
+	> But you CAN:
+		- Change the elements of constant array
+		- Change the properties of constant object
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+# Declaration VS Defination:
+	- variable declare, value = undefined.
+	- variable define, value = literals| data
+
+	- var apple = 10; --> value: 10
+	- var ball; --> value: undefined
+	- var apple; --> value: 10, not undefined
+
+	- let apple = 10; --> value: 10
+	- let apple; error cannot re-declare let variable.
+
+--------------------------------------------------------------------------------------------------------------------------------
+

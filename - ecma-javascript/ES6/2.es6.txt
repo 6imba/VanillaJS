@@ -5,11 +5,6 @@ ES6 is latest addition to JavaScript.
 Node.js ~ server side JS
 node.js also support es6.
 
-var -> function scope
-let -> block scope
-const -> block scope
-
-// Function Scope: When a variable is declared inside a function, it is only accessible within that function and cannot be used outside that function. Block Scope: A variable when declared inside the if or switch conditions or inside for or while loops, are accessible within that particular condition or loop.
 
 access object preperty and method either using dot . notation or bracket [] notation.
 

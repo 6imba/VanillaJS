@@ -1,0 +1,84 @@
+# Phases Of Function:
+    1. Declaration/Defination
+    2. Invocation/Call/Ente
+    3. Return/Stop/Exist
+
+  1.> Function Declaration/Defination:
+
+    function myFunction(a, b) {
+      return a * b;
+    }
+    const x = myFunction(4, 3);
+
+    - function -> function declaration/defination keyword.
+    - () -> function invoke operator.
+    - (*args,) -> function parameter/argument.
+    - {} -> function body.
+    - return -> function return keyword.
+
+  2.> Function Invocation
+    - The code inside the function will execute when "something" invokes (calls) the function:
+    - When an event occurs (when a user clicks a button)
+    - When it is invoked (called) from JavaScript code
+    - Automatically (self invoked)
+    - When JavaScript reaches a return statement, the function will stop executing.
+    - The () Operator Invokes the Function
+
+  3.> Return from Functions:
+    1. Implicit: Default
+    2. Explicit: Manual
+
+    - there is no implicit return in JavaScript functions, if you write a function using the function keyword. 
+      i.e:
+      function needsReturn()
+      {
+        console.log('function invoked');
+      }
+      needsReturn()    //returns undefined
+
+    - Functions without a return statement return undefined by default.
+    
+    - But, this changes with arrow functions, which can potentially have an implicit return.
+    - An arrow function expression is a compact alternative to a traditional function expression, but is limited and can't be used in all situations.
+    - Single Expression Arrow Function Returns: resulting_executed_value by single_expression(here_acts _as_a_function_body)
+    - For an arrow function to have an implicit return an expression is required.
+    - Arrow functions can contain statements too, but now the function body must be surrounded by {curlies}. And as soon as you have curly braces surrounding your function body, returns are no longer implicit – for either statements or expressions.
+      i.e:
+        const explicit = () => { return 'Hi' }
+        explicit()
+
+        const implicit = () => 'Hi'
+        implicit()
+
+**************************************************************************************************************************************************************************************
+
+# Display function defination vs Display fucntion return value:
+
+  > code snippet:
+    <script>
+      function add(a,b) {
+        return a+b;
+      }
+      document.getElementById("demo").innerHTML = add //1
+      document.getElementById("demo").innerHTML = add(2,3); //2
+    </script>
+
+  > OutPut:
+    - function add(a,b) { return a+b; } //1
+    - 5 //2
+
+  > Conclution:
+    - Using the example above, add //1 refers to the function object/defination, and add() //2 refers to the function returned value.
+    - //1 prints function defination
+    - //2 if function invocation return value if has, so displayed function returned value else displayed undefined. "() operator invoke function"
+
+**************************************************************************************************************************************************************************************
+
+# Scope of varaible within functions:
+
+**************************************************************************************************************************************************************************************
+
+# Why Functions?
+	> You can reuse code: Define the code once, and use it many times.
+
+**************************************************************************************************************************************************************************************

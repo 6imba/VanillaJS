@@ -1,0 +1,96 @@
+# JS Scope:
+	- Scope determines the accessibility (visibility) of variables.
+	- JavaScript has 3 types of scope: Global Scope, Block Scope, Function Scope.
+	> global & local(Block,Function)
+
+# Global Scope:
+	- A with global scope is accessible anywhere, (use global keyword if need to reference it inside blockfunction)
+	- variable declared with var keyword has global scope which means it is attached with global_window_object.(global variables belong to the window object.)
+	- You can use export/import keyword to use global variables of one file/module into another.
+	- All globle variables declare with var keyword outside function are considers as properties of window_object.
+
+# Block Scope:
+	- Variables declared inside a { } block cannot be accessed from outside the block.(but we can reference to global variable via global keyword)
+	- A variable when declared inside the if or switch conditions or inside for or while loops, are accessible within that particular condition or loop.
+	- However, please note that the exported variable is not directly the block-scoped variable itself; it's the value assigned to that variable. This is because named exports operate on values, not on the variables themselves. If you need to share a block-scoped variable itself between modules, you would typically need to export it from a function, object, or class that contains it. The export and import process primarily deals with values and not the underlying variable declarations.
+
+# Function Scope:
+	- When a variable is declared inside a function, it is only accessible within that function and cannot be used outside that function.(but we can reference to global variable via global keyword)
+	- Variables declared with var, let and const are quite similar when declared inside a function.
+
+> Scope of variables declared with var, let and const are quite similar(function scope) when declared inside a function.
+	var x = 2
+	function a(){
+	    var x = 3;
+	}
+	a()
+	console.log(x)
+
+> If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable.
+	var x =2;
+	function a(){
+		x=3;
+	}
+	a()
+	console.log(x)
+
+> Variable declared with var keyword has global scope which means it is attached with global_window_object.(global variables belong to the window object.)
+	function apple(){
+		return 1;
+	}
+	console.log(global.apple)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Who have Global Scope?
+	- Varible declare with var keyword not inside function(anywhere outside function like sonditional block, so on),
+	- Varible define with no keyword(anywhere outside function like sonditional block, so on),
+	- Varible declare with let,const outside block{},
+	- Varible declare with var inside block{},
+	> Global Scope: variable: var, no keyword, let&const outside function_scope.
+
+# Who have Function Scope?
+	- Varible declare inside a JavaScript function, ==> function foo () {},
+	- Varible declare with var,let,const keyword all have Function Scope when declare inside a function.
+	> Function Scope: variable declare inside function foo () {} using any of the keyword var,let,const.
+
+# Who have Block Scope?
+	- Varible declare with let, const keyword inside block{}
+	- block scope if declared using let and const inside function scope
+	- Variables declared with the var keyword inside block{}, can NOT have block scope instead has has global scope.
+	> Block Scope: variable:let,const inside block, i.e; condition:if(){},switch(){} && loop:for(){},while(){},do{}.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q. What determinses the scope of any variable?
+	- What keyword is used while declaring variable?
+	- Where it is declared? (inside function, within block{}, outside any kind of block|function)?
+
+
+Q. Is a file and window same?
+	- Global variables can be used (and changed) by all scripts in the page (and in the window).
+	- script vs file vs page vs document vs window vs module?
+
+# Global:
+	- A global variable has Global Scope.
+	- Global variables can be accessed from anywhere within_a_same_JavaScript_program/file and from_a_another_JavaScript_program/file incase of import&export.
+	- Variables created with a declaration keyword (var) are always global. (but if they are created inside a function they are local).
+	- Variables created without a declaration keyword (var, let, or const) are always global. (even if they are created inside a function).
+
+# Local: Function or Block.
+	- A local variable has either Function or Block Scope.
+	- A local variable of function has a function scope.  ==> function foo (){}
+	- A local variable of block{} has a block scope.  ==> if(){}, switch(){}, for(){}, while(){}, do{}.
+	- Variables created with a declaration keyword (let & const) are always local.
+	- local variable declared inside function has function scope.
+	- local variable declared inside block(){} has block scope.
+	- Variables created with a declaration keyword (var) inside block(){} are always global.
+	- Variables created with a declaration keyword (var) inside function{} are always local.
+	- Variables created with (var, let, or const) declaration keywords are always local to function and has local/function scope.
+	- Variables created without a declaration keyword (var, let, or const) are always global, even if they are created inside a function.
+	- Variables created with declaration keyword (var) are always global, but if they are created inside a function they have local/function scope whereas if they are created inside a block{} they have global scope.
+	- Variables created with declaration keyword (let and const) are always local to block{} and have block scope.
+
+Q. shadowing varaible in block and function scope?
+
+Q. global scope variable vs gobal scope object

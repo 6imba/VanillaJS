@@ -24,3 +24,5 @@
 - Memory Life Cycle in JavaScript by JavaScript_Engine:
     # Phases:
         - Memory -> Allocate -> Use -> Realease
+
+- Variable Lifetime?

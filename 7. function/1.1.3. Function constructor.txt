@@ -1,0 +1,37 @@
+
+> Function Constructor vs Constructor Function: 
+    - Function Constructor is the function that creates function.
+        where as
+    - Constructor Function is used to create objects:promise_object,array_object,Object_object,Number_object,String_object, so on.
+    
+    # Example:
+        - Function Constructor: Function  ==>  new Function('a', 'b', 'return a + b');
+        - Constructor Function: Array,Promise
+            - Constructor Function can be pre-define/native/built-in as well as custome/self-defined.
+
+************************************************************************************************************************
+
+# Function are object:
+  - The typeof operator in JavaScript returns "function" for functions.
+  - But, JavaScript functions can best be described as objects.
+  - JavaScript functions have both properties and methods.
+  - The arguments.length property returns the number of arguments received when the function was invoked.
+  - The toString() method returns the function as a string.
+
+*********************************************************************************************************
+
+# Notes:
+  - A function defined as the property of an object, is called a method to the object.
+  - A function designed to create new objects, is called an object constructor.
+
+*********************************************************************************************************
+
+# Summary:
+  - JavaScript functions can be used as values:
+  - JavaScript functions can be used in expressions:
+  - Functions are Objects
+  - Arrow Functions
+  - The Arguments Object
+  - Arguments are Passed by Value
+  - Objects are Passed by Reference
+  - Function are object.

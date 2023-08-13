@@ -22,5 +22,3 @@
 
 # Whole Summury:
     - varaible's (scope,declare,assign,re-declare,re-assign,mutable,pass by value or reference) is determined by ==>where(inside function, within block{}, outside any kind of block|function) its declared and keyword used while declaring.
-
-# 

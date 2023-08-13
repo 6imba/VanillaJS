@@ -58,11 +58,6 @@
 - Run JS in .html in browser-console.
 - Run JS in .js in IDE using node.js
 
-- Variable declaration keyword and its scope.
-- var, let, const
-- Global Scope,
-- Function Scope,
-- Block Scope,(define scope)
 
 - Data Types:
 	- String,

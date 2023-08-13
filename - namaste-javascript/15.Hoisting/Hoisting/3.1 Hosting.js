@@ -35,3 +35,33 @@
 // const y = 2;
 // // In JavaScript variable declared with let and const keyword are hoisted to the top of their block scope, but not initialized(so gives error).
 // // ReferenceError: Cannot access 'carName' before initialization
+
+
+// // Hoisting1:
+// function func3(){
+//     console.log(x)
+//     let x = 3;
+// }
+// func3()
+
+// // Hoisting2:
+// function func3(){
+//     let x = 3;
+//     console.log(x)
+// }
+// func3()
+
+
+// Hoisting1:
+function func3(){
+    console.log(x)
+    let x = 3;
+}
+func3()
+
+// Hoisting2:
+function func4(){
+    let x = 3;
+    console.log(x)
+}
+func4()
