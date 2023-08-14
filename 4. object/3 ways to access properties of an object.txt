@@ -7,3 +7,60 @@
 - In OOP clas is an object constructor but in JS function an object constructor.
 - There are four ways to create an object in JavaScript - using object literals, using the function constructor, using the Object. create method, and using the class keyword (which is almost the same as using a function constructor).
 - https://www.youtube.com/results?search_query=object+constructor+in+JS
+
+
+access object preperty and method either using dot . notation or bracket [] notation.
+
+
+every function in js is object having certain object members(properties and methods)
+
+- Object.keys(messages).len()
+
+
+
+//object
+
+let person = {
+	fname: "Amir",
+	lname: "Shrestha",
+	age: 21,
+	gender: "male",
+	address: "Sindhupalchok",
+	occupation: "student",
+
+	fullName: function(){
+		return this.fname + " " + this.lname;
+	}
+}
+
+document.write(person.fullName()); ----> Amir Shrestha ----> object_method_call
+document.write(person.age); ----> 21 ----> object_property
+
+
+i.e:
+// person -> object_name
+// name: "Amir", lname: "Shrestha", age: 21, gender: "male", address: "Sindhupalchok", occupation: "student", ----> object_properties(key/value_pair)
+// fname, lname, age, gender, address, occupation ----> object_properties_keyes
+// "Amir", "Shrestha", 21, "male", "Sindhupalchok", "student" ----> object_properties_values
+// fullName ----> object_method
+// In a function definition, this refers to the "owner/object" of the function.
+
+
+- JS Objects,
+	var obj1 = {
+		name: "Amir",
+		about: function() {
+			console.log("I am Amir")
+		}
+	}
+
+	//2018 updates
+	var obj1 = {
+		name: "Amir",
+		about () {
+			console.log("I am Amir")
+		}
+	}
+
+	obj1.about()
+	obj1["about"]()

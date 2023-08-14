@@ -219,3 +219,33 @@ func2();
 
 
 //https://www.w3schools.com/js/js_arrow_function.asp
+
+
+# Arrow function:
+
+function square (numb){
+	return numb * numb;
+}
+
+#1 NormalFunction as variable.
+const square = function (numb){
+	return numb * numb;
+}
+
+#2
+const square = (numb) => {
+	return numb * numb;
+}
+
+#3
+const square = numb => {
+	return numb * numb;
+}
+
+#4
+const square = numb => numb * numb;
+
+#5
+const square = () => 2*2;
+
+# filter() methods

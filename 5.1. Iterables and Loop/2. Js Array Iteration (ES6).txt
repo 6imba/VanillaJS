@@ -1,3 +1,76 @@
 Map, reduce, and filter are all array methods in JavaScript.
 Each one will iterate over an array and perform a transformation or computation.
 Each will return a new array based on the result of the function. In this article, you will learn why and how to use each one.
+
+
+
+- for, for in, for of, foreach.
+	- for(let i, i<10, i++)
+	- for(let i in arr)
+	- for(let i of arr)
+	- arr.forEach()
+
+
+
+
+# looping:
+for, while, do while, forEach
+
+// for loop
+for(let i=0; i<=100; i++){
+	document.write(i+"<br>");
+}
+..............................................
+
+
+// while loop
+let i=0;
+while(i<=100){
+	document.write(i+"<br>");
+	i++;
+}
+..............................................
+
+
+// do while loop
+let i=0;
+do{
+   document.write(i+"<br>");
+   i++;
+}while(i<=100)
+..............................................
+
+//forEach loop
+
+const days = ['Sunday', 'Monday', 'Tuesday','Wednusday','Thursday','Friday','Saturday']
+days.forEach( function(day){ document.write(day); } ) -> SundayMondayTuesdayWednusdayThursdayFridaySaturday
+
+************************************************************************************************************************
+
+//Array
+const days = ['Sunday', 'Monday', 'Tuesday','Wednusday','Thursday','Friday','Saturday']
+console.log(days); -> Sunday, Monday, Tuesday,Wednusday,Thursday,Friday,Saturday
+console.log(days[0]); -> Sunday
+console.log(days[9]); -> undefined
+
+built-in function of js_array:
+days.shift(); -> add first element of array
+days.shift("Baar"); -> add passed argument as first element of array
+days.pop(); -> remove last element of array
+days.push(); -> add passed argument as last element of array
+days.splice(2,3,"TWT") -> add add passed argument in after the passed index inplace of passed indexed-> SundayMondayTWTFridaySaturday
+days.length
+days.sort()
+
+******
+
+
+
+
+- JS Array,
+	var arr1 = [1,2,3,4] // define array in normal way
+	var arr1 = new Array(1,2,3,4) // define array in object oriented way//here Array is Interface or Class
+	- JS is multi paradime
+	- In JS array are objects.
+	- In JS everythings are objects.
+	- join(): array to string && split(): string to array.

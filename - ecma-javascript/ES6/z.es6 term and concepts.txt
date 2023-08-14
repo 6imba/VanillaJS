@@ -1,1 +1,0 @@
-Object Destructuring ==> {property1, propery2} = {p:"hi1", p:"hi2"}

@@ -18,6 +18,17 @@
   16. Generator Function (https://www.geeksforgeeks.org/javascript-function-expression-2/)
   17. Factory function (return object)
   18. Node Module Wrapper function
+  19. standalone function (this ~ window object)
+
+  - function:
+	- normal function,
+	- variable function,
+	- arrow function,
+	- anonomous function,
+	- normal function,
+	- self-calling function,
+	- callback function,
+	- asynchronous function,
 
 *********************************************************************************************************
 

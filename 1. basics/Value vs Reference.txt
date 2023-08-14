@@ -1,3 +1,0 @@
-# In JavaScript:
-    > pass by value: function_argument
-    > pass by reference: object

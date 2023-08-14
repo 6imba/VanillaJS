@@ -1,9 +1,6 @@
-- Object.keys(messages).len()
-- window.location
-- window.open()
-- use strict
-- global.location
+this keyword in js. -> returns the reference to the js object.
 
+standalone function ~ this ~ window object
 
 # this.innerHTML
     <!DOCTYPE html>

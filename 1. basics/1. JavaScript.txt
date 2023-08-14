@@ -53,8 +53,7 @@ Where to JavaScipt: External, Internal, Inline.
 
 access object preperty and method either using dot . notation or bracket [] notation.
 
-this keyword in js. -> returns the reference to the js object.
-
-standalone function ~ this ~ window object
-
 every function in js is object having certain object members(properties and methods)
+
+
+- JS engine,

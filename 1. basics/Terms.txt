@@ -6,3 +6,6 @@
 EXPRESSIONS vs STATEMENTS:
 EXPRESSIONS: x+4-8*0;         ==> an expression returns or is replaceable with a value
 STATEMENTS: const result=x+4-8*0; alert('hi amir'); ==> statement will execute some code without a resulting value
+
+- use strict
+- global.location

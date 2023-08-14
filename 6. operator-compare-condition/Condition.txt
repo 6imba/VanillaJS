@@ -4,3 +4,13 @@ ternery operator
 && operator
 
   - A contrasting example could be a ternary expression vs. an if statement. Both are used for conditional branching in the code.
+
+
+# condition:
+if (myAge < 18){
+	document.write("You are kid!");
+}else if(myAge > 18 & myAge < 30){
+	document.write("You are adult!");
+}else{
+	document.write("You are man!");
+}

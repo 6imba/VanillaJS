@@ -1,0 +1,10 @@
+// Math
+let a = Math.PI;
+let a = Math.round(2.3453454353);
+let a = Math.pow(2,3);
+let a = Math.sqrt(25);
+let a = (Math.random());
+let a = (Math.random()*6);
+let a = (Math.random()*6).toFixed(0);
+let a = Math.ceil(0.1); --> return 1
+let a = Math.floor(2.6); --> return 2

@@ -23,3 +23,7 @@ Q. iteration protocols?
 Q. 
 
 
+
+The Difference Between Arrays and Objects
+In JavaScript, arrays use numbered indexes.  
+In JavaScript, objects use named indexes.

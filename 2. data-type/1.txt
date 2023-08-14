@@ -1,0 +1,13 @@
+- typeof()
+
+- Data Types:
+	- String,
+	- Number,
+	- Boolean,
+	- undefined,
+	- null.
+
+
+	typeof array_variable_name 
+Array.isArray(array_variable_name) --> return true
+fruits instanceof Array; --> return true

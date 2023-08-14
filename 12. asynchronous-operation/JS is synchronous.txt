@@ -26,7 +26,8 @@ https://www.google.com/search?q=is+javascript+synchronous+or+asynchronous&oq=is+
 https://frontendmasters.com/courses/rethinking-async-js/single-threaded-javascript/#:~:text=In%20the%20context%20of%20programming,executed%20at%20any%20given%20time.
 https://www.google.com/search?q=is+javascript+single+tread&oq=is+javascript+single+tread&aqs=chrome..69i57j0i13j0i8i13i30l2j0i390l2.10930j0j4&sourceid=chrome&ie=UTF-8
 https://www.google.com/search?q=architecture+of+javascript&oq=architecture+of+javascript&aqs=chrome.0.0i512j0i22i30l2.7458j0j7&sourceid=chrome&ie=UTF-8
-
+https://www.freecodecamp.org/news/synchronous-vs-asynchronous-in-javascript/#:~:text=JavaScript%20is%20a%20single%2Dthreaded,language%20with%20lots%20of%20flexibility.
+https://stackoverflow.com/questions/15141118/are-javascript-functions-asynchronous/15141138
 
 
 
@@ -34,7 +35,3 @@ https://www.google.com/search?q=architecture+of+javascript&oq=architecture+of+ja
 --------------------------------------------------------------------------------------------------------------------------------
 
 -JavaScript is a single-threaded, non-blocking, asynchronous, concurrent programming language with lots of flexibility.
-
-
-https://www.freecodecamp.org/news/synchronous-vs-asynchronous-in-javascript/#:~:text=JavaScript%20is%20a%20single%2Dthreaded,language%20with%20lots%20of%20flexibility.
-https://stackoverflow.com/questions/15141118/are-javascript-functions-asynchronous/15141138

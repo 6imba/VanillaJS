@@ -1,18 +1,8 @@
-Recent version of JS: ES6 / ES2015/ ECMAScript 6(specification defines what features are avialable in js)
-
-Vanilla JavaScript ~ Common JS
-ES6 is latest addition to JavaScript.
-Node.js ~ server side JS
-node.js also support es6.
 
 
-access object preperty and method either using dot . notation or bracket [] notation.
 
-this keyword in js. -> returns the reference to the js object.
 
-standalone function ~ this ~ window object
 
-every function in js is object having certain object members(properties and methods)
 
 
 # Arrow function:
@@ -139,42 +129,18 @@ const items = colors.map( color => `<li>${color}</li>`);
 # Arrow Function and this in method inside object in es6:
 
 
-#Object Destructuring:
+******************************************************************************************************************
+
+# function:
+
+//function_defination
+function printName(){
+	document.getElementById("id_1").innerHTML="Hello World!";
+}
+
+//function_call
+<p id="id_1"></p>
+<button onclick="printName()">ClickMe</button>
 
 
-#Spred Operator:
-
-#Spred Operator in array:
-const arr1 = [1,2,3];
-const arr1 = [5,6,7];
-const arr3 = [...arr1, 4, ...arr2, 8];
-arr3 ==> [1,2,3,4,5,6,7,8]
-spread operator to clone array. ==> const arr4 = [...arr3]
-
-#Spred Operator in object:
-const obj1 = [age: 22];
-const obj1 = {age: 20};
-const obj3 = {...obj1, name:'Amir', ...obj2, name:'Samir'}
-obj3 ==> {age:22, name:'Amir', age:20, name:'Saimr'}
-spread operator to clone object. ==> const obj4 = [...obj3]
-
-#ECMAScript 6 compatibility table
-
-Reference:
-
-https://www.youtube.com/watch?v=NCwa_xi0Uuc&t=2790s
-TABLE OF CONTENT: 
-01:45 Let vs Var vs Const
-05:39 Objects 
-08:26 The this Keyword
-11:17 Binding this
-13:55 Arrow Functions
-18:12 Arrow Functions and this
-22:29 Array.map Method
-26:06 Object Destructuring
-28:37 Spread Operator
-32:41 Classes
-36:28 Inheritance 
-40:33 Modules
-44:45 Named and Default Exports
-template literals ==> backtick ``
+************************************************************************************************************************

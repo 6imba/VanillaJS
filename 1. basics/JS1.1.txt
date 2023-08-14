@@ -1,0 +1,62 @@
+- Machine Level Language vs Assembly Langugae vs High Level Language,
+
+- Compiled Language vs Interpreted Language(Most of the scripting language are interpreted:python, javascript, etc )
+
+- Dynamically Typed PL vs Statically Typed PL. (automatically set datatype of variable)
+
+- Prototype Based PL: Everything in JS is object, linked to its prototype.
+
+- Multi-paradigm PL(oop/functional/procedual).
+
+- JavaScript: High Level, Interpreted, Dynamically Typed, Prototype Based, Multi-paradigm Programming Language.
+
+- JS makes website interractive-dynamic at client-side/browser.
+- Node.js works at server-side.
+
+- Functionality of JS:
+	- DOM(Tree structure) Manipulation,
+	- Event Handlings
+	- Animations,
+	- Asynchronous Data Send/Receive,
+	- Threading(WE Workers)
+	- etc
+
+* Concurrency vs Parallelism ,
+
+- JS Stacks:
+	- MERN
+	- MEAN
+	- MEVN
+	- PERN
+
+	- Database: MongoDB, MySQL, PostgreSQL
+	- Frontend: React.js, Angular.js, Veu.js
+	- Backend: Node.js
+	- Node.js framework: Express.js (use: web application server framework/Middleware Routing)
+
+- JS Libraries: Jquery, Counterup.js, Aos.js, pdf.js, wow.js. html2Canvas.js.
+
+- ECMA: ECMA oraganization has set a standard for Language(JS,etc) and that standard is called ECMAScript.
+- IEEE: IEEE oraganization has set a standard for Computer Network.
+
+- Single-page, Multi-page, and Hybrid web applications.
+
+- JS is language for browser.
+- Browser is depends on specific Scripting Language.
+
+- Version of ECMAScript:
+	- ECMA-262,
+	- ES1,
+	- ES2,
+	- ES3,
+	* ES4,
+	- ES5,
+	- ES6,
+
+- Version of JavaScript means, upadation in ECMAScript which is implemented in JavaScript.
+
+- Run JS in .html in browser-console.
+- Run JS in .js in IDE using node.js
+- Multi-paradigm PL(oop/functional/procedual).
+	- var a = "Hello";
+	- var a = new String("Hello");

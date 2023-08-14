@@ -171,3 +171,12 @@ To summarize, the web browser, as the software running on the user's device, gen
     - It is created and exposed by a web browser when it parses the web document.
     - The DOM can be accessed and manipulated using scripting languages like JavaScript.
 
+
+
+
+
+- DOM Manupulation
+	- To make eweb page dynamic not static: JS was introduced which has DOM Manupulation feature.
+	- DOM: Structural model of HTML document.
+	- Shows the Hirarchy(Parent-child of html element)
+	- DOM lets us visualize and modify/,manipulate tags in html file.

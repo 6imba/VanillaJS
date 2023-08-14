@@ -20,3 +20,35 @@ Q. What is ES6?
 
 Q. Typescript vs Javascript?
     - TypeScript is known as an Object-oriented programming language whereas JavaScript is a scripting language
+
+
+Recent version of JS: ES6 / ES2015/ ECMAScript 6(specification defines what features are avialable in js)
+
+Vanilla JavaScript ~ Common JS
+ES6 is latest addition to JavaScript.
+Node.js ~ server side JS
+node.js also support es6.
+
+
+#ECMAScript 6 compatibility table
+
+Reference:
+
+https://www.youtube.com/watch?v=NCwa_xi0Uuc&t=2790s
+TABLE OF CONTENT: 
+01:45 Let vs Var vs Const
+05:39 Objects 
+08:26 The this Keyword
+11:17 Binding this
+13:55 Arrow Functions
+18:12 Arrow Functions and this
+22:29 Array.map Method
+26:06 Object Destructuring
+28:37 Spread Operator
+32:41 Classes
+36:28 Inheritance 
+40:33 Modules
+44:45 Named and Default Exports
+template literals ==> backtick ``
+
+ES5 vs ES6
