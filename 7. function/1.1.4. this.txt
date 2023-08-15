@@ -1,0 +1,21 @@
+# this keyword in js:
+* In a function definition, this refers to the owner_object of the function.
+const person = {
+	meth1() {
+		console.log(this);
+	}
+}
+person.meth1(); ~ print object/object_defination in console
+# if we call a functioin as a method in an object, this will always returns a refference to that object. However if we call a function as a stand_alone_object or outside of an object, this will return global object which is window object in browser.
+
+function itself is an object.
+const meth2 = person.meth1; //here meth1 is method of person object. In js a function itself is an object. But meth2 is a function as a stand_alone_object.
+
+# if strick mode is enable, then this returns undefined if we call a function as a stand_alone_object or outside of an object.
+
+So solution for no matter how we call this keyword, this will alaways return reference to its owner object is bind method of function object in js.
+
+
+# callback function is not part of any object
+# arrow function doesnt rebind this keyword.
+# if we call a functioin as a method in an object, this will always returns a refference to that object. However if we call a function as a stand_alone_object or outside of an object, this will return global object which is window object in browser.

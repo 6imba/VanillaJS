@@ -12,14 +12,48 @@
         // Local variables have short lives. They are created when the function is invoked, and deleted when the function is finished.
 
 // # Example of closure with self invoking function:
-    // const add = (function () {
-    //     let counter = 0;
-    //     return function () {counter += 1; return counter;}
-    // })();
+  // const add = (function () {
+  //   let counter = 0;
+  //   return function () {counter += 1; return counter;}
+  // })();
+  // console.log(add)
+  // console.log(add())
+  // console.log(add())
+  // console.log(add())
+    
+  // const add = (function () {
+  //   let counter = 0;
+  //   const x = () => { counter += 1; return counter; }
+  //   return x;
+  // })();
+  // console.log(add)
+  // console.log(add())
+  // console.log(add())
+  // console.log(add())
+  
+    // const add = () => {
+    //   let counter = 0;
+    //   return function () { counter += 1; return counter; }
+    // };
     // console.log(add())
     // console.log(add())
     // console.log(add())
 
+    // const add = () => {
+    //   let counter = 0;
+    //   return function () { counter += 1; return counter; }
+    // };
+    // console.log(add()())
+    // console.log(add()())
+    // console.log(add()())
+
+    // const add = () => {
+    //   let counter = 0;
+    //   return counter += 1;
+    // };
+    // console.log(add())
+    // console.log(add())
+    // console.log(add())
 
     // Here:
         // first, this self invoking function runs first.
@@ -35,12 +69,12 @@
 
 
 
-// const myArray = [10, 12, 15, 21];
-// for (var i = 0; i < myArray.length; i++) {
-//   setTimeout(function() {
-//        console.log(`Current index is ${i} and the element is ${myArray[i]}`);
-//   }, 3000);
-// }
+const myArray = [10, 12, 15, 21];
+for (var i = 0; i < myArray.length; i++) {
+  setTimeout(function() {
+       console.log(`Current index is ${i} and the element is ${myArray[i]}`);
+  }, 3000);
+}
 
 // const myArray = [10, 12, 15, 21];
 // for (var i = 0; i < myArray.length; i++) {
@@ -58,12 +92,12 @@
 
 
 
-const myArray = [10, 12, 15, 21];
-for (let i = 0; i < myArray.length; i++) {
-  setTimeout(function() {
-       console.log(`Current index is ${i} and the element is ${myArray[i]}`);
-  }, 3000);
-}
+// const myArray = [10, 12, 15, 21];
+// for (let i = 0; i < myArray.length; i++) {
+//   setTimeout(function() {
+//        console.log(`Current index is ${i} and the element is ${myArray[i]}`);
+//   }, 3000);
+// }
 // We can also solve this by replacing var keyword with let while assigning iterator"i" in For loop.
 // As we know that variable defined with var keyword has block scope and variable defined with let keyword has block scope.
 // So, value of i for each iteration is uniquely pass by value while incase of var it was pass by reference to i.

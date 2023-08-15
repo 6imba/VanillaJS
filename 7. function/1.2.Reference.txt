@@ -1,2 +1,0 @@
-1. https://cmorinan.medium.com/passing-functions-as-arguments-in-javascript-tips-and-pitfalls-d29bbd4522a9
-2. https://www.dofactory.com/javascript/function-objects#:~:text=In%20JavaScript%2C%20functions%20are%20called,as%20arguments%20to%20other%20functions
