@@ -1,0 +1,10 @@
+# Type of event:
+    - Mouse Events
+    - Keyboard Events
+    - Form Events
+    - Document Events
+    - Loading Events
+    - Network Events
+    - Window Events
+    - Custom Events
+    - Focus & Blur events

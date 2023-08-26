@@ -1,0 +1,4 @@
+- https://developer.mozilla.org/en-US/docs/Web/Events
+- https://www.w3schools.com/js/js_events.asp
+- Cheat Sheet: https://javascript.info/events
+- https://www.educba.com/javascript-onsubmit/

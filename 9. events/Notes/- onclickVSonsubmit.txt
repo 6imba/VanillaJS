@@ -1,0 +1,44 @@
+# Button click(onclick) VS Form submission(onsubmit):
+    - onsubmit is register on form tag, it will be triggered before submitting the form,
+    - onclick is register on html tag generally on button tag to trigger click events.
+
+- Before submitting the form, data verification is generally performed.
+- You can choose to verify in onclick on the submit button, or verify in onsubmit.
+- But onclick is triggered earlier than onsubmit.(& onsubmit can be placed on form tag only.)
+
+1. The user clicks the button —->
+2. Trigger onclick event —->
+3. Onclick returns true or onclick is not processed —->
+4. Trigger onsubmit event —->
+5. Onsubmit is not processed or returns true ——>
+6. Submit the form.
+7.  The onsubmit processing function returns false and the onclick function returns false, neither will cause the form to be submitted.
+8. Which would be the reasons to ever use the onclick of a submit button to determine whether or not the form should be submitted?
+
+https://blog.actorsfit.com/a?ID=00550-1a5a9af5-f9a7-49a9-9819-9f784dbd435e
+https://www.py4u.net/discuss/299899
+
+
+
+Q.What happens when you press submit button?
+    - "Upon clicking the submit button: It calls any button class handlers, then any  attached javascript handlers, and then the submit form handler.
+    - All button class objects have built in methods.
+
+    <form action="/action_page.php" onsubmit="JS">
+        <input type="submit" value="Submit" onclick="Js">
+    </form>
+
+    * onclick="Js" ==> button-class-handlers
+    * onsubmit="JS" ==> form-attached-javascript-handlers
+    * action="/action_page.php" ==> form-action-handler or simply form handler.
+
+    - https://coderanch.com/t/599987/languages/click-HTML-submit-button
+
+
+
+
+******************************************************************************************************************************************************************************************
+
+The Target Attribute
+The target attribute specifies where to display the response that is received after submitting the form.
+The target attribute can have one of the following values:

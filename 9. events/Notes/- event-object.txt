@@ -1,0 +1,15 @@
+- event object can be found in event handler funtion only.
+- jun sukai function ma ni event vanera parameter chai lekhna  milxa but use aauxa ki aaudaina vanne ho?
+    const eventHandler = (event) => {
+      console.log("Console event object from event handler function: "+event)
+      callFunc();
+    }
+
+    const callFunc = (event) => {
+      console.log("Trying to console event object from event handler function: "+event)
+    }
+
+
+
+What is the first required argument of event listeners?
+Event listeners only take one argument, the Event Object, which is automatically passed to the listener, and the return value is ignored.

@@ -56,3 +56,11 @@ const citrus = fruits.slice(1,3);
 - array destructuring
 - array looping
 - iteration array ==> loop(for,while,do,forEach), Built-in-HOF(map,reduce,filter,), operators(in)
+- forEach
+- map
+- filter
+- find
+- reduce
+- some
+- includes
+- indexOf

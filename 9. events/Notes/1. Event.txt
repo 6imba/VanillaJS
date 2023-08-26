@@ -1,0 +1,17 @@
+- JS events are "things" that the browser does, or something a user does/happen to HTML_elements,document_object,window_object.
+- JavaScript lets you execute-code/react-someJS when events are detected. That code is called EventHandler which allow you to react on, when certain things happens on page.
+
+* Here are some examples of HTML events:
+    An HTML web page has finished loading
+    An HTML input field was changed
+    An HTML button was clicked
+    When a user clicks the mouse
+    When a web page has loaded
+    When an image has been loaded
+    When the mouse moves over an element
+    When an input field is changed
+    When an HTML form is submitted
+    When a user strokes a key
+
+# Assign/Register Events.
+# Types of Events.

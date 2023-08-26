@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MutationObserver</title>
+</head>
+<body>
+    <div id="app">
+        <div>
+            Count: <span id="count"></span>
+        </div>
+        <button onclick="increaseCount()">increase</button>
+        <p id="noMutaTionObserver"> <b>noMutaTionObserver</b> </h1>
+    </div>
+
+    <script>
+        
+        /*
+        * dom mutating code:
+        **/
+        let count  = 0;
+        const selector = document.getElementById('count')
+        selector.innerHTML = count;
+        const increaseCount = () => {
+            count = count+1;
+            selector.innerHTML = count;
+        }
+
+        /*
+        * dom mutation observer:
+        **/
+        const elementToBeObserver = document.querySelector("#app")
+        // const elementToBeObserver = document.querySelector("#noMutaTionObserver")
+        function mutaionHandlerCallback (mutatedElement, domMutationObserver) {
+            console.log('mutatedElement', mutatedElement)
+            console.log('domMutationObserver ==> ', domMutationObserver)
+            console.log('Callback to be execute when observe mutation on elementToBeObserver ...')
+        }
+        const domMutationObserver = new MutationObserver(mutaionHandlerCallback)
+
+        // Start observing the document with the configured parameters
+        const observerConfig = { childList: true, subtree: true }
+        domMutationObserver.observe(elementToBeObserver, observerConfig)
+
+        // Stop observing mutation after 5000 milisecond
+        setTimeout( ()=>{
+            domMutationObserver.disconnect() //stop observing mutation on elementToBeObserver
+        }, 5000)
+
+    </script>
+</body>
+</html>

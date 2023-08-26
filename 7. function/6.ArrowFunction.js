@@ -1,41 +1,37 @@
-// // 1:
-//     const double = (x) => {
-//         return x*2;
-//     }
-//     console.log(double(3))
-    
-// 2:
-const double = x => x*2;
-console.log(double(3))
+// 1: anonomous arrow function as function expression:
+const double1 = (x) => {
+  return x*2;
+}
+console.log(double1(3))
 
-// #1 NormalFunction as variable.
-const square = function (numb){
-	return numb * numb;
+// 2: anonomous arrow function as function expression:
+const double2 = x => x*2;
+console.log(double2(3))
+
+// 3: anonomous normal function as function expression:
+const square1 = function (numb){
+  return numb * numb;
 }
 
-// #2
+// 4: anonomous arrow function as function expression:
 const square2 = (numb) => {
-	return numb * numb;
+  return numb * numb;
 }
 
-// #3
+// 5: anonomous arrow function as function expression:
 const square3 = numb => {
-	return numb * numb;
+  return numb * numb;
 }
 
-// #4
+// 6: anonomous arrow function as function expression:
 const square4 = numb => numb * numb;
 
-// #5
+// 7: anonomous arrow function as function expression:
 const square5 = () => 2 * 2;
-
 
 // Note:
     // - you dont have to write parenthesis if there is only one parameter in function.
     // - no need of curly braces & return keyword incase fuinction has only one statement to be runned.
-
-
-
 
 //     // <title>ArrowFunction</title>
 
