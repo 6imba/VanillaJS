@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dispatchEvent</title>
+</head>
+<body>
+    <p id="para1">Para1</p>
+    <script>
+        const para1 = document.getElementById('para1');
+        const customeEvent = new Event('myCustomeEvent');
+        const eventHandler = function(e) {
+            console.log('para1 event listener');
+        }
+
+        para1.addEventListener('myCustomeEvent', eventHandler);
+        para1.dispatchEvent(customeEvent);
+    </script>
+</body>
+</html>
+
+
+
+<!-- action/event listener -> event -> event handler -->
+<!-- action -> event -> event handler -> event listener -> event object -> event target -> event propagation -> event bubbling -> event capturing -> event delegation -> event loop -> event queue -> event stack -> event driven programming -> event emitter -> event driven architecture -> event driven design -> event drive -->
+
+<!--
+    let event = new Event(type[, options]);
+    - type – event type, a string 
+    - options – optional object with two boolean properties:
+        bubbles: whether the event bubbles. Default false.
+        cancelable: whether the default action can be prevented. Default false.
+-->
+
+<!--
+    - https://javascript.info/dispatch-events
+    - https://www.javascripttutorial.net/javascript-dom/javascript-dispatchevent/
+    - https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/dispatchEvent
+-->
