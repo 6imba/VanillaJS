@@ -1,6 +1,6 @@
 # Phases Of Function:
     1. Declaration/Defination
-    2. Invocation/Call/Ente
+    2. Invocation/Call/Emit
     3. Return/Stop/Exist
 
   1.> Function Declaration/Defination:

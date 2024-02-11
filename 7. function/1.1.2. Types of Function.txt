@@ -2,7 +2,7 @@
   1. Normal Function
   2. Function Expression
   3. Anonomous Function
-  5. Fat_Arrow Function
+  5. Flat_Arrow Function
   11. Callback Function(call-after/later/back)
   9. Inline/Inner Function
   10. Nested function
